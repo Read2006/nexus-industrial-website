@@ -79,7 +79,7 @@ export default function Home() {
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
               {/* Real Building Image - FULL */}
               <img 
-                src="/images/IMG-20260425-WA0006.jpg.jpeg" 
+                src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" 
                 alt="Industrial Building" 
                 className="w-full h-full object-cover"
               />
