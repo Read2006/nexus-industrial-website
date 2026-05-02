@@ -7,7 +7,7 @@ export default function Home() {
       <header className="sticky top-0 bg-white border-b border-gray-100 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="NIS Logo" className="w-10 h-10 object-contain" />
+            <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
             <span className="text-sm font-bold text-gray-900 hidden sm:inline">NIS</span>
           </div>
           <nav className="hidden md:flex gap-8">
@@ -75,22 +75,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Real Building Image */}
+            {/* Right: Real Building Image - CLEAN */}
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
-              {/* Real Building Image */}
+              {/* Real Building Image - FULL */}
               <img 
                 src="/images/IMG-20260425-WA0006.jpg.jpeg" 
                 alt="Industrial Building" 
                 className="w-full h-full object-cover"
               />
 
-              {/* Logo & Company Name Overlay (Bottom Left) */}
-              <div className="absolute bottom-6 left-6 z-20 space-y-3 bg-white bg-opacity-95 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Nexus Logo" className="w-14 h-14 object-contain" />
-                <div className="space-y-1">
-                  <h3 className="text-lg font-bold text-gray-900 leading-tight">Nexus</h3>
-                  <p className="text-xs text-gray-600 font-medium">Industrial Solutions</p>
-                </div>
+              {/* Company Name - Bottom Center */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white text-center">
+                <h3 className="text-2xl font-bold">Nexus Industrial Solutions</h3>
               </div>
 
               {/* Compliance Badge (Top Right) */}
