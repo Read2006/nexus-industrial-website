@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Real Building Image - CLEAN */}
+            {/* Right: Real Building Image - CLEAN, NO TEXT, NO LOGO */}
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
               {/* Real Building Image - FULL */}
               <img 
@@ -84,12 +84,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
 
-              {/* Company Name - Bottom Center */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white text-center">
-                <h3 className="text-2xl font-bold">Nexus Industrial Solutions</h3>
-              </div>
-
-              {/* Compliance Badge (Top Right) */}
+              {/* Compliance Badge (Top Right) - ONLY THIS */}
               <div className="absolute top-6 right-6 z-20 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
                 <p className="text-xs font-bold text-teal-700 uppercase">Registered</p>
                 <p className="text-xs text-gray-600 font-semibold">NTN: 123455</p>
