@@ -3,8 +3,28 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Top Bar - Sticky */}
+      <div className="bg-gray-900 text-white text-sm py-3 px-6">
+        <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-4">
+          <div className="flex items-center gap-6 flex-wrap">
+            <a href="tel:03351503555" className="hover:text-teal-400 transition flex items-center gap-2">
+              <span>📞</span>
+              <span>0335-1503555</span>
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition flex items-center gap-2">
+              <span>📧</span>
+              <span>info@nexus-is.co</span>
+            </a>
+          </div>
+          <div className="text-teal-400 font-semibold">
+            Sourcing Solutions. Delivering Results.
+          </div>
+        </div>
+      </div>
+
       {/* Header */}
-      <header className="sticky top-0 bg-white border-b border-gray-100 z-50 shadow-sm">
+      <header className="sticky top-12 bg-white border-b border-gray-100 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
@@ -22,7 +42,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section - With Real Images */}
+      {/* Hero Section */}
       <section className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -75,7 +95,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Real Building Image - CLEAN, NO TEXT, NO LOGO */}
+            {/* Right: Real Building Image - CLEAN */}
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
               {/* Real Building Image - FULL */}
               <img 
@@ -221,8 +241,8 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-white font-bold mb-4">Contact</h3>
-              <p className="text-sm">📞 0316-5333566</p>
-              <p className="text-sm">📧 osama.asif83@gmail.com</p>
+              <p className="text-sm">📞 0335-1503555</p>
+              <p className="text-sm">📧 info@nexus-is.co</p>
             </div>
             <div>
               <h3 className="text-white font-bold mb-4">Compliance</h3>
