@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Top Bar - Sticky */}
-      <div className="bg-gray-900 text-white text-sm py-3 px-6">
+      <div className="sticky top-0 bg-gray-900 text-white text-sm py-3 px-6 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-4">
           <div className="flex items-center gap-6 flex-wrap">
             <a href="tel:03351503555" className="hover:text-teal-400 transition flex items-center gap-2">
@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header className="sticky top-12 bg-white border-b border-gray-100 z-50 shadow-sm">
+      <header className="sticky top-0 bg-white border-b border-gray-100 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
