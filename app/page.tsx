@@ -6,9 +6,9 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 bg-white border-b border-gray-100 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
-            <span className="text-sm font-bold text-gray-900">NIS</span>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
+            <span className="text-sm font-bold text-gray-900 hidden sm:inline">NIS</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="/" className="text-sm font-medium text-teal-700">Home</a>
@@ -22,19 +22,19 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="bg-white py-20 px-6">
+      {/* Hero Section - Beautiful Building Image */}
+      <section className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 z-10">
               <div>
-                <p className="text-teal-700 text-sm font-bold uppercase tracking-wide mb-2">Welcome to Nexus</p>
-                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
-                  Delivering Reliable Industrial Supply & Global Trade Solutions
+                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">Welcome to</p>
+                <h1 className="text-5xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
+                  Nexus Industrial Solutions
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Your trusted partner in quality, efficiency, and business growth. We specialize in supply, distribution, and import/export of high-quality industrial products with established global sourcing channels and deep industry expertise.
+                  Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.
                 </p>
               </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
                     <span className="text-teal-700 font-bold text-lg mt-1">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Timely Delivery</p>
-                      <p className="text-sm text-gray-600">Fast & reliable delivery system across Pakistan and globally</p>
+                      <p className="text-sm text-gray-600">Fast & reliable delivery across Pakistan and globally</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -66,7 +66,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">
+                <button className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition transform hover:scale-105">
                   Get Started
                 </button>
                 <button className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition">
@@ -75,37 +75,40 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Visual */}
-            <div className="space-y-6">
-              {/* Building Image Placeholder */}
-              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl aspect-video flex items-center justify-center overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/20 to-transparent"></div>
-                <p className="text-gray-400 text-center relative z-10">
-                  {/* Building image will go here */}
-                  <span className="block text-4xl mb-2">🏭</span>
-                  Industrial Excellence
-                </p>
-              </div>
+            {/* Right: Beautiful Building Image */}
+            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
+              {/* Teal Diagonal Design Elements (Top Left & Bottom Right) */}
+              <div className="absolute top-0 left-0 w-32 h-32 bg-teal-600 transform -skew-y-12 z-10"></div>
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-teal-600 transform skew-y-12 z-10"></div>
 
-              {/* Logo & Name Card */}
-              <div className="bg-white border border-gray-200 rounded-2xl p-8 space-y-4">
-                <div className="flex justify-center">
-                  <div className="w-16 h-16 bg-teal-700 rounded-full flex items-center justify-center text-white text-4xl font-bold">N</div>
-                </div>
-                <div className="text-center space-y-2">
-                  <h2 className="text-2xl font-bold text-gray-900">Nexus Industrial Solutions</h2>
-                  <p className="text-sm text-gray-600">Industrial Supply & Global Trade</p>
-                  <div className="flex justify-center gap-4 pt-4 border-t border-gray-200">
-                    <div className="text-center">
-                      <p className="text-xs text-gray-600">NTN</p>
-                      <p className="font-semibold text-gray-900">123455</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-xs text-gray-600">STRN</p>
-                      <p className="font-semibold text-gray-900">1233456</p>
-                    </div>
+              {/* Building Image Background - Golden Hour Industrial */}
+              <div className="absolute inset-0 bg-gradient-to-b from-amber-100 via-gray-200 to-gray-400">
+                {/* Factory/Industrial Building Emoji Representation */}
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-amber-200/80 to-gray-300/80 backdrop-blur-sm">
+                  <div className="text-center space-y-4">
+                    <div className="text-8xl">🏭</div>
+                    <p className="text-2xl font-bold text-gray-700">Industrial Complex</p>
+                    <p className="text-sm text-gray-600">Golden Hour Excellence</p>
                   </div>
                 </div>
+
+                {/* Golden Gradient Overlay (Sunset effect) */}
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 via-transparent to-amber-100/20"></div>
+              </div>
+
+              {/* Logo & Company Name Overlay (Bottom Left - Vertical) */}
+              <div className="absolute bottom-6 left-6 z-20 space-y-3 bg-white bg-opacity-95 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                <div className="w-14 h-14 bg-teal-700 rounded-full flex items-center justify-center text-white text-3xl font-bold">N</div>
+                <div className="space-y-1">
+                  <h3 className="text-lg font-bold text-gray-900 leading-tight">Nexus</h3>
+                  <p className="text-xs text-gray-600 font-medium">Industrial Solutions</p>
+                </div>
+              </div>
+
+              {/* Compliance Badge (Top Right) */}
+              <div className="absolute top-6 right-6 z-20 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
+                <p className="text-xs font-bold text-teal-700 uppercase">Registered</p>
+                <p className="text-xs text-gray-600 font-semibold">NTN: 123455</p>
               </div>
             </div>
           </div>
@@ -137,35 +140,35 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Core Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-3">
+            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
               <h3 className="text-xl font-bold text-gray-900">Integrity</h3>
-              <p className="text-gray-600">Honest and transparent dealings in every transaction and relationship</p>
+              <p className="text-gray-600">Honest and transparent dealings in every transaction</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
               <h3 className="text-xl font-bold text-gray-900">Quality Commitment</h3>
-              <p className="text-gray-600">Delivering only the best products that meet industry standards</p>
+              <p className="text-gray-600">Delivering only the best products that meet standards</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
               <h3 className="text-xl font-bold text-gray-900">Customer Focus</h3>
-              <p className="text-gray-600">Client satisfaction is our highest priority in every engagement</p>
+              <p className="text-gray-600">Client satisfaction is our highest priority</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
               <h3 className="text-xl font-bold text-gray-900">Reliability</h3>
-              <p className="text-gray-600">Consistent and timely service delivery across all operations</p>
+              <p className="text-gray-600">Consistent and timely service delivery</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
               <h3 className="text-xl font-bold text-gray-900">Innovation</h3>
-              <p className="text-gray-600">Adapting to modern industry needs and solutions</p>
+              <p className="text-gray-600">Adapting to modern industry needs</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
               <h3 className="text-xl font-bold text-gray-900">Global Connectivity</h3>
-              <p className="text-gray-600">Established extensive global sourcing channels worldwide</p>
+              <p className="text-gray-600">Extensive global sourcing channels</p>
             </div>
           </div>
         </div>
@@ -176,21 +179,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Services</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Distribution Supply</h3>
-              <p className="text-gray-600">Efficient and reliable distribution for a wide range of industrial products. Strong network ensures timely and secure delivery.</p>
+              <p className="text-gray-600">Efficient and reliable distribution for industrial products with strong network and timely delivery.</p>
             </div>
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Import & Export</h3>
-              <p className="text-gray-600">Complete import/export solutions with documentation, customs clearance, and compliance with all trade requirements.</p>
+              <p className="text-gray-600">Complete import/export solutions with documentation and customs clearance compliance.</p>
             </div>
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Sourcing Solutions</h3>
-              <p className="text-gray-600">Assist businesses in sourcing high-quality products meeting exact requirements with cost-effective options.</p>
+              <p className="text-gray-600">High-quality product sourcing meeting exact specifications with cost-effective options.</p>
             </div>
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Bulk Trading</h3>
-              <p className="text-gray-600">Specialized bulk order management with efficient handling and competitive pricing without compromising quality.</p>
+              <p className="text-gray-600">Specialized bulk order management with efficient handling and competitive pricing.</p>
             </div>
           </div>
         </div>
@@ -200,10 +203,10 @@ export default function Home() {
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Industries We Serve</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {['Cement', 'Steel', 'Oil & Gas', 'Fertilizer', 'Textile', 'Aluminum', 'FMCG', 'Power', 'Chemical/Pharma'].map((industry, i) => (
-              <div key={i} className="bg-teal-50 border border-teal-200 rounded-lg p-6 text-center hover:bg-teal-100 transition">
-                <p className="font-semibold text-gray-900">{industry}</p>
+              <div key={i} className="bg-teal-50 border border-teal-200 rounded-lg p-4 text-center hover:bg-teal-100 hover:border-teal-400 transition cursor-pointer font-semibold text-gray-900 text-sm">
+                {industry}
               </div>
             ))}
           </div>
@@ -215,7 +218,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-bold">Ready to Partner With Us?</h2>
           <p className="text-lg opacity-95">Get in touch today to discuss your industrial supply needs and discover how we can support your business growth.</p>
-          <button className="bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          <button className="bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
             Contact Us
           </button>
         </div>
