@@ -7,7 +7,7 @@ export default function Home() {
       <header className="sticky top-0 bg-white border-b border-gray-100 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
+            <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="NIS Logo" className="w-10 h-10 object-contain" />
             <span className="text-sm font-bold text-gray-900 hidden sm:inline">NIS</span>
           </div>
           <nav className="hidden md:flex gap-8">
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section - Beautiful Building Image */}
+      {/* Hero Section - With Real Images */}
       <section className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -75,30 +75,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Beautiful Building Image */}
+            {/* Right: Real Building Image */}
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
-              {/* Teal Diagonal Design Elements (Top Left & Bottom Right) */}
-              <div className="absolute top-0 left-0 w-32 h-32 bg-teal-600 transform -skew-y-12 z-10"></div>
-              <div className="absolute bottom-0 right-0 w-32 h-32 bg-teal-600 transform skew-y-12 z-10"></div>
+              {/* Real Building Image */}
+              <img 
+                src="/images/IMG-20260425-WA0006.jpg.jpeg" 
+                alt="Industrial Building" 
+                className="w-full h-full object-cover"
+              />
 
-              {/* Building Image Background - Golden Hour Industrial */}
-              <div className="absolute inset-0 bg-gradient-to-b from-amber-100 via-gray-200 to-gray-400">
-                {/* Factory/Industrial Building Emoji Representation */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-amber-200/80 to-gray-300/80 backdrop-blur-sm">
-                  <div className="text-center space-y-4">
-                    <div className="text-8xl">🏭</div>
-                    <p className="text-2xl font-bold text-gray-700">Industrial Complex</p>
-                    <p className="text-sm text-gray-600">Golden Hour Excellence</p>
-                  </div>
-                </div>
-
-                {/* Golden Gradient Overlay (Sunset effect) */}
-                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 via-transparent to-amber-100/20"></div>
-              </div>
-
-              {/* Logo & Company Name Overlay (Bottom Left - Vertical) */}
+              {/* Logo & Company Name Overlay (Bottom Left) */}
               <div className="absolute bottom-6 left-6 z-20 space-y-3 bg-white bg-opacity-95 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                <div className="w-14 h-14 bg-teal-700 rounded-full flex items-center justify-center text-white text-3xl font-bold">N</div>
+                <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Nexus Logo" className="w-14 h-14 object-contain" />
                 <div className="space-y-1">
                   <h3 className="text-lg font-bold text-gray-900 leading-tight">Nexus</h3>
                   <p className="text-xs text-gray-600 font-medium">Industrial Solutions</p>
