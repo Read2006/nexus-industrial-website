@@ -104,40 +104,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Core Values */}
-      <section className="bg-white py-20 px-6">
+      {/* Core Values - Professional Layout */}
+      <section className="bg-white py-0 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Core Values</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
-              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
-              <h3 className="text-xl font-bold text-gray-900">Integrity</h3>
-              <p className="text-gray-600">Honest and transparent dealings in every transaction</p>
-            </div>
-            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
-              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
-              <h3 className="text-xl font-bold text-gray-900">Quality Commitment</h3>
-              <p className="text-gray-600">Delivering only the best products that meet standards</p>
-            </div>
-            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
-              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
-              <h3 className="text-xl font-bold text-gray-900">Customer Focus</h3>
-              <p className="text-gray-600">Client satisfaction is our highest priority</p>
-            </div>
-            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
-              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
-              <h3 className="text-xl font-bold text-gray-900">Reliability</h3>
-              <p className="text-gray-600">Consistent and timely service delivery</p>
-            </div>
-            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
-              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
-              <h3 className="text-xl font-bold text-gray-900">Innovation</h3>
-              <p className="text-gray-600">Adapting to modern industry needs</p>
-            </div>
-            <div className="space-y-3 p-6 rounded-xl hover:bg-teal-50 transition">
-              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 font-bold text-xl">◆</div>
-              <h3 className="text-xl font-bold text-gray-900">Global Connectivity</h3>
-              <p className="text-gray-600">Extensive global sourcing channels</p>
+          {/* Hero Image */}
+          <div className="relative h-64 rounded-t-2xl overflow-hidden shadow-lg">
+            <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Industrial Complex" className="w-full h-full object-cover" />
+          </div>
+
+          {/* Content Section */}
+          <div className="bg-gray-50 py-20 px-8 rounded-b-2xl">
+            <div className="max-w-4xl mx-auto">
+              {/* Heading */}
+              <div className="mb-8">
+                <p className="text-teal-700 text-sm font-semibold mb-2">Our</p>
+                <h2 className="text-4xl font-bold text-teal-700 mb-6">CORE VALUES</h2>
+              </div>
+
+              {/* Intro Text */}
+              <p className="text-gray-700 font-semibold mb-8">At Nexus Industrial Solutions, our business is built on strong values:</p>
+
+              {/* Values List with Square Bullets */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div>
+                    <p className="font-bold text-gray-900">INTEGRITY <span className="font-normal">– Honest and transparent dealings</span></p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div>
+                    <p className="font-bold text-gray-900">QUALITY COMMITMENT <span className="font-normal">– Delivering only the best products</span></p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div>
+                    <p className="font-bold text-gray-900">CUSTOMER FOCUS <span className="font-normal">– Client satisfaction is our priority</span></p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div>
+                    <p className="font-bold text-gray-900">RELIABILITY <span className="font-normal">– Consistent and timely service</span></p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div>
+                    <p className="font-bold text-gray-900">INNOVATION <span className="font-normal">– Adapting to modern industry needs</span></p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div>
+                    <p className="font-bold text-gray-900">GLOBAL CONNECTIVITY <span className="font-normal">– Established extensive global sourcing channels</span></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
