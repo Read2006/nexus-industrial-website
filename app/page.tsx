@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Core Values - Professional Layout */}
+      {/* Core Values - Professional 2x2 Grid */}
       <section className="bg-white py-0 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Hero Image */}
@@ -114,52 +114,60 @@ export default function Home() {
 
           {/* Content Section */}
           <div className="bg-gray-50 py-20 px-8 rounded-b-2xl">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               {/* Heading */}
-              <div className="mb-8">
-                <p className="text-teal-700 text-sm font-semibold mb-2">Our</p>
-                <h2 className="text-4xl font-bold text-teal-700 mb-6">CORE VALUES</h2>
+              <div className="mb-12">
+                <p className="text-teal-700 text-lg font-semibold mb-2">Our</p>
+                <h2 className="text-5xl font-bold text-teal-700 mb-2">CORE VALUES</h2>
+                <div className="w-16 h-1 bg-teal-700"></div>
               </div>
 
               {/* Intro Text */}
-              <p className="text-gray-700 font-semibold mb-8">At Nexus Industrial Solutions, our business is built on strong values:</p>
+              <p className="text-gray-700 text-lg font-medium mb-12">At Nexus Industrial Solutions, our business is built on strong values:</p>
 
-              {/* Values List with Square Bullets */}
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <p className="font-bold text-gray-900">INTEGRITY <span className="font-normal">– Honest and transparent dealings</span></p>
+              {/* 2x2 Grid for Desktop, 1 Column for Mobile */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                {/* Value 1 */}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Integrity</h3>
+                      <p className="text-lg text-gray-700">Honest and transparent dealings in every transaction with our clients</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <p className="font-bold text-gray-900">QUALITY COMMITMENT <span className="font-normal">– Delivering only the best products</span></p>
+
+                {/* Value 2 */}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Quality Commitment</h3>
+                      <p className="text-lg text-gray-700">Delivering only the best products that meet international standards</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <p className="font-bold text-gray-900">CUSTOMER FOCUS <span className="font-normal">– Client satisfaction is our priority</span></p>
+
+                {/* Value 3 */}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Customer Focus</h3>
+                      <p className="text-lg text-gray-700">Client satisfaction is our highest priority in every interaction</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <p className="font-bold text-gray-900">RELIABILITY <span className="font-normal">– Consistent and timely service</span></p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <p className="font-bold text-gray-900">INNOVATION <span className="font-normal">– Adapting to modern industry needs</span></p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-4 h-4 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <p className="font-bold text-gray-900">GLOBAL CONNECTIVITY <span className="font-normal">– Established extensive global sourcing channels</span></p>
+
+                {/* Value 4 */}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Global Connectivity</h3>
+                      <p className="text-lg text-gray-700">Established extensive global sourcing channels for worldwide reach</p>
+                    </div>
                   </div>
                 </div>
               </div>
