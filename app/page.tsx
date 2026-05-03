@@ -117,8 +117,8 @@ export default function Home() {
             <div className="max-w-5xl mx-auto">
               {/* Heading */}
               <div className="mb-12">
-                <p className="text-teal-700 text-lg font-semibold mb-2">Our</p>
-                <h2 className="text-5xl font-bold text-teal-700 mb-2">CORE VALUES</h2>
+                <p className="text-teal-700 text-2xl font-semibold mb-2">Our</p>
+                <h2 className="text-5xl font-bold text-gray-900 mb-2">CORE VALUES</h2>
                 <div className="w-16 h-1 bg-teal-700"></div>
               </div>
 
