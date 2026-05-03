@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Top Bar - Sticky */}
+      {/* Top Bar - Sticky at VERY TOP */}
       <div className="sticky top-0 bg-gray-900 text-white text-sm py-3 px-6 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-4">
           <div className="flex items-center gap-6 flex-wrap">
@@ -23,22 +23,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Header */}
-      <header className="sticky top-0 bg-white border-b border-gray-100 z-40 shadow-sm">
+      {/* HEADER - Logo LEFT, Pages RIGHT - STICKY WHEN SCROLLING */}
+      <header className="sticky top-12 bg-white border-b border-gray-100 z-40 shadow-sm w-full">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
-            <span className="text-sm font-bold text-gray-900 hidden sm:inline">NIS</span>
+            <span className="font-bold text-gray-900 text-sm">NIS</span>
           </div>
-          <nav className="hidden md:flex gap-8">
-            <a href="/" className="text-sm font-medium text-teal-700">Home</a>
-            <a href="/about" className="text-sm font-medium text-gray-600 hover:text-teal-700 transition">About</a>
-            <a href="/products" className="text-sm font-medium text-gray-600 hover:text-teal-700 transition">Products</a>
-            <a href="/industries" className="text-sm font-medium text-gray-600 hover:text-teal-700 transition">Industries</a>
-            <a href="/brands" className="text-sm font-medium text-gray-600 hover:text-teal-700 transition">Brands</a>
-            <a href="/contact" className="text-sm font-medium text-gray-600 hover:text-teal-700 transition">Contact</a>
+          <nav className="flex gap-6">
+            <a href="/" className="text-sm font-semibold text-teal-700">Home</a>
+            <a href="/about" className="text-sm font-semibold text-gray-700 hover:text-teal-700">About</a>
+            <a href="/products" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Products</a>
+            <a href="/industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
+            <a href="/brands" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Brands</a>
+            <a href="/contact" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Contact</a>
           </nav>
-          <button className="md:hidden text-gray-600">☰</button>
         </div>
       </header>
 
@@ -95,16 +94,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Real Building Image - CLEAN */}
-            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
-              {/* Real Building Image - FULL */}
+            {/* Right: Real Building Image */}
+            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" 
                 alt="Industrial Building" 
                 className="w-full h-full object-cover"
               />
-
-              {/* Compliance Badge (Top Right) - ONLY THIS */}
               <div className="absolute top-6 right-6 z-20 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
                 <p className="text-xs font-bold text-teal-700 uppercase">Registered</p>
                 <p className="text-xs text-gray-600 font-semibold">NTN: 123455</p>
@@ -173,7 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Services */}
       <section className="bg-gray-50 py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Services</h2>
