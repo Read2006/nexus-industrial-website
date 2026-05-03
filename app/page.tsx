@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       {/* HEADER - FLUSH BELOW TOP BAR, NO GAP */}
-      <header className="sticky top-[38px] bg-white border-b border-gray-100 z-40 w-full">
+      <header className="sticky top-[36px] bg-white border-b border-gray-100 z-40 w-full">
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
