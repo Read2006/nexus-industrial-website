@@ -3,29 +3,21 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Top Bar - Sticky at VERY TOP */}
-      <div className="sticky top-0 bg-gray-900 text-white text-sm py-3 px-6 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-4">
-          <div className="flex items-center gap-6 flex-wrap">
-            <a href="tel:03351503555" className="hover:text-teal-400 transition flex items-center gap-2">
-              <span>📞</span>
-              <span>0335-1503555</span>
-            </a>
+      {/* TOP BAR */}
+      <div className="sticky top-0 bg-gray-900 text-white text-sm py-2 px-6 z-50">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="flex items-center gap-6">
+            <a href="tel:03351503555" className="hover:text-teal-400 transition">📞 0335-1503555</a>
             <span className="text-gray-600">|</span>
-            <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition flex items-center gap-2">
-              <span>📧</span>
-              <span>info@nexus-is.co</span>
-            </a>
+            <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">📧 info@nexus-is.co</a>
           </div>
-          <div className="text-teal-400 font-semibold">
-            Sourcing Solutions. Delivering Results.
-          </div>
+          <div className="text-teal-400 font-semibold">Sourcing Solutions. Delivering Results.</div>
         </div>
       </div>
 
-      {/* HEADER - Logo LEFT, Pages RIGHT - STICKY WHEN SCROLLING */}
-      <header className="sticky top-12 bg-white border-b border-gray-100 z-40 shadow-sm w-full">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      {/* HEADER - FLUSH BELOW TOP BAR, NO GAP */}
+      <header className="sticky top-[38px] bg-white border-b border-gray-100 z-40 w-full">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
             <span className="font-bold text-gray-900 text-sm">NIS</span>
@@ -41,41 +33,36 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* HERO */}
       <section className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left: Content */}
-            <div className="space-y-6 z-10">
+            <div className="space-y-6">
               <div>
-                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">Welcome to</p>
-                <h1 className="text-5xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
-                  Nexus Industrial Solutions
-                </h1>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.
-                </p>
+                <p className="text-teal-700 text-sm font-bold uppercase mb-4">Welcome to</p>
+                <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h1>
+                <p className="text-lg text-gray-600">Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.</p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-gray-900">Why Partner With Us?</h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg mt-1">✓</span>
+                    <span className="text-teal-700 font-bold text-lg">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Timely Delivery</p>
                       <p className="text-sm text-gray-600">Fast & reliable delivery across Pakistan and globally</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg mt-1">✓</span>
+                    <span className="text-teal-700 font-bold text-lg">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Competitive Pricing</p>
                       <p className="text-sm text-gray-600">Market-leading prices without compromising quality</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg mt-1">✓</span>
+                    <span className="text-teal-700 font-bold text-lg">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Global Network</p>
                       <p className="text-sm text-gray-600">Trusted supplier network with established channels worldwide</p>
@@ -84,23 +71,14 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition transform hover:scale-105">
-                  Get Started
-                </button>
-                <button className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition">
-                  Learn More
-                </button>
+              <div className="flex gap-4 pt-4">
+                <button className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800">Get Started</button>
+                <button className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50">Learn More</button>
               </div>
             </div>
 
-            {/* Right: Real Building Image */}
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" 
-                alt="Industrial Building" 
-                className="w-full h-full object-cover"
-              />
+              <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Industrial Building" className="w-full h-full object-cover" />
               <div className="absolute top-6 right-6 z-20 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
                 <p className="text-xs font-bold text-teal-700 uppercase">Registered</p>
                 <p className="text-xs text-gray-600 font-semibold">NTN: 123455</p>
@@ -116,15 +94,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4">
               <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
-                To provide high-quality industrial products and efficient services that help businesses operate smoothly and grow sustainably. We build strong relationships with our clients through reliability, transparency, and customer satisfaction.
-              </p>
+              <p className="text-gray-600 leading-relaxed">To provide high-quality industrial products and efficient services that help businesses operate smoothly and grow sustainably. We build strong relationships with our clients through reliability, transparency, and customer satisfaction.</p>
             </div>
             <div className="space-y-4">
               <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">
-                To become a highly recognized and trusted name in industrial supply and trading, known for delivering excellence, innovation, and outstanding customer service. Building strong and long-term partnerships through continuous improvement.
-              </p>
+              <p className="text-gray-600 leading-relaxed">To become a highly recognized and trusted name in industrial supply and trading, known for delivering excellence, innovation, and outstanding customer service. Building strong and long-term partnerships through continuous improvement.</p>
             </div>
           </div>
         </div>
@@ -213,9 +187,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-bold">Ready to Partner With Us?</h2>
           <p className="text-lg opacity-95">Get in touch today to discuss your industrial supply needs and discover how we can support your business growth.</p>
-          <button className="bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
-            Contact Us
-          </button>
+          <button className="bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us</button>
         </div>
       </section>
 
