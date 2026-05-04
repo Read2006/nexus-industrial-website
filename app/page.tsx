@@ -176,41 +176,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Services</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Distribution Supply</h3>
-              <p className="text-gray-600">Efficient and reliable distribution for industrial products with strong network and timely delivery.</p>
-            </div>
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Import & Export</h3>
-              <p className="text-gray-600">Complete import/export solutions with documentation and customs clearance compliance.</p>
-            </div>
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Sourcing Solutions</h3>
-              <p className="text-gray-600">High-quality product sourcing meeting exact specifications with cost-effective options.</p>
-            </div>
-            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:border-teal-300 transition">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Bulk Trading</h3>
-              <p className="text-gray-600">Specialized bulk order management with efficient handling and competitive pricing.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
+      {/* ABOUT US SECTION - Scrollable */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Industries We Serve</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {['Cement', 'Steel', 'Oil & Gas', 'Fertilizer', 'Textile', 'Aluminum', 'FMCG', 'Power', 'Chemical/Pharma'].map((industry, i) => (
-              <div key={i} className="bg-teal-50 border border-teal-200 rounded-lg p-4 text-center hover:bg-teal-100 hover:border-teal-400 transition cursor-pointer font-semibold text-gray-900 text-sm">
-                {industry}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="/images/Screenshot 2026-05-03 113802.png" 
+                alt="Nexus Industrial Solutions" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="space-y-6">
+              <div>
+                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">About Us</p>
+                <h2 className="text-4xl font-bold text-gray-900 mb-6">Nexus Industrial Solutions</h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality across multiple industrial sectors.
+                </p>
               </div>
-            ))}
+
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold text-gray-900">Our Commitment</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  We proudly serve manufacturing, construction, engineering, FMCG, power, and trading industries. We are committed to delivering excellence and building long-term business relationships based on trust, reliability, and exceptional performance.
+                </p>
+              </div>
+
+              <div>
+                <a href="/about" className="inline-block bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">
+                  Learn More
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
