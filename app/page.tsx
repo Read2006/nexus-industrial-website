@@ -177,14 +177,14 @@ export default function Home() {
       </section>
 
       {/* ABOUT US SECTION - Scrollable */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div className="space-y-6">
               <div>
-                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">About Us</p>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Nexus Industrial Solutions</h2>
+                <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-2">About Us</p>
+                <h2 className="text-5xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality across multiple industrial sectors.
                 </p>
