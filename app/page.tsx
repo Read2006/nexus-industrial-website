@@ -1,6 +1,6 @@
 'use client'
 
-export default function Home() {
+export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* TOP BAR */}
@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* HEADER - FLUSH BELOW TOP BAR, NO GAP */}
+      {/* HEADER */}
       <header className="sticky top-[36px] bg-white border-b border-gray-100 z-40 w-full">
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
           <div className="flex items-center gap-2">
@@ -23,8 +23,8 @@ export default function Home() {
             <span className="font-bold text-gray-900 text-sm">NIS</span>
           </div>
           <nav className="flex gap-6">
-            <a href="/" className="text-sm font-semibold text-teal-700">Home</a>
-            <a href="/about" className="text-sm font-semibold text-gray-700 hover:text-teal-700">About</a>
+            <a href="/" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Home</a>
+            <a href="/about" className="text-sm font-semibold text-teal-700">About</a>
             <a href="/products" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Products</a>
             <a href="/industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
             <a href="/brands" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Brands</a>
@@ -33,181 +33,47 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO */}
-      <section className="bg-white py-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div>
-                <p className="text-teal-700 text-sm font-bold uppercase mb-4">Welcome to</p>
-                <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h1>
-                <p className="text-lg text-gray-600">Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.</p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-gray-900">Why Partner With Us?</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
-                    <div>
-                      <p className="font-semibold text-gray-900">Timely Delivery</p>
-                      <p className="text-sm text-gray-600">Fast & reliable delivery across Pakistan and globally</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
-                    <div>
-                      <p className="font-semibold text-gray-900">Competitive Pricing</p>
-                      <p className="text-sm text-gray-600">Market-leading prices without compromising quality</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
-                    <div>
-                      <p className="font-semibold text-gray-900">Global Network</p>
-                      <p className="text-sm text-gray-600">Trusted supplier network with established channels worldwide</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex gap-4 pt-4">
-                <button className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800">Get Started</button>
-                <button className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50">Learn More</button>
-              </div>
-            </div>
-
-            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Industrial Building" className="w-full h-full object-cover" />
-              <div className="absolute top-6 right-6 z-20 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
-                <p className="text-xs font-bold text-teal-700 uppercase">Registered</p>
-                <p className="text-xs text-gray-600 font-semibold">NTN: 123455</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission & Vision */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-4">
-              <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">To provide high-quality industrial products and efficient services that help businesses operate smoothly and grow sustainably. We build strong relationships with our clients through reliability, transparency, and customer satisfaction.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">To become a highly recognized and trusted name in industrial supply and trading, known for delivering excellence, innovation, and outstanding customer service. Building strong and long-term partnerships through continuous improvement.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Values - Professional 2x2 Grid */}
-      <section className="bg-white py-0 px-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Hero Image */}
-          <div className="relative h-64 rounded-t-2xl overflow-hidden shadow-lg">
-            <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Industrial Complex" className="w-full h-full object-cover" />
-          </div>
-
-          {/* Content Section */}
-          <div className="bg-gray-50 py-20 px-8 rounded-b-2xl">
-            <div className="max-w-5xl mx-auto">
-              {/* Heading */}
-              <div className="mb-12">
-                <p className="text-teal-700 text-2xl font-semibold mb-2">Our</p>
-                <h2 className="text-5xl font-bold text-gray-900 mb-2">CORE VALUES</h2>
-                <div className="w-16 h-1 bg-teal-700"></div>
-              </div>
-
-              {/* Intro Text */}
-              <p className="text-gray-700 text-lg font-medium mb-12">At Nexus Industrial Solutions, our business is built on strong values:</p>
-
-              {/* 2x2 Grid for Desktop, 1 Column for Mobile */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                {/* Value 1 */}
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Integrity</h3>
-                      <p className="text-lg text-gray-700">Honest and transparent dealings in every transaction with our clients</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Value 2 */}
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Quality Commitment</h3>
-                      <p className="text-lg text-gray-700">Delivering only the best products that meet international standards</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Value 3 */}
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Customer Focus</h3>
-                      <p className="text-lg text-gray-700">Client satisfaction is our highest priority in every interaction</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Value 4 */}
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Global Connectivity</h3>
-                      <p className="text-lg text-gray-700">Established extensive global sourcing channels for worldwide reach</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ABOUT US SECTION - Scrollable */}
+      {/* MAIN ABOUT SECTION - Image LEFT, Text RIGHT */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src="/images/Screenshot 2026-05-03 113802.png" 
-                alt="Nexus Industrial Solutions" 
-                className="w-full h-full object-cover"
-              />
+            {/* LEFT: Image with Teal Diagonal */}
+            <div className="relative h-96 md:h-[500px]">
+              {/* Teal Diagonal Background */}
+              <div className="absolute inset-0 bg-teal-700 skew-x-12 origin-top-left -ml-12"></div>
+              
+              {/* Image Container */}
+              <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl z-10">
+                <img 
+                  src="/images/Screenshot 2026-05-03 113802.png" 
+                  alt="Nexus Industrial Solutions" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
-            {/* Right: Content */}
+            {/* RIGHT: Text Content */}
             <div className="space-y-6">
               <div>
-                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">About Us</p>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Nexus Industrial Solutions</h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality across multiple industrial sectors.
-                </p>
+                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-2">About Us</p>
+                <h2 className="text-5xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h2>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900">Our Commitment</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  We proudly serve manufacturing, construction, engineering, FMCG, power, and trading industries. We are committed to delivering excellence and building long-term business relationships based on trust, reliability, and exceptional performance.
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality across multiple industrial sectors.
                 </p>
+
+                <div className="pt-4">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Commitment</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    We proudly serve manufacturing, construction, engineering, FMCG, power, and trading industries. We are committed to delivering excellence and building long-term business relationships based on trust, reliability, and exceptional performance.
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <a href="/about" className="inline-block bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">
+              <div className="pt-4">
+                <a href="#why-choose" className="inline-block bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition transform hover:scale-105">
                   Learn More
                 </a>
               </div>
@@ -216,12 +82,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY CHOOSE US */}
+      <section id="why-choose" className="bg-gray-50 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Nexus?</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Global Network</h3>
+              <p className="text-gray-700">Established sourcing channels with trusted suppliers worldwide for reliable supply</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Industry Expertise</h3>
+              <p className="text-gray-700">Deep knowledge serving cement, steel, oil & gas, and multiple industrial sectors</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Timely Delivery</h3>
+              <p className="text-gray-700">Reliable logistics ensuring on-time delivery across regions and countries</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Competitive Pricing</h3>
+              <p className="text-gray-700">Market-leading prices without compromising on quality and service standards</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Assurance</h3>
+              <p className="text-gray-700">Strict quality checks with full certifications and compliance documentation</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Customer Support</h3>
+              <p className="text-gray-700">Dedicated support team ready to assist with quotations and special orders</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT WE DO */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">What We Do</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Distribution Supply</h3>
+              <p className="text-gray-700 leading-relaxed">Efficient and reliable distribution networks ensuring products reach clients on time across Pakistan and globally</p>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Import & Export</h3>
+              <p className="text-gray-700 leading-relaxed">Complete international trade solutions with documentation, customs clearance, and full compliance support</p>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sourcing Solutions</h3>
+              <p className="text-gray-700 leading-relaxed">Expert product sourcing tailored to exact specifications with cost-effective options and quality assurance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl font-bold">Ready to Partner With Us?</h2>
-          <p className="text-lg opacity-95">Get in touch today to discuss your industrial supply needs and discover how we can support your business growth.</p>
-          <button className="bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us</button>
+          <h2 className="text-4xl font-bold">Ready to Partner With Nexus?</h2>
+          <p className="text-lg opacity-95">Let's discuss your industrial supply needs and discover how we can support your business growth.</p>
+          <a href="/contact" className="inline-block bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">Contact Us Today</a>
         </div>
       </section>
 
@@ -236,9 +163,9 @@ export default function Home() {
             <div>
               <h3 className="text-white font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm">
+                <li><a href="/" className="hover:text-white transition">Home</a></li>
                 <li><a href="/about" className="hover:text-white transition">About</a></li>
-                <li><a href="/products" className="hover:text-white transition">Products</a></li>
-                <li><a href="/industries" className="hover:text-white transition">Industries</a></li>
+                <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
               </ul>
             </div>
             <div>
