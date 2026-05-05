@@ -180,16 +180,7 @@ export default function Home() {
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src="/images/pexels-canmiless-5860937.jpg" 
-                alt="Nexus Industrial Warehouse" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Right: Content */}
+            {/* Left: Content */}
             <div className="space-y-6">
               <div>
                 <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">About Us</p>
@@ -211,6 +202,15 @@ export default function Home() {
                   Learn More
                 </a>
               </div>
+            </div>
+
+            {/* Right: Image */}
+            <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="/images/pexels-canmiless-5860937.jpg" 
+                alt="Nexus Industrial Warehouse" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
