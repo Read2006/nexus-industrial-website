@@ -34,7 +34,7 @@ export default function About() {
       </header>
 
       {/* MAIN ABOUT SECTION - TEXT LEFT, IMAGE RIGHT */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-white py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* LEFT: Text Content */}
@@ -69,20 +69,15 @@ export default function About() {
               </div>
             </div>
 
-            {/* RIGHT: Image with Teal Diagonal Design */}
+            {/* RIGHT: Image - CLEAN, NO OVERLAY */}
             <div className="relative h-96 md:h-[550px]">
-              {/* Teal Diagonal Shape - Right side */}
-              <div className="absolute inset-0 right-0 top-0 w-24 bg-teal-700 transform -skew-x-12 origin-top-right z-0"></div>
-              
-              {/* Image Container */}
+              {/* Image Container - NO TEAL DIAGONAL */}
               <div className="relative h-full rounded-xl overflow-hidden shadow-2xl">
                 <img 
                   src="/images/pexels-canmiless-5860937.jpg" 
                   alt="Nexus Industrial Solutions Warehouse" 
                   className="w-full h-full object-cover"
                 />
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent opacity-0 hover:opacity-100 transition duration-300"></div>
               </div>
             </div>
           </div>
