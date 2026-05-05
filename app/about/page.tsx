@@ -171,24 +171,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* INDUSTRIES SERVED */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
-            <p className="text-lg text-gray-600">Trusted by leading companies across multiple sectors</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {['Cement', 'Steel', 'Oil & Gas', 'Fertilizer', 'Textile', 'Aluminum', 'FMCG', 'Power', 'Chemical/Pharma'].map((industry, i) => (
-              <div key={i} className="bg-white border-2 border-teal-700 rounded-lg p-4 text-center hover:bg-teal-50 transition font-semibold text-gray-900 text-sm shadow-sm">
-                {industry}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
