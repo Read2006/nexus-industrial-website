@@ -40,7 +40,7 @@ export default function About() {
             {/* LEFT: Text Content */}
             <div className="space-y-8">
               <div>
-                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-3">About Us</p>
+                <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-4">About Us</p>
                 <h2 className="text-5xl font-black text-gray-900 leading-tight">Nexus Industrial Solutions</h2>
               </div>
 
@@ -77,8 +77,8 @@ export default function About() {
               {/* Image Container */}
               <div className="relative h-full rounded-xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/Screenshot 2026-05-03 113802.png" 
-                  alt="Nexus Industrial Solutions Factory" 
+                  src="/images/pexels-canmiless-5860937.jpg" 
+                  alt="Nexus Industrial Solutions Warehouse" 
                   className="w-full h-full object-cover"
                 />
                 {/* Overlay Gradient */}
