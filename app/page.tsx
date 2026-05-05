@@ -183,8 +183,8 @@ export default function Home() {
             {/* Left: Image */}
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="/images/Screenshot 2026-05-03 113802.png" 
-                alt="Nexus Industrial Solutions" 
+                src="/images/pexels-canmiless-5860937.jpg" 
+                alt="Nexus Industrial Warehouse" 
                 className="w-full h-full object-cover"
               />
             </div>
