@@ -33,88 +33,117 @@ export default function About() {
         </div>
       </header>
 
-      {/* MAIN ABOUT SECTION - Image LEFT, Text RIGHT */}
+      {/* MAIN ABOUT SECTION - TEXT LEFT, IMAGE RIGHT */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* LEFT: Image with Teal Diagonal */}
-            <div className="relative h-96 md:h-[500px]">
-              {/* Teal Diagonal Background */}
-              <div className="absolute inset-0 bg-teal-700 skew-x-12 origin-top-left -ml-12"></div>
-              
-              {/* Image Container */}
-              <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl z-10">
-                <img 
-                  src="/images/Screenshot 2026-05-03 113802.png" 
-                  alt="Nexus Industrial Solutions" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* RIGHT: Text Content */}
-            <div className="space-y-6">
+            {/* LEFT: Text Content */}
+            <div className="space-y-8">
               <div>
-                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-2">About Us</p>
-                <h2 className="text-5xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h2>
+                <p className="text-teal-700 text-sm font-bold uppercase tracking-wider mb-3">About Us</p>
+                <h2 className="text-5xl font-black text-gray-900 leading-tight">Nexus Industrial Solutions</h2>
               </div>
 
-              <div className="space-y-4">
-                <p className="text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700 leading-relaxed font-medium">
                   Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality across multiple industrial sectors.
                 </p>
 
-                <div className="pt-4">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Commitment</h3>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Our Commitment</h3>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     We proudly serve manufacturing, construction, engineering, FMCG, power, and trading industries. We are committed to delivering excellence and building long-term business relationships based on trust, reliability, and exceptional performance.
                   </p>
                 </div>
-              </div>
 
-              <div className="pt-4">
-                <a href="#why-choose" className="inline-block bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition transform hover:scale-105">
-                  Learn More
-                </a>
+                <div className="pt-4 flex gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 bg-teal-700 rounded-full"></div>
+                    <span className="text-gray-700 font-semibold">Global Supply Chain</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 bg-teal-700 rounded-full"></div>
+                    <span className="text-gray-700 font-semibold">Quality Assured</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT: Image with Teal Diagonal Design */}
+            <div className="relative h-96 md:h-[550px]">
+              {/* Teal Diagonal Shape - Right side */}
+              <div className="absolute inset-0 right-0 top-0 w-24 bg-teal-700 transform -skew-x-12 origin-top-right z-0"></div>
+              
+              {/* Image Container */}
+              <div className="relative h-full rounded-xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/images/Screenshot 2026-05-03 113802.png" 
+                  alt="Nexus Industrial Solutions Factory" 
+                  className="w-full h-full object-cover"
+                />
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent opacity-0 hover:opacity-100 transition duration-300"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
-      <section id="why-choose" className="bg-gray-50 py-20 px-6">
+      {/* WHY CHOOSE US - Professional Grid */}
+      <section className="bg-gray-50 py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Nexus?</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Nexus?</h2>
+            <p className="text-lg text-gray-600">Trusted by industries across Pakistan and globally</p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-teal-700">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🌍</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Global Network</h3>
-              <p className="text-gray-700">Established sourcing channels with trusted suppliers worldwide for reliable supply</p>
+              <p className="text-gray-700 leading-relaxed">Established sourcing channels with trusted suppliers worldwide ensuring reliable supply</p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-teal-700">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">⚙️</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Industry Expertise</h3>
-              <p className="text-gray-700">Deep knowledge serving cement, steel, oil & gas, and multiple industrial sectors</p>
+              <p className="text-gray-700 leading-relaxed">Deep knowledge serving cement, steel, oil & gas, and 10+ industrial sectors</p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-teal-700">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🚚</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Timely Delivery</h3>
-              <p className="text-gray-700">Reliable logistics ensuring on-time delivery across regions and countries</p>
+              <p className="text-gray-700 leading-relaxed">Reliable logistics ensuring on-time delivery across regions and internationally</p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-teal-700">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Competitive Pricing</h3>
-              <p className="text-gray-700">Market-leading prices without compromising on quality and service standards</p>
+              <p className="text-gray-700 leading-relaxed">Market-leading prices without compromising on quality and service standards</p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-teal-700">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">✅</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Assurance</h3>
-              <p className="text-gray-700">Strict quality checks with full certifications and compliance documentation</p>
+              <p className="text-gray-700 leading-relaxed">Strict quality checks with full certifications and compliance documentation</p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-700 hover:shadow-xl transition">
+            <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-teal-700">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">📞</span>
+              </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Customer Support</h3>
-              <p className="text-gray-700">Dedicated support team ready to assist with quotations and special orders</p>
+              <p className="text-gray-700 leading-relaxed">Dedicated support team ready to assist with quotations and special orders</p>
             </div>
           </div>
         </div>
@@ -123,22 +152,44 @@ export default function About() {
       {/* WHAT WE DO */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">What We Do</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
+            <p className="text-lg text-gray-600">Comprehensive solutions for industrial supply and trade</p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
+            <div className="bg-gray-50 p-10 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Distribution Supply</h3>
-              <p className="text-gray-700 leading-relaxed">Efficient and reliable distribution networks ensuring products reach clients on time across Pakistan and globally</p>
+              <p className="text-gray-700 leading-relaxed">Efficient and reliable distribution networks ensuring products reach clients on time across Pakistan and globally with full tracking</p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
+            <div className="bg-gray-50 p-10 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Import & Export</h3>
-              <p className="text-gray-700 leading-relaxed">Complete international trade solutions with documentation, customs clearance, and full compliance support</p>
+              <p className="text-gray-700 leading-relaxed">Complete international trade solutions with full documentation, customs clearance, and compliance support for seamless operations</p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
+            <div className="bg-gray-50 p-10 rounded-xl border-l-4 border-teal-700 hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Sourcing Solutions</h3>
-              <p className="text-gray-700 leading-relaxed">Expert product sourcing tailored to exact specifications with cost-effective options and quality assurance</p>
+              <p className="text-gray-700 leading-relaxed">Expert product sourcing tailored to exact specifications with cost-effective options and comprehensive quality assurance</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INDUSTRIES SERVED */}
+      <section className="bg-gray-50 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
+            <p className="text-lg text-gray-600">Trusted by leading companies across multiple sectors</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {['Cement', 'Steel', 'Oil & Gas', 'Fertilizer', 'Textile', 'Aluminum', 'FMCG', 'Power', 'Chemical/Pharma'].map((industry, i) => (
+              <div key={i} className="bg-white border-2 border-teal-700 rounded-lg p-4 text-center hover:bg-teal-50 transition font-semibold text-gray-900 text-sm shadow-sm">
+                {industry}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -147,8 +198,10 @@ export default function About() {
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-bold">Ready to Partner With Nexus?</h2>
-          <p className="text-lg opacity-95">Let's discuss your industrial supply needs and discover how we can support your business growth.</p>
-          <a href="/contact" className="inline-block bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">Contact Us Today</a>
+          <p className="text-lg opacity-95">Discover how our solutions can optimize your industrial supply chain and drive business growth</p>
+          <a href="/contact" className="inline-block bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+            Get in Touch
+          </a>
         </div>
       </section>
 
