@@ -216,6 +216,59 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRODUCTS SECTION */}
+      <section id="products" className="bg-gray-50 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-3">Our Products</p>
+            <h2 className="text-5xl font-black text-gray-900 mb-4">Product Categories</h2>
+            <p className="text-lg text-gray-600">Comprehensive industrial solutions across multiple sectors</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* Electrical */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">⚡</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Electrical</h3>
+              <p className="text-gray-700 mb-6">Motors, cables, switchgear, and electrical components</p>
+              <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
+            </div>
+
+            {/* Mechanical */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">⚙️</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Mechanical</h3>
+              <p className="text-gray-700 mb-6">Bearings, belts, pumps, and mechanical equipment</p>
+              <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
+            </div>
+
+            {/* Instruments */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">📏</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Instruments</h3>
+              <p className="text-gray-700 mb-6">Gauges, meters, sensors, and control instruments</p>
+              <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
+            </div>
+
+            {/* Pipes & Fittings */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">🔧</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Pipes & Fittings</h3>
+              <p className="text-gray-700 mb-6">MS, GI, SS pipes, tubes, and fittings</p>
+              <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
+            </div>
+
+            {/* General Orders */}
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">📦</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">General Orders</h3>
+              <p className="text-gray-700 mb-6">Custom supplies and specialized equipment</p>
+              <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
