@@ -227,42 +227,42 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Electrical */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700 flex flex-col h-full">
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">⚡</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Electrical</h3>
-              <p className="text-gray-700 mb-6">Motors, cables, switchgear, and electrical components</p>
+              <p className="text-gray-700 mb-6 flex-grow">Motors, cables, switchgear, and electrical components</p>
               <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
             </div>
 
             {/* Mechanical */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700 flex flex-col h-full">
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">⚙️</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Mechanical</h3>
-              <p className="text-gray-700 mb-6">Bearings, belts, pumps, and mechanical equipment</p>
+              <p className="text-gray-700 mb-6 flex-grow">Bearings, belts, pumps, and mechanical equipment</p>
               <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
             </div>
 
             {/* Instruments */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700 flex flex-col h-full">
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">📏</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Instruments</h3>
-              <p className="text-gray-700 mb-6">Gauges, meters, sensors, and control instruments</p>
+              <p className="text-gray-700 mb-6 flex-grow">Gauges, meters, sensors, and control instruments</p>
               <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
             </div>
 
             {/* Pipes & Fittings */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700 flex flex-col h-full">
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">🔧</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Pipes & Fittings</h3>
-              <p className="text-gray-700 mb-6">MS, GI, SS pipes, tubes, and fittings</p>
+              <p className="text-gray-700 mb-6 flex-grow">MS, GI, SS pipes, tubes, and fittings</p>
               <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
             </div>
 
             {/* General Orders */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-teal-700 flex flex-col h-full">
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-3xl">📦</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">General Orders</h3>
-              <p className="text-gray-700 mb-6">Custom supplies and specialized equipment</p>
+              <p className="text-gray-700 mb-6 flex-grow">Custom supplies and specialized equipment</p>
               <button className="text-teal-700 font-semibold hover:text-teal-800 transition">View Products →</button>
             </div>
           </div>
