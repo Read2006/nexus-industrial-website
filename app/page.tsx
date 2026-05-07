@@ -229,7 +229,7 @@ export default function Home() {
             {/* Electrical */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
               <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/pexels-zakhar-36878027.jpg" alt="Electrical" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
+                <img src="/images/pexels-mikhail-nilov-9242910.jpg" alt="Electrical" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Electrical</h3>
@@ -271,7 +271,7 @@ export default function Home() {
             {/* Pipes & Fittings */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
               <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/pexels-mikhail-nilov-9242910.jpg" alt="Pipes & Fittings" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
+                <img src="/images/pexels-zakhar-36878027.jpg" alt="Pipes & Fittings" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Pipes & Fittings</h3>
