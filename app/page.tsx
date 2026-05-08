@@ -7,19 +7,22 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about-section', 'products']
+      const aboutElement = document.getElementById('about-section')
+      const productsElement = document.getElementById('products')
       
-      for (const sectionId of sections) {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          if (rect.top < 200 && rect.bottom > 200) {
-            setActiveSection(sectionId)
-            return
-          }
+      if (aboutElement && productsElement) {
+        const aboutRect = aboutElement.getBoundingClientRect()
+        const productsRect = productsElement.getBoundingClientRect()
+        
+        // Check which section is most visible in viewport
+        if (productsRect.top <= window.innerHeight / 2 && productsRect.top > -productsRect.height) {
+          setActiveSection('products')
+        } else if (aboutRect.top <= window.innerHeight / 2 && aboutRect.top > -aboutRect.height) {
+          setActiveSection('about-section')
+        } else {
+          setActiveSection('home')
         }
       }
-      setActiveSection('home')
     }
 
     window.addEventListener('scroll', handleScroll)
