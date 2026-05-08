@@ -284,8 +284,8 @@ export default function Home() {
 
             {/* General Orders */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
-              <div className="h-48 bg-gradient-to-br from-teal-50 to-teal-100 flex items-center justify-center">
-                <span className="text-6xl">📦</span>
+              <div className="relative h-48 bg-gray-100 overflow-hidden">
+                <img src="/images/WhatsApp Image 2026-05-07 at 8.54.00 PM.jpeg" alt="General Orders" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">General Orders</h3>
