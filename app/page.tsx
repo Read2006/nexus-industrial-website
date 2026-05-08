@@ -1,6 +1,31 @@
 'use client'
 
+import { useState, useEffect } from 'react'
+
 export default function Home() {
+  const [activeSection, setActiveSection] = useState('home')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about-section', 'products']
+      
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top < 200 && rect.bottom > 200) {
+            setActiveSection(sectionId)
+            return
+          }
+        }
+      }
+      setActiveSection('home')
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <div className="min-h-screen bg-white">
       {/* TOP BAR */}
@@ -23,9 +48,9 @@ export default function Home() {
             <span className="font-bold text-gray-900 text-sm">NIS</span>
           </div>
           <nav className="flex gap-6">
-            <a href="/" className="text-sm font-semibold text-teal-700">Home</a>
-            <a href="#about-section" className="text-sm font-semibold text-gray-700 hover:text-teal-700 scroll-smooth">About</a>
-            <a href="#products" className="text-sm font-semibold text-gray-700 hover:text-teal-700 scroll-smooth">Products</a>
+            <a href="/" className={`text-sm font-semibold ${activeSection === 'home' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Home</a>
+            <a href="#about-section" className={`text-sm font-semibold ${activeSection === 'about-section' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'} scroll-smooth`}>About</a>
+            <a href="#products" className={`text-sm font-semibold ${activeSection === 'products' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'} scroll-smooth`}>Products</a>
             <a href="/industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
             <a href="/brands" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Brands</a>
             <a href="/contact" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Contact</a>
