@@ -52,8 +52,8 @@ export default function Home() {
           </div>
           <nav className="flex gap-6">
             <a href="/" className={`text-sm font-semibold ${activeSection === 'home' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Home</a>
-            <a href="#about-section" className={`text-sm font-semibold ${activeSection === 'about-section' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'} scroll-smooth`}>About</a>
-            <a href="#products" className={`text-sm font-semibold ${activeSection === 'products' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'} scroll-smooth`}>Products</a>
+            <a href="/#about-section" className={`text-sm font-semibold ${activeSection === 'about-section' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'} scroll-smooth`}>About</a>
+            <a href="/#products" className={`text-sm font-semibold ${activeSection === 'products' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'} scroll-smooth`}>Products</a>
             <a href="/industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
             <a href="/brands" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Brands</a>
             <a href="/contact" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Contact</a>
