@@ -24,8 +24,8 @@ export default function Home() {
           </div>
           <nav className="flex gap-6">
             <a href="/" className="text-sm font-semibold text-teal-700">Home</a>
-            <a href="/about" className="text-sm font-semibold text-gray-700 hover:text-teal-700">About</a>
-            <a href="/products" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Products</a>
+            <a href="#about-section" className="text-sm font-semibold text-gray-700 hover:text-teal-700 scroll-smooth">About</a>
+            <a href="#products" className="text-sm font-semibold text-gray-700 hover:text-teal-700 scroll-smooth">Products</a>
             <a href="/industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
             <a href="/brands" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Brands</a>
             <a href="/contact" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Contact</a>
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT US SECTION - Scrollable */}
-      <section className="bg-white py-12 px-6">
+      <section id="about-section" className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
