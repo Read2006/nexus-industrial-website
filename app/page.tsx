@@ -343,127 +343,91 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Cement */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-cottonbro-5532664.jpg" alt="Cement" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-orange-600/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Cement</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Cement</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Oil & Gas */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-fabnel-ldn-2147803336-33690927.jpg" alt="Oil & Gas" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-blue-700/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Oil & Gas</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Oil & Gas</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Textile */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-jakub-pabis-147246622-15970032.jpg" alt="Textile" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-red-600/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-red-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Textile</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Textile</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:from-red-600 hover:to-red-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Steel */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-500 to-slate-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-kalpesh-damor-774903984-18920790.jpg" alt="Steel" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-slate-700/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-slate-200 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Steel</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Steel</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg hover:from-slate-700 hover:to-slate-800 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Fertilizer */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-kyle-miller-169884138-18335700.jpg" alt="Fertilizer" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-green-700/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-green-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Fertilizer</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Fertilizer</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Aluminum */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-mike-van-schoonderwalт-1884800-5505706.jpg" alt="Aluminum" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-amber-600/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-amber-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Aluminum</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Aluminum</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* FMCG */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-nishantaneja-11703173.jpg" alt="FMCG" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-purple-700/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-purple-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">FMCG</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">FMCG</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-purple-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Power */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-tEadventures-16472144.jpg" alt="Power" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-yellow-600/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-yellow-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Power</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Power</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
 
             {/* Chemical/Pharma */}
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/pexels-wolfgang-weiser-467045605-30321822.jpg" alt="Chemical/Pharma" className="w-full h-full object-cover opacity-90" />
-                  <div className="absolute inset-0 bg-cyan-700/10"></div>
-                </div>
+              <div className="relative w-48 h-48 mb-6 bg-cyan-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Chemical/Pharma</h3>
-              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
-                View Solutions <span>→</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Chemical/Pharma</h3>
+              <a href="#" className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition transform hover:scale-105 shadow-md">
+                View Solutions
               </a>
             </div>
           </div>
