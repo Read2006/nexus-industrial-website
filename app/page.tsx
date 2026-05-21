@@ -345,8 +345,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/cement-industry.jpg" alt="Cement" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-orange-600/20"></div>
+                  <img src="/images/pexels-cottonbro-5532664.jpg" alt="Cement" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-orange-600/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Cement</h3>
@@ -359,8 +359,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/oil-gas-industry.jpg" alt="Oil & Gas" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-blue-700/20"></div>
+                  <img src="/images/pexels-fabnel-ldn-2147803336-33690927.jpg" alt="Oil & Gas" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-blue-700/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Oil & Gas</h3>
@@ -373,8 +373,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/textile-industry.jpg" alt="Textile" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-red-600/20"></div>
+                  <img src="/images/pexels-jakub-pabis-147246622-15970032.jpg" alt="Textile" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-red-600/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Textile</h3>
@@ -387,8 +387,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-500 to-slate-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/steel-industry.jpg" alt="Steel" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-slate-700/20"></div>
+                  <img src="/images/pexels-kalpesh-damor-774903984-18920790.jpg" alt="Steel" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-slate-700/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Steel</h3>
@@ -401,8 +401,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/fertilizer-industry.jpg" alt="Fertilizer" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-green-700/20"></div>
+                  <img src="/images/pexels-kyle-miller-169884138-18335700.jpg" alt="Fertilizer" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-green-700/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Fertilizer</h3>
@@ -415,8 +415,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/aluminum-industry.jpg" alt="Aluminum" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-amber-600/20"></div>
+                  <img src="/images/pexels-mike-van-schoonderwalт-1884800-5505706.jpg" alt="Aluminum" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-amber-600/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Aluminum</h3>
@@ -429,8 +429,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/fmcg-industry.jpg" alt="FMCG" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-purple-700/20"></div>
+                  <img src="/images/pexels-nishantaneja-11703173.jpg" alt="FMCG" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-purple-700/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">FMCG</h3>
@@ -443,8 +443,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/power-industry.jpg" alt="Power" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-yellow-600/20"></div>
+                  <img src="/images/pexels-tEadventures-16472144.jpg" alt="Power" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-yellow-600/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Power</h3>
@@ -457,8 +457,8 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
-                  <img src="/images/chemical-pharma-industry.jpg" alt="Chemical/Pharma" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-cyan-700/20"></div>
+                  <img src="/images/pexels-wolfgang-weiser-467045605-30321822.jpg" alt="Chemical/Pharma" className="w-full h-full object-cover opacity-90" />
+                  <div className="absolute inset-0 bg-cyan-700/10"></div>
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Chemical/Pharma</h3>
