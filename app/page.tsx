@@ -327,6 +327,149 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INDUSTRIES SECTION */}
+      <section id="industries" className="bg-gray-50 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Intro */}
+          <div className="text-center mb-16">
+            <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-3">Industrial Excellence</p>
+            <h2 className="text-5xl font-black text-gray-900 mb-6">Industries We Serve</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Nexus Industrial Solutions delivers specialized solutions across diverse industrial sectors. With deep expertise in each industry, we provide tailored products and services to meet your unique operational requirements and drive sustainable growth.
+            </p>
+          </div>
+
+          {/* Hexagon Grid - 3x3 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Cement */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/cement-industry.jpg" alt="Cement" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-orange-600/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Cement</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Oil & Gas */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/oil-gas-industry.jpg" alt="Oil & Gas" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-blue-700/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Oil & Gas</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Textile */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/textile-industry.jpg" alt="Textile" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-red-600/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Textile</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Steel */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-500 to-slate-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/steel-industry.jpg" alt="Steel" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-slate-700/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Steel</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Fertilizer */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/fertilizer-industry.jpg" alt="Fertilizer" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-green-700/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Fertilizer</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Aluminum */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/aluminum-industry.jpg" alt="Aluminum" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-amber-600/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Aluminum</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* FMCG */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/fmcg-industry.jpg" alt="FMCG" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-purple-700/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">FMCG</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Power */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/power-industry.jpg" alt="Power" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-yellow-600/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Power</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+
+            {/* Chemical/Pharma */}
+            <div className="flex flex-col items-center">
+              <div className="relative w-48 h-48 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 flex items-center justify-center overflow-hidden">
+                  <img src="/images/chemical-pharma-industry.jpg" alt="Chemical/Pharma" className="w-full h-full object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-cyan-700/20"></div>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Chemical/Pharma</h3>
+              <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">
+                View Solutions <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
