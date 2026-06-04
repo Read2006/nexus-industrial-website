@@ -346,7 +346,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Cement</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">
+              <a href="/cement" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -356,7 +356,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Oil & Gas</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition transform hover:scale-105 shadow-md">
+              <a href="/oil-gas" className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -366,7 +366,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-red-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Textile</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:from-red-600 hover:to-red-700 transition transform hover:scale-105 shadow-md">
+              <a href="/textile" className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:from-red-600 hover:to-red-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -376,7 +376,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-slate-200 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Steel</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg hover:from-slate-700 hover:to-slate-800 transition transform hover:scale-105 shadow-md">
+              <a href="/steel" className="px-6 py-2 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg hover:from-slate-700 hover:to-slate-800 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -386,7 +386,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-green-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Fertilizer</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition transform hover:scale-105 shadow-md">
+              <a href="/fertilizer" className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -396,7 +396,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-amber-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Aluminum</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition transform hover:scale-105 shadow-md">
+              <a href="/aluminum" className="px-6 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -406,7 +406,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-purple-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">FMCG</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-purple-700 transition transform hover:scale-105 shadow-md">
+              <a href="/fmcg" className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-purple-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -416,7 +416,7 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-yellow-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Power</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105 shadow-md">
+              <a href="/power" className="px-6 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
@@ -426,14 +426,13 @@ export default function Home() {
               <div className="relative w-48 h-48 mb-6 bg-cyan-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105">
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Chemical/Pharma</h3>
-              <a href="#" className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition transform hover:scale-105 shadow-md">
+              <a href="/chemical-pharma" className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition transform hover:scale-105 shadow-md">
                 View Solutions
               </a>
             </div>
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
