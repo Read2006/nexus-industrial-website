@@ -82,7 +82,7 @@ nav{
 }
 .hero::before{
   content:'';position:absolute;inset:0;
-  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacit[...]
 }
 .hero-inner{
   max-width:1100px;margin:0 auto;width:100%;
@@ -173,6 +173,12 @@ nav{
   display:flex;align-items:center;justify-content:center;
   position:relative;border:1px solid var(--border);
 }
+.overview-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
 .overview-img-placeholder{
   font-size:7rem;opacity:0.2;
 }
@@ -205,6 +211,11 @@ nav{
   display:flex;align-items:center;justify-content:center;
   font-size:1rem;flex-shrink:0;
 }
+.op-icon img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
+}
 .op-body strong{
   font-size:0.9rem;font-weight:700;color:#1e293b;display:block;margin-bottom:0.2rem;
 }
@@ -231,6 +242,12 @@ nav{
   background:rgba(26,58,107,0.8);border:1px solid rgba(255,255,255,0.1);
   display:flex;align-items:center;justify-content:center;
   font-size:1.3rem;margin-bottom:1.2rem;
+}
+.pc-icon img{
+  width:32px;
+  height:32px;
+  object-fit:contain;
+  filter:brightness(0) invert(1);
 }
 .product-card h3{
   font-size:1rem;font-weight:700;color:#1e293b;margin-bottom:0.5rem;
@@ -296,7 +313,18 @@ nav{
   border-color:rgba(232,160,32,0.3);
   transform:translateY(-3px);
 }
-.why-icon{font-size:2rem;display:block;margin-bottom:1rem}
+.why-icon{
+  font-size:2rem;display:block;margin-bottom:1rem;
+  height:2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.why-icon img{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+}
 .why-card h4{font-size:0.92rem;font-weight:700;color:#1e293b;margin-bottom:0.5rem}
 .why-card p{font-size:0.82rem;color:var(--grey);line-height:1.65}
 
@@ -467,7 +495,7 @@ footer{
       <div class="hero-label">🏭 Industry Solutions</div>
       <h1>Cement <span>Industry</span><br>Solutions</h1>
       <p class="hero-desc">
-        Nexus Industrial Solutions is a trusted supplier of electrical, instrumentation, and mechanical components for cement plants across Pakistan and globally. We keep your plant running — reliably, on time, every time.
+        Nexus Industrial Solutions is a trusted supplier of electrical, instrumentation, and mechanical components for cement plants across Pakistan and globally. We keep your plant running — r[...]
       </p>
       <div class="hero-btns">
         <a href="contact.html" class="btn-accent">Request Quotation</a>
@@ -501,8 +529,7 @@ footer{
     <div class="overview-grid">
       <div class="fade">
         <div class="overview-img">
-          <div class="overview-img-placeholder">🏭</div>
-          <div class="overview-img-label">Cement Plant — Electrical & Mechanical Supply</div>
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80" alt="Cement Plant Industrial Facility" />
         </div>
         <div class="overview-badge-row">
           <div class="overview-badge">
@@ -523,25 +550,31 @@ footer{
         <div class="section-tag">Who We Serve</div>
         <h2 class="section-heading">Powering Cement Plants<br><span>Nationwide & Beyond</span></h2>
         <p class="section-sub">
-          Cement production runs in one of the harshest industrial environments — extreme heat, heavy dust, and 24/7 operation. We supply the components your plant depends on, from raw material handling all the way to dispatch.
+          Cement production runs in one of the harshest industrial environments — extreme heat, heavy dust, and 24/7 operation. We supply the components your plant depends on, from raw material[...]
         </p>
         <div class="overview-points">
           <div class="overview-point">
-            <div class="op-icon">🏗️</div>
+            <div class="op-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/1/1995.png" alt="Full Plant Coverage" />
+            </div>
             <div class="op-body">
               <strong>Full Plant Coverage</strong>
               <p>Components for every stage — crushing, grinding, pyroprocessing, cooling, and packing.</p>
             </div>
           </div>
           <div class="overview-point">
-            <div class="op-icon">🔩</div>
+            <div class="op-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/992/992698.png" alt="OEM Replacement Parts" />
+            </div>
             <div class="op-body">
               <strong>OEM & Replacement Parts</strong>
               <p>Genuine OEM parts and qualified replacements from verified international manufacturers.</p>
             </div>
           </div>
           <div class="overview-point">
-            <div class="op-icon">⚡</div>
+            <div class="op-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="Emergency Procurement" />
+            </div>
             <div class="op-body">
               <strong>Emergency Procurement</strong>
               <p>Fast-track sourcing to minimise plant downtime — because every hour of stoppage costs you.</p>
@@ -566,7 +599,9 @@ footer{
     </div>
     <div class="products-grid">
       <div class="product-card fade">
-        <div class="pc-icon">⚡</div>
+        <div class="pc-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/3050/3050159.png" alt="Electrical Components" />
+        </div>
         <h3>Electrical Components</h3>
         <p>Complete electrical products for plant distribution, control, and protection systems — motors to switchgear.</p>
         <div class="pc-tags">
@@ -578,7 +613,9 @@ footer{
         </div>
       </div>
       <div class="product-card fade">
-        <div class="pc-icon">🎛️</div>
+        <div class="pc-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2/2935.png" alt="Instrumentation" />
+        </div>
         <h3>Instrumentation</h3>
         <p>Precision measurement and control instruments designed for high-dust, high-temperature environments.</p>
         <div class="pc-tags">
@@ -590,7 +627,9 @@ footer{
         </div>
       </div>
       <div class="product-card fade">
-        <div class="pc-icon">⚙️</div>
+        <div class="pc-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/3143/3143615.png" alt="Mechanical Equipment" />
+        </div>
         <h3>Mechanical Equipment</h3>
         <p>Heavy-duty mechanical components built to withstand abrasion, extreme heat, and continuous operation.</p>
         <div class="pc-tags">
@@ -601,7 +640,9 @@ footer{
         </div>
       </div>
       <div class="product-card fade">
-        <div class="pc-icon">🔥</div>
+        <div class="pc-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/6094/6094783.png" alt="Kiln Pyroprocessing" />
+        </div>
         <h3>Kiln & Pyroprocessing</h3>
         <p>Specialist components for rotary kilns, preheaters, and clinker coolers — the most critical plant section.</p>
         <div class="pc-tags">
@@ -612,7 +653,9 @@ footer{
         </div>
       </div>
       <div class="product-card fade">
-        <div class="pc-icon">💧</div>
+        <div class="pc-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/826/826946.png" alt="Pumps Valves" />
+        </div>
         <h3>Pumps & Valves</h3>
         <p>Industrial pumps and valve solutions for slurry, cooling water, fuel, and pneumatic conveying systems.</p>
         <div class="pc-tags">
@@ -623,7 +666,9 @@ footer{
         </div>
       </div>
       <div class="product-card fade">
-        <div class="pc-icon">🔩</div>
+        <div class="pc-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/924/924515.png" alt="Pipes Fittings" />
+        </div>
         <h3>Pipes & Fittings</h3>
         <p>MS, GI, SS pipes, tubes, flanges, and fittings for all cement plant piping requirements.</p>
         <div class="pc-tags">
@@ -717,22 +762,30 @@ footer{
     </div>
     <div class="why-grid">
       <div class="why-card fade">
-        <span class="why-icon">⏱️</span>
+        <span class="why-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2/2785.png" alt="Timely Delivery" />
+        </span>
         <h4>Timely Delivery</h4>
         <p>Fast and reliable delivery across Pakistan and globally. We understand plant schedules cannot wait.</p>
       </div>
       <div class="why-card fade">
-        <span class="why-icon">💰</span>
+        <span class="why-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1995/1995506.png" alt="Competitive Pricing" />
+        </span>
         <h4>Competitive Pricing</h4>
         <p>Market-leading prices without compromising on quality. Direct sourcing keeps costs low for you.</p>
       </div>
       <div class="why-card fade">
-        <span class="why-icon">🌍</span>
+        <span class="why-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Global Network" />
+        </span>
         <h4>Global Network</h4>
         <p>Trusted supplier network with established channels worldwide — access to 100+ international brands.</p>
       </div>
       <div class="why-card fade">
-        <span class="why-icon">📋</span>
+        <span class="why-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1237/1237946.png" alt="Full Documentation" />
+        </span>
         <h4>Full Documentation</h4>
         <p>Every product with complete material traceability, test certificates, and compliance documentation.</p>
       </div>
@@ -780,7 +833,7 @@ footer{
         <span class="oi-icon">🔧</span><span class="oi-name">Steel</span>
       </a>
       <a href="fertilizer.html" class="oi-card">
-        <span class="oi-icon">🌿</span><span class="oi-name">Fertilizer</span>
+        <span class="oi-icon">���</span><span class="oi-name">Fertilizer</span>
       </a>
       <a href="aluminum.html" class="oi-card">
         <span class="oi-icon">⚗️</span><span class="oi-name">Aluminum</span>
