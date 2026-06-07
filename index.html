@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -627,6 +626,18 @@ footer {
         grid-template-rows: repeat(3, 100px);
     }
 }
+
+/* Steel section styles (simple, matches site look) */
+.steel-section {
+    background: linear-gradient(145deg, #0b1720 0%, #071018 100%);
+    color: #ffffff;
+    padding: 60px 24px;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+.steel-section h2 { color: #ffd166; }
+.steel-section p { color: #cbd5e6; max-width: 760px; margin: 12px auto 0; }
+
 </style>
 </head>
 <body>
@@ -638,6 +649,7 @@ footer {
     <div class="logo-premium">ABT EUROPE <span style="font-weight:500">Limited</span> <span style="font-size:0.8rem;">Aluminum Division</span></div>
     <div class="nav-premium">
         <a href="#" class="active">Aluminum</a>
+        <a href="#steel">Steel</a>
         <a href="#">Industries</a>
         <a href="#">Products</a>
         <a href="#">Projects</a>
@@ -665,6 +677,10 @@ footer {
                 </a>
                 <a href="#portfolio" class="btn-white-outline">
                     <i class="fas fa-magnifying-glass"></i> Browse Equipment
+                </a>
+                <!-- New button to connect to Steel section -->
+                <a href="#steel" class="btn-white-outline" title="View our Steel Division">
+                    <i class="fas fa-industry"></i> View Steel Division
                 </a>
             </div>
 
@@ -711,12 +727,12 @@ footer {
 <div class="container" id="portfolio">
     <div class="section-title reveal"><h2>Key Solutions Portfolio</h2><p>High-reliability components mapped directly to critical stages of aluminum manufacturing</p></div>
     <div class="grid-3cols">
-        <div class="eq-card reveal"><i class="fas fa-fire-alt"></i><h3>Industrial Furnaces</h3><ul><li>Smelting &amp; Holding Systems</li><li>Melting &amp; Heat Treatment Units</li><li>Refractory Systems &amp; Spare Parts</li><li>Thermal Integrity Seals</li></ul></div>
-        <div class="eq-card reveal"><i class="fas fa-cubes"></i><h3>Casting Equipment</h3><ul><li>DC Casting Core Infrastructure</li><li>Ingot &amp; Billet Casting Moulds</li><li>Molten Metal Transfer Components</li><li>High-Temp Safety Interfaces</li></ul></div>
-        <div class="eq-card reveal"><i class="fas fa-stream"></i><h3>Heavy-Duty Conveyors</h3><ul><li>Raw Material &amp; Alumina Handling</li><li>Scrap &amp; Dross Conveying Lines</li><li>High-Wear Mechanical Drive Units</li><li>Industrial Grade Belts &amp; Rollers</li></ul></div>
-        <div class="eq-card reveal"><i class="fas fa-gantry"></i><h3>Specialized Cranes</h3><ul><li>Heavy-Duty Smelter Potline Cranes</li><li>Scrap Charging &amp; Foundry Cranes</li><li>Precision Hoists &amp; Brake Assemblies</li><li>High-Torque Travel Gearboxes</li></ul></div>
-        <div class="eq-card reveal"><i class="fas fa-microchip"></i><h3>Instrumentation &amp; Controls</h3><ul><li>Precision Pressure Transmitters</li><li>Digital &amp; Analog Safety Gauges</li><li>HART Protocol Systems</li><li>Explosion-Proof Enclosures</li></ul></div>
-        <div class="eq-card reveal"><i class="fas fa-cogs"></i><h3>Mechanical Components</h3><ul><li>100% Forged Flanges (ANSI/ASME)</li><li>High-Pressure Pipe Fittings &amp; Tubes</li><li>Spiral Wound Sealing Gaskets</li><li>PTFE &amp; Vulcanized Rubber Seals</li></ul></div>
+        <div class="eq-card reveal"><i class="fas fa-fire-alt"></i><h3>Industrial Furnaces</h3><ul><li>Smelting &amp; Holding Systems</li><li>Melting &amp; Heat Treatment Units</li><li>Refractory[...]
+        <div class="eq-card reveal"><i class="fas fa-cubes"></i><h3>Casting Equipment</h3><ul><li>DC Casting Core Infrastructure</li><li>Ingot &amp; Billet Casting Moulds</li><li>Molten Metal Tra[...]
+        <div class="eq-card reveal"><i class="fas fa-stream"></i><h3>Heavy-Duty Conveyors</h3><ul><li>Raw Material &amp; Alumina Handling</li><li>Scrap &amp; Dross Conveying Lines</li><li>High-We[...]
+        <div class="eq-card reveal"><i class="fas fa-gantry"></i><h3>Specialized Cranes</h3><ul><li>Heavy-Duty Smelter Potline Cranes</li><li>Scrap Charging &amp; Foundry Cranes</li><li>Precision[...]
+        <div class="eq-card reveal"><i class="fas fa-microchip"></i><h3>Instrumentation &amp; Controls</h3><ul><li>Precision Pressure Transmitters</li><li>Digital &amp; Analog Safety Gauges</li><[...]
+        <div class="eq-card reveal"><i class="fas fa-cogs"></i><h3>Mechanical Components</h3><ul><li>100% Forged Flanges (ANSI/ASME)</li><li>High-Pressure Pipe Fittings &amp; Tubes</li><li>Spiral[...]
     </div>
 
     <div class="section-title reveal"><h2>Quality Excellence &amp; Compliance</h2><p>Ensuring operational reliability under demanding industrial conditions</p></div>
@@ -731,32 +747,32 @@ footer {
 
     <div class="section-title reveal"><h2>Comprehensive Industrial Supply</h2></div>
     <div class="services-grid">
-        <div class="serv-card reveal"><i class="fas fa-network-wired" style="font-size:2rem; color:#1e40af"></i><h3 style="margin:15px 0">Brand Endorsement</h3><p>Direct supply partnerships with international equipment manufacturers.</p><div class="serv-tags"><span>OEM Sourcing</span><span>Reasonable Pricing</span></div></div>
-        <div class="serv-card reveal"><i class="fas fa-boxes"></i><h3 style="margin:15px 0">Diversified Logistics</h3><p>Streamlined supply chain for hard-to-find components and assemblies.</p><div class="serv-tags"><span>Timely Delivery</span></div></div>
-        <div class="serv-card reveal"><i class="fas fa-user-shield"></i><h3 style="margin:15px 0">Quality Assurance</h3><p>Rigorous benchmarking ensuring high mechanical and thermal performance.</p><div class="serv-tags"><span>100% Inspected</span></div></div>
-        <div class="serv-card reveal"><i class="fas fa-user-tie"></i><h3 style="margin:15px 0">Dedicated Support</h3><p>Expert technical staff helping resolve critical equipment breakdowns.</p><div class="serv-tags"><span>Fast Turnaround</span></div></div>
+        <div class="serv-card reveal"><i class="fas fa-network-wired" style="font-size:2rem; color:#1e40af"></i><h3 style="margin:15px 0">Brand Endorsement</h3><p>Direct supply partnerships with [...]
+        <div class="serv-card reveal"><i class="fas fa-boxes"></i><h3 style="margin:15px 0">Diversified Logistics</h3><p>Streamlined supply chain for hard-to-find components and assemblies.</p><d[...]
+        <div class="serv-card reveal"><i class="fas fa-user-shield"></i><h3 style="margin:15px 0">Quality Assurance</h3><p>Rigorous benchmarking ensuring high mechanical and thermal performance.<[...]
+        <div class="serv-card reveal"><i class="fas fa-user-tie"></i><h3 style="margin:15px 0">Dedicated Support</h3><p>Expert technical staff helping resolve critical equipment breakdowns.</p><d[...]
     </div>
 
     <div class="section-title reveal"><h2>Sector Operations</h2></div>
     <div class="grid-3cols">
-        <div class="project-card reveal"><div class="project-title">🏗️ Smelting &amp; Reduction Lines</div><div class="project-meta">30+ Global Industry Projects Completed</div><p>Sourcing of specialty furnace components, crane spares, and automated transport infrastructure.</p></div>
-        <div class="project-card reveal"><div class="project-title">🔧 Processing Plant Modernization</div><div class="project-meta">Mechanical Piping Packages</div><p>Provision of ANSI/ASME standard high-pressure fittings and specialized gaskets for high-temp processing units.</p></div>
-        <div class="project-card reveal"><div class="project-title">📊 Control &amp; Instrumentation Fitout</div><div class="project-meta">Automation Pipelines</div><p>Integrating explosion-proof pressure transmitters and analog control units into continuous casting lines.</p></div>
+        <div class="project-card reveal"><div class="project-title">🏗️ Smelting &amp; Reduction Lines</div><div class="project-meta">30+ Global Industry Projects Completed</div><p>Sourcing o[...]
+        <div class="project-card reveal"><div class="project-title">🔧 Processing Plant Modernization</div><div class="project-meta">Mechanical Piping Packages</div><p>Provision of ANSI/ASME st[...]
+        <div class="project-card reveal"><div class="project-title">📊 Control &amp; Instrumentation Fitout</div><div class="project-meta">Automation Pipelines</div><p>Integrating explosion-pro[...]
     </div>
 
     <div class="section-title reveal"><h2>Featured Heavy Solutions</h2></div>
     <div class="gallery">
-        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-dumpster-fire"></i></div><div class="gallery-info"><h4>Industrial Furnaces</h4><p>High thermal stability spares</p></div></div>
-        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-pallet"></i></div><div class="gallery-info"><h4>Heavy Conveyors</h4><p>Raw alumina &amp; bulk materials</p></div></div>
-        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-truck-ramp-box"></i></div><div class="gallery-info"><h4>Potline Cranes</h4><p>Heavy duty charging components</p></div></div>
-        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-tachometer-alt"></i></div><div class="gallery-info"><h4>Instrumentation</h4><p>HART Protocol transmitters</p></div></div>
+        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-dumpster-fire"></i></div><div class="gallery-info"><h4>Industrial Furnaces</h4><p>High thermal stability spares<[...]
+        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-pallet"></i></div><div class="gallery-info"><h4>Heavy Conveyors</h4><p>Raw alumina &amp; bulk materials</p></div></di[...]
+        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-truck-ramp-box"></i></div><div class="gallery-info"><h4>Potline Cranes</h4><p>Heavy duty charging components</p>[...]
+        <div class="gallery-item reveal"><div class="gallery-img"><i class="fas fa-tachometer-alt"></i></div><div class="gallery-info"><h4>Instrumentation</h4><p>HART Protocol transmitters</p></d[...]
     </div>
 
     <div class="faq-block reveal">
         <h2 style="text-align:center; margin-bottom:24px;">Frequently Asked Questions</h2>
-        <div class="faq-item"><div class="faq-question">What specific aluminum equipment does ABT Europe supply? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">We supply complete assemblies and spare parts for industrial furnaces, casting equipment, material handling conveyors, and heavy industrial cranes tailored to aluminum processing plants.</div></div>
-        <div class="faq-item"><div class="faq-question">Are the piping components and mechanical parts fully certified? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes. All mechanical products, including flanges, fittings, and sealing components, are built to rigorous ANSI/ASME and API/ASTM standards with 100% forged quality assurances.</div></div>
-        <div class="faq-item"><div class="faq-question">Do you offer global supply chain fulfillment? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes, our logistics and technical supporting staff ensure timely delivery of equipment items to clients internationally, minimizing supply disruptions.</div></div>
+        <div class="faq-item"><div class="faq-question">What specific aluminum equipment does ABT Europe supply? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">We supply complet[...]
+        <div class="faq-item"><div class="faq-question">Are the piping components and mechanical parts fully certified? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes. All m[...]
+        <div class="faq-item"><div class="faq-question">Do you offer global supply chain fulfillment? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes, our logistics and techn[...]
     </div>
 
     <div class="cta-section reveal">
@@ -764,14 +780,27 @@ footer {
         <p>Connect directly with our technical team to receive tailored engineering quotes.</p>
         <a href="mailto:info@abteurope.uk" class="btn-gold">Request an Equipment Quote <i class="fas fa-arrow-right"></i></a>
     </div>
+
+    <!-- New Steel Section: connected via #steel anchor -->
+    <section id="steel" class="steel-section reveal">
+        <div class="container">
+            <h2>Steel Division — Heavy Industry Solutions</h2>
+            <p>ABT Europe also supplies heavy-duty equipment and spares for the steel industry: rolling mill components, heat-treatment systems, heavy-duty cranes, and refractory solutions. Browse our steel portfolio or contact our sales team for bespoke packages and cross-industry solutions.</p>
+            <div style="text-align:center; margin-top:18px;">
+                <a href="mailto:info@abteurope.uk" class="btn-cyan-filled">Contact Steel Sales <i class="fas fa-arrow-right"></i></a>
+                <a href="#portfolio" class="btn-white-outline" style="margin-left:12px;">View Related Equipment</a>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <footer>
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col"><h4>ABT Europe Ltd.</h4><p>Industrial Equipment &amp; Spare Parts Division</p><p>Reliable sourcing for high-demand processing environments.</p></div>
-            <div class="footer-col"><h4>Industries Served</h4><a href="#">Aluminum Processing</a><a href="#">Cement &amp; Gypsum</a><a href="#">Fertilizer Sector</a><a href="#">Oil &amp; Gas EPC</a></div>
-            <div class="footer-col"><h4>Contact Sales</h4><a href="tel:+447985489140"><i class="fas fa-phone"></i> +44 7985 489140</a><a href="mailto:info@abteurope.uk"><i class="fas fa-envelope"></i> info@abteurope.uk</a></div>
+            <div class="footer-col"><h4>Industries Served</h4><a href="#">Aluminum Processing</a><a href="#">Cement &amp; Gypsum</a><a href="#">Fertilizer Sector</a><a href="#">Oil &amp; Gas EPC</a></[...]
+            <div class="footer-col"><h4>Contact Sales</h4><a href="tel:+447985489140"><i class="fas fa-phone"></i> +44 7985 489140</a><a href="mailto:info@abteurope.uk"><i class="fas fa-envelope">[...]</a></div>
             <div class="footer-col"><h4>Company Details</h4><p>ISO 9001:2015 Compliant Partner</p><p>HQ: United Kingdom</p></div>
         </div>
         <div class="copyright"><p>© 2026 ABT Europe Limited. Quality Brands. Reasonable Prices. All Rights Reserved.</p></div>
@@ -829,8 +858,18 @@ if (firstIcon) {
     firstIcon.classList.remove('fa-chevron-down');
     firstIcon.classList.add('fa-chevron-up');
 }
+
+// Smooth scroll for anchor links (enhances in-page navigation)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        // allow normal behavior for external links like "#" only anchors
+        const href = this.getAttribute('href');
+        if (href === '#' || href.indexOf('http') === 0) return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
 </script>
 </body>
 </html>
-
-```
