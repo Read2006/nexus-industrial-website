@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cement Industry | Nexus Industrial Solutions</title>
+<meta name="description" content="Nexus Industrial Solutions – specialist supplier of electrical, instrumentation, and mechanical components for the cement industry."/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1a3a6b;
+  --navy2:#ffffff;
+  --navy3:#f4f7fb;
+  --blue:#1a3a6b;
+  --blue2:#1e4080;
+  --accent:#e8a020;
+  --accent2:#f0b535;
+  --white:#ffffff;
+  --offwhite:#f0f4ff;
+  --grey:#5a6a80;
+  --lightgrey:#334155;
+  --border:rgba(0,0,0,0.09);
+  --cardbg:#f4f7fb;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#ffffff;color:#1e293b;overflow-x:hidden}
+
+/* ── TOP BAR ── */
+.topbar{
+  background:var(--blue);
+  padding:0.45rem 2rem;
+  display:flex;align-items:center;justify-content:flex-end;gap:2rem;
+  font-size:0.8rem;color:var(--offwhite);
+}
+.topbar a{color:var(--offwhite);text-decoration:none;display:flex;align-items:center;gap:0.4rem;transition:color .2s}
+.topbar a:hover{color:var(--accent)}
+
+/* ── NAV ── */
+nav{
+  background:#ffffff;
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:999;
+  padding:0 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  height:68px;
+}
+.nav-brand{display:flex;align-items:center;gap:0.9rem;text-decoration:none}
+.nav-logo-circle{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue2),var(--accent));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1.1rem;color:#fff;letter-spacing:-0.5px;
+  flex-shrink:0;
+}
+.nav-brand-text{display:flex;flex-direction:column}
+.nav-brand-main{font-weight:700;font-size:1rem;color:var(--white);line-height:1.1}
+.nav-brand-sub{font-size:0.68rem;color:var(--grey);letter-spacing:0.5px}
+.nav-links{display:flex;align-items:center;gap:0.2rem;list-style:none}
+.nav-links a{
+  font-size:0.875rem;font-weight:500;color:#334155;
+  text-decoration:none;padding:0.5rem 1rem;border-radius:6px;
+  transition:all .2s;
+}
+.nav-links a:hover,.nav-links a.active{background:rgba(26,58,107,0.08);color:#1a3a6b}
+.nav-links a.active{color:var(--accent)}
+.nav-cta{
+  background:var(--accent);color:var(--navy);
+  font-weight:700;font-size:0.82rem;padding:0.55rem 1.3rem;
+  border-radius:6px;text-decoration:none;letter-spacing:0.3px;
+  transition:background .2s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--accent2)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:.3s}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,#1a3a6b 0%,#1e4080 60%,#0d2254 100%);
+  padding:5rem 2rem 4rem;
+  position:relative;overflow:hidden;
+  min-height:480px;display:flex;align-items:center;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-inner{
+  max-width:1100px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-breadcrumb{
+  display:flex;align-items:center;gap:0.5rem;
+  font-size:0.78rem;color:var(--grey);margin-bottom:1.2rem;
+}
+.hero-breadcrumb a{color:var(--grey);text-decoration:none;transition:color .2s}
+.hero-breadcrumb a:hover{color:var(--accent)}
+.hero-breadcrumb .sep{color:var(--blue2)}
+.hero-breadcrumb .cur{color:var(--accent)}
+.hero-label{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:rgba(232,160,32,0.15);border:1px solid rgba(232,160,32,0.3);
+  color:var(--accent);font-size:0.75rem;font-weight:600;letter-spacing:1.5px;
+  text-transform:uppercase;padding:0.35rem 0.9rem;border-radius:20px;
+  margin-bottom:1.2rem;
+}
+.hero h1{
+  font-size:clamp(2.2rem,4.5vw,3.5rem);
+  font-weight:800;line-height:1.15;margin-bottom:1.2rem;
+  color:#ffffff;
+}
+.hero h1 span{color:var(--accent)}
+.hero-desc{
+  font-size:1rem;line-height:1.75;color:var(--lightgrey);
+  margin-bottom:2rem;max-width:480px;
+}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-accent{
+  background:var(--accent);color:var(--navy);font-weight:700;
+  font-size:0.875rem;padding:0.75rem 1.8rem;border-radius:7px;
+  text-decoration:none;transition:all .2s;display:inline-block;
+}
+.btn-accent:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn-ghost{
+  border:1px solid rgba(255,255,255,0.25);color:var(--white);
+  font-size:0.875rem;font-weight:500;padding:0.75rem 1.8rem;border-radius:7px;
+  text-decoration:none;transition:all .2s;display:inline-block;
+}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.hero-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem;
+}
+.stat-card{
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:10px;padding:1.4rem 1.2rem;
+  text-align:center;
+}
+.stat-num{
+  font-size:2.2rem;font-weight:800;
+  color:var(--accent);line-height:1;margin-bottom:0.3rem;
+}
+.stat-label{font-size:0.78rem;color:var(--grey);line-height:1.4}
+
+/* ── SHARED SECTION ── */
+.section{padding:5rem 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-tag{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:rgba(232,160,32,0.1);border:1px solid rgba(232,160,32,0.25);
+  color:var(--accent);font-size:0.72rem;font-weight:600;letter-spacing:2px;
+  text-transform:uppercase;padding:0.3rem 0.85rem;border-radius:20px;
+  margin-bottom:0.9rem;
+}
+.section-heading{
+  font-size:clamp(1.8rem,3.5vw,2.8rem);
+  font-weight:800;line-height:1.2;margin-bottom:0.8rem;color:#1e293b;
+}
+.section-heading span{color:var(--accent)}
+.section-sub{font-size:0.97rem;color:var(--grey);line-height:1.7;max-width:580px}
+.section-header-row{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:3rem;flex-wrap:wrap;gap:1rem;
+}
+
+/* ── OVERVIEW ── */
+.overview{background:#f4f7fb}
+.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.overview-img{
+  border-radius:12px;overflow:hidden;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--navy2) 100%);
+  aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;border:1px solid var(--border);
+}
+.overview-img-placeholder{
+  font-size:7rem;opacity:0.2;
+}
+.overview-img-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(10,15,30,0.9),transparent);
+  padding:1.5rem 1.2rem 1rem;
+  font-size:0.8rem;color:var(--lightgrey);
+}
+.overview-badge-row{
+  display:flex;gap:1rem;margin-top:2rem;
+}
+.overview-badge{
+  background:rgba(232,160,32,0.1);border:1px solid rgba(232,160,32,0.2);
+  border-radius:8px;padding:1rem 1.2rem;flex:1;text-align:center;
+}
+.overview-badge-n{font-size:1.8rem;font-weight:800;color:var(--accent);line-height:1}
+.overview-badge-t{font-size:0.72rem;color:var(--grey);margin-top:0.2rem}
+.overview-points{display:flex;flex-direction:column;gap:1.1rem;margin-top:2rem}
+.overview-point{
+  display:flex;gap:1rem;align-items:flex-start;
+  padding:1.1rem 1.2rem;
+  background:#eef2f9;border:1px solid rgba(0,0,0,0.07);border-radius:8px;
+  transition:border-color .2s;
+}
+.overview-point:hover{border-color:rgba(232,160,32,0.3)}
+.op-icon{
+  width:36px;height:36px;border-radius:8px;
+  background:rgba(232,160,32,0.12);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;flex-shrink:0;
+}
+.op-body strong{
+  font-size:0.9rem;font-weight:700;color:#1e293b;display:block;margin-bottom:0.2rem;
+}
+.op-body p{font-size:0.83rem;color:var(--grey);line-height:1.55}
+
+/* ── PRODUCTS ── */
+.products{background:#ffffff}
+.products-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;
+}
+.product-card{
+  background:#f4f7fb;
+  border:1px solid var(--border);
+  border-radius:10px;padding:1.8rem;
+  transition:all .25s;cursor:default;
+}
+.product-card:hover{
+  background:#eef2f9;
+  border-color:rgba(232,160,32,0.35);
+  transform:translateY(-3px);
+}
+.pc-icon{
+  width:48px;height:48px;border-radius:10px;
+  background:rgba(26,58,107,0.8);border:1px solid rgba(255,255,255,0.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;margin-bottom:1.2rem;
+}
+.product-card h3{
+  font-size:1rem;font-weight:700;color:#1e293b;margin-bottom:0.5rem;
+}
+.product-card p{font-size:0.85rem;color:var(--grey);line-height:1.6;margin-bottom:1.1rem}
+.pc-tags{display:flex;flex-wrap:wrap;gap:0.4rem}
+.pc-tag{
+  font-size:0.7rem;color:var(--lightgrey);
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:4px;padding:0.2rem 0.55rem;
+}
+
+/* ── PROCESS ── */
+.process{background:#f4f7fb}
+.process-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.process-steps{display:flex;flex-direction:column;gap:0;margin-top:1.5rem}
+.ps{
+  display:flex;gap:1.2rem;padding:1.3rem 0;
+  border-bottom:1px solid var(--border);
+}
+.ps:first-child{border-top:1px solid var(--border)}
+.ps-num{
+  font-size:1.3rem;font-weight:800;color:#1a3a6b;
+  line-height:1;flex-shrink:0;width:2rem;padding-top:2px;
+  transition:color .2s;
+}
+.ps:hover .ps-num{color:var(--accent)}
+.ps-body strong{font-size:0.9rem;font-weight:700;color:#1e293b;display:block;margin-bottom:0.2rem}
+.ps-body p{font-size:0.83rem;color:var(--grey);line-height:1.6}
+.process-diagram{
+  background:#eef2f9;border:1px solid rgba(0,0,0,0.09);
+  border-radius:12px;padding:2rem;
+  position:sticky;top:90px;
+}
+.pd-title{
+  font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;
+  color:#5a6a80;margin-bottom:1.5rem;font-weight:600;
+}
+.pd-flow{display:flex;flex-direction:column}
+.pd-node{display:flex;align-items:center;gap:0.9rem}
+.pd-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;
+}
+.pd-label{font-size:0.85rem;color:#334155;font-weight:500}
+.pd-line{
+  width:2px;height:22px;
+  background:linear-gradient(var(--accent),rgba(232,160,32,0.15));
+  margin-left:4px;
+}
+
+/* ── WHY ── */
+.why{background:#ffffff}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.why-card{
+  background:#f4f7fb;border:1px solid var(--border);
+  border-radius:10px;padding:2rem 1.5rem;text-align:center;
+  transition:all .25s;
+}
+.why-card:hover{
+  background:#eef2f9;
+  border-color:rgba(232,160,32,0.3);
+  transform:translateY(-3px);
+}
+.why-icon{font-size:2rem;display:block;margin-bottom:1rem}
+.why-card h4{font-size:0.92rem;font-weight:700;color:#1e293b;margin-bottom:0.5rem}
+.why-card p{font-size:0.82rem;color:var(--grey);line-height:1.65}
+
+/* ── BRANDS ── */
+.brands-section{background:#f4f7fb;padding:3rem 2rem}
+.brands-inner{max-width:1100px;margin:0 auto}
+.brands-label{
+  font-size:0.72rem;letter-spacing:2.5px;text-transform:uppercase;
+  color:#5a6a80;text-align:center;margin-bottom:1.8rem;font-weight:600;
+}
+.brands-row{
+  display:flex;flex-wrap:wrap;align-items:center;
+  justify-content:center;gap:0.8rem;
+}
+.brand-chip{
+  font-size:0.8rem;font-weight:600;color:#5a6a80;
+  border:1px solid rgba(0,0,0,0.1);border-radius:6px;
+  padding:0.45rem 1.1rem;
+  transition:all .2s;
+}
+.brand-chip:hover{color:var(--lightgrey);border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.04)}
+
+/* ── OTHER INDUSTRIES ── */
+.other-industries{background:#f4f7fb;padding:4rem 2rem}
+.oi-inner{max-width:1100px;margin:0 auto}
+.oi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;margin-top:2rem}
+.oi-card{
+  background:#eef2f9;border:1px solid rgba(0,0,0,0.07);border-radius:8px;
+  padding:1.1rem 1.2rem;display:flex;align-items:center;gap:0.8rem;
+  text-decoration:none;transition:all .2s;
+}
+.oi-card:hover{background:rgba(255,255,255,0.07);border-color:rgba(232,160,32,0.3)}
+.oi-icon{font-size:1.2rem}
+.oi-name{font-size:0.85rem;font-weight:600;color:#334155}
+.oi-card.active-ind{border-color:rgba(232,160,32,0.4);background:rgba(232,160,32,0.07)}
+.oi-card.active-ind .oi-name{color:var(--accent)}
+
+/* ── CTA ── */
+.cta{
+  background:linear-gradient(135deg,var(--blue) 0%,var(--blue2) 100%);
+  padding:4.5rem 2rem;text-align:center;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+.cta-inner{max-width:700px;margin:0 auto}
+.cta h2{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;margin-bottom:1rem;line-height:1.2}
+.cta p{font-size:0.97rem;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:2rem}
+.cta-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+
+/* ── FOOTER ── */
+footer{
+  background:#1a3a6b;
+  border-top:1px solid var(--border);
+  padding:3rem 2rem 2rem;
+}
+.footer-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;
+}
+.footer-brand{display:flex;align-items:center;gap:0.8rem;margin-bottom:0.9rem}
+.footer-logo{
+  width:38px;height:38px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue2),var(--accent));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1rem;color:#fff;flex-shrink:0;
+}
+.footer-brand-n{font-weight:700;font-size:0.95rem;color:#ffffff}
+.footer-desc{font-size:0.83rem;color:var(--grey);line-height:1.65}
+.footer-col h5{
+  font-size:0.78rem;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--lightgrey);margin-bottom:1rem;
+}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.55rem}
+.footer-col a{font-size:0.83rem;color:var(--grey);text-decoration:none;transition:color .2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{
+  max-width:1100px;margin:2rem auto 0;
+  padding-top:1.5rem;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:0.78rem;color:var(--grey);flex-wrap:wrap;gap:0.5rem;
+}
+.footer-compliance{display:flex;gap:1.5rem}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .oi-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .nav-links.open{
+    display:flex;flex-direction:column;gap:0.5rem;
+    position:fixed;top:68px;left:0;right:0;
+    background:#ffffff;padding:1.5rem;
+    border-bottom:1px solid rgba(0,0,0,0.08);z-index:998;
+  }
+  .nav-links.open a{padding:0.75rem 1rem;border-radius:6px}
+  .hamburger{display:flex}
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem}
+  .hero{padding:3rem 1.5rem 3rem}
+  .overview-grid{grid-template-columns:1fr;gap:2.5rem}
+  .process-grid{grid-template-columns:1fr;gap:2.5rem}
+  .process-diagram{position:static}
+  .oi-grid{grid-template-columns:repeat(2,1fr)}
+  section,.section{padding:3.5rem 1.5rem}
+  .brands-section,.other-industries{padding:3rem 1.5rem}
+  footer{padding:2.5rem 1.5rem 1.5rem}
+  .footer-inner{grid-template-columns:1fr}
+  .topbar{padding:0.4rem 1.5rem;font-size:0.75rem}
+}
+@media(max-width:480px){
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .products-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .oi-grid{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:2rem}
+  .cta h2{font-size:1.8rem}
+}
+
+/* ── ANIMATIONS ── */
+.fade{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="tel:03351503555">📞 0335-1503555</a>
+  <a href="mailto:info@nexus-is.co">📧 info@nexus-is.co</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-logo-circle">N</div>
+    <div class="nav-brand-text">
+      <span class="nav-brand-main">NIS</span>
+      <span class="nav-brand-sub">Nexus Industrial Solutions</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about-section">About</a></li>
+    <li><a href="index.html#products">Products</a></li>
+    <li><a href="index.html#industries" class="active">Industries</a></li>
+    <li><a href="brands.html">Brands</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get Quote</a>
+  <div class="hamburger" id="burger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="fade">
+      <div class="hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#industries">Industries</a>
+        <span class="sep">/</span>
+        <span class="cur">Cement</span>
+      </div>
+      <div class="hero-label">🏭 Industry Solutions</div>
+      <h1>Cement <span>Industry</span><br>Solutions</h1>
+      <p class="hero-desc">
+        Nexus Industrial Solutions is a trusted supplier of electrical, instrumentation, and mechanical components for cement plants across Pakistan and globally. We keep your plant running — reliably, on time, every time.
+      </p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn-accent">Request Quotation</a>
+        <a href="#products" class="btn-ghost">View Products</a>
+      </div>
+    </div>
+    <div class="hero-stats fade">
+      <div class="stat-card">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Products Supplied to Cement Plants</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Years of Industry Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Global Supplier Brands</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">24h</div>
+        <div class="stat-label">Quotation Response Time</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="overview section">
+  <div class="section-inner">
+    <div class="overview-grid">
+      <div class="fade">
+        <div class="overview-img">
+          <div class="overview-img-placeholder">🏭</div>
+          <div class="overview-img-label">Cement Plant — Electrical & Mechanical Supply</div>
+        </div>
+        <div class="overview-badge-row">
+          <div class="overview-badge">
+            <div class="overview-badge-n">25+</div>
+            <div class="overview-badge-t">Plants Served</div>
+          </div>
+          <div class="overview-badge">
+            <div class="overview-badge-n">OEM</div>
+            <div class="overview-badge-t">Certified Parts</div>
+          </div>
+          <div class="overview-badge">
+            <div class="overview-badge-n">SECP</div>
+            <div class="overview-badge-t">Registered</div>
+          </div>
+        </div>
+      </div>
+      <div class="fade">
+        <div class="section-tag">Who We Serve</div>
+        <h2 class="section-heading">Powering Cement Plants<br><span>Nationwide & Beyond</span></h2>
+        <p class="section-sub">
+          Cement production runs in one of the harshest industrial environments — extreme heat, heavy dust, and 24/7 operation. We supply the components your plant depends on, from raw material handling all the way to dispatch.
+        </p>
+        <div class="overview-points">
+          <div class="overview-point">
+            <div class="op-icon">🏗️</div>
+            <div class="op-body">
+              <strong>Full Plant Coverage</strong>
+              <p>Components for every stage — crushing, grinding, pyroprocessing, cooling, and packing.</p>
+            </div>
+          </div>
+          <div class="overview-point">
+            <div class="op-icon">🔩</div>
+            <div class="op-body">
+              <strong>OEM & Replacement Parts</strong>
+              <p>Genuine OEM parts and qualified replacements from verified international manufacturers.</p>
+            </div>
+          </div>
+          <div class="overview-point">
+            <div class="op-icon">⚡</div>
+            <div class="op-body">
+              <strong>Emergency Procurement</strong>
+              <p>Fast-track sourcing to minimise plant downtime — because every hour of stoppage costs you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products section" id="products">
+  <div class="section-inner">
+    <div class="section-header-row fade">
+      <div>
+        <div class="section-tag">What We Supply</div>
+        <h2 class="section-heading">Product <span>Categories</span></h2>
+        <p class="section-sub">Comprehensive industrial supply across all sections of the cement manufacturing process.</p>
+      </div>
+      <a href="contact.html" class="btn-ghost">Request Full Catalogue</a>
+    </div>
+    <div class="products-grid">
+      <div class="product-card fade">
+        <div class="pc-icon">⚡</div>
+        <h3>Electrical Components</h3>
+        <p>Complete electrical products for plant distribution, control, and protection systems — motors to switchgear.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Switchgear</span>
+          <span class="pc-tag">Motors</span>
+          <span class="pc-tag">VFDs</span>
+          <span class="pc-tag">Cables</span>
+          <span class="pc-tag">Transformers</span>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <div class="pc-icon">🎛️</div>
+        <h3>Instrumentation</h3>
+        <p>Precision measurement and control instruments designed for high-dust, high-temperature environments.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Sensors</span>
+          <span class="pc-tag">Transmitters</span>
+          <span class="pc-tag">PLCs</span>
+          <span class="pc-tag">Analysers</span>
+          <span class="pc-tag">SCADA</span>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <div class="pc-icon">⚙️</div>
+        <h3>Mechanical Equipment</h3>
+        <p>Heavy-duty mechanical components built to withstand abrasion, extreme heat, and continuous operation.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Bearings</span>
+          <span class="pc-tag">Gearboxes</span>
+          <span class="pc-tag">Couplings</span>
+          <span class="pc-tag">Seals</span>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <div class="pc-icon">🔥</div>
+        <h3>Kiln & Pyroprocessing</h3>
+        <p>Specialist components for rotary kilns, preheaters, and clinker coolers — the most critical plant section.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Kiln Seals</span>
+          <span class="pc-tag">Burners</span>
+          <span class="pc-tag">Fans</span>
+          <span class="pc-tag">Refractory</span>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <div class="pc-icon">💧</div>
+        <h3>Pumps & Valves</h3>
+        <p>Industrial pumps and valve solutions for slurry, cooling water, fuel, and pneumatic conveying systems.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Centrifugal</span>
+          <span class="pc-tag">Diaphragm</span>
+          <span class="pc-tag">Gate Valves</span>
+          <span class="pc-tag">Butterfly</span>
+        </div>
+      </div>
+      <div class="product-card fade">
+        <div class="pc-icon">🔩</div>
+        <h3>Pipes & Fittings</h3>
+        <p>MS, GI, SS pipes, tubes, flanges, and fittings for all cement plant piping requirements.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Flanges</span>
+          <span class="pc-tag">Elbows</span>
+          <span class="pc-tag">Gaskets</span>
+          <span class="pc-tag">Fasteners</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process section">
+  <div class="section-inner">
+    <div class="process-grid">
+      <div class="fade">
+        <div class="section-tag">Process Coverage</div>
+        <h2 class="section-heading">Cement Plant<br><span>Process Areas</span></h2>
+        <p class="section-sub">We supply components across every stage of cement manufacturing.</p>
+        <div class="process-steps">
+          <div class="ps">
+            <div class="ps-num">01</div>
+            <div class="ps-body">
+              <strong>Quarrying & Crushing</strong>
+              <p>Heavy crushers, conveyors, and dust collection systems for raw material extraction and size reduction.</p>
+            </div>
+          </div>
+          <div class="ps">
+            <div class="ps-num">02</div>
+            <div class="ps-body">
+              <strong>Raw Milling</strong>
+              <p>Ball mills, vertical roller mills, separators, and associated drives and control systems.</p>
+            </div>
+          </div>
+          <div class="ps">
+            <div class="ps-num">03</div>
+            <div class="ps-body">
+              <strong>Pyroprocessing</strong>
+              <p>Preheater towers, rotary kilns, and clinker coolers — the most demanding section of any cement plant.</p>
+            </div>
+          </div>
+          <div class="ps">
+            <div class="ps-num">04</div>
+            <div class="ps-body">
+              <strong>Clinker Grinding</strong>
+              <p>Finish mills, cement silos, bucket elevators, and pneumatic conveying systems.</p>
+            </div>
+          </div>
+          <div class="ps">
+            <div class="ps-num">05</div>
+            <div class="ps-body">
+              <strong>Packing & Dispatch</strong>
+              <p>Packing machines, bulk loaders, weighing systems, and logistics automation components.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-diagram fade">
+        <div class="pd-title">Cement Production Flow</div>
+        <div class="pd-flow">
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Quarrying & Raw Materials</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Crushing & Pre-blending</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Raw Milling & Homogenisation</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Preheating & Calcination</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Rotary Kiln — Clinkering</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Clinker Cooling</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Finish Grinding — Cement Mill</div></div>
+          <div class="pd-line"></div>
+          <div class="pd-node"><div class="pd-dot"></div><div class="pd-label">Storage, Packing & Dispatch</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why section">
+  <div class="section-inner">
+    <div class="fade" style="text-align:center;margin-bottom:0">
+      <div class="section-tag" style="justify-content:center">Our Advantage</div>
+      <h2 class="section-heading" style="text-align:center">Why Choose <span>Nexus</span></h2>
+      <p class="section-sub" style="max-width:520px;margin:0 auto">Reliable supply, competitive pricing, and technical expertise — backed by years of experience serving cement plants.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade">
+        <span class="why-icon">⏱️</span>
+        <h4>Timely Delivery</h4>
+        <p>Fast and reliable delivery across Pakistan and globally. We understand plant schedules cannot wait.</p>
+      </div>
+      <div class="why-card fade">
+        <span class="why-icon">💰</span>
+        <h4>Competitive Pricing</h4>
+        <p>Market-leading prices without compromising on quality. Direct sourcing keeps costs low for you.</p>
+      </div>
+      <div class="why-card fade">
+        <span class="why-icon">🌍</span>
+        <h4>Global Network</h4>
+        <p>Trusted supplier network with established channels worldwide — access to 100+ international brands.</p>
+      </div>
+      <div class="why-card fade">
+        <span class="why-icon">📋</span>
+        <h4>Full Documentation</h4>
+        <p>Every product with complete material traceability, test certificates, and compliance documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands-section">
+  <div class="brands-inner">
+    <div class="brands-label fade">Brands We Supply for Cement Industry</div>
+    <div class="brands-row fade">
+      <div class="brand-chip">Siemens</div>
+      <div class="brand-chip">ABB</div>
+      <div class="brand-chip">Schneider Electric</div>
+      <div class="brand-chip">WIKA</div>
+      <div class="brand-chip">Endress+Hauser</div>
+      <div class="brand-chip">SEW-Eurodrive</div>
+      <div class="brand-chip">SKF</div>
+      <div class="brand-chip">Flender</div>
+      <div class="brand-chip">KSB</div>
+      <div class="brand-chip">Grundfos</div>
+      <div class="brand-chip">Spirax Sarco</div>
+      <div class="brand-chip">Venti Oelde</div>
+    </div>
+  </div>
+</div>
+
+<!-- OTHER INDUSTRIES -->
+<div class="other-industries">
+  <div class="oi-inner">
+    <div class="section-tag fade">Explore More</div>
+    <h2 class="section-heading fade">Other <span>Industries We Serve</span></h2>
+    <div class="oi-grid">
+      <a href="cement-industry.html" class="oi-card active-ind">
+        <span class="oi-icon">🏭</span><span class="oi-name">Cement</span>
+      </a>
+      <a href="oil-gas.html" class="oi-card">
+        <span class="oi-icon">🛢️</span><span class="oi-name">Oil & Gas</span>
+      </a>
+      <a href="textile.html" class="oi-card">
+        <span class="oi-icon">🧵</span><span class="oi-name">Textile</span>
+      </a>
+      <a href="steel.html" class="oi-card">
+        <span class="oi-icon">🔧</span><span class="oi-name">Steel</span>
+      </a>
+      <a href="fertilizer.html" class="oi-card">
+        <span class="oi-icon">🌿</span><span class="oi-name">Fertilizer</span>
+      </a>
+      <a href="aluminum.html" class="oi-card">
+        <span class="oi-icon">⚗️</span><span class="oi-name">Aluminum</span>
+      </a>
+      <a href="fmcg.html" class="oi-card">
+        <span class="oi-icon">📦</span><span class="oi-name">FMCG</span>
+      </a>
+      <a href="power.html" class="oi-card">
+        <span class="oi-icon">⚡</span><span class="oi-name">Power</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="cta-inner fade">
+    <h2>Ready to Source Your Parts?</h2>
+    <p>Send us your requirement list or technical specifications and our team will respond with a competitive quotation within 24 hours.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-accent">Contact Us</a>
+      <a href="tel:03351503555" class="btn-ghost">📞 0335-1503555</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <div class="footer-logo">N</div>
+        <div class="footer-brand-n">Nexus Industrial Solutions</div>
+      </div>
+      <p class="footer-desc">Delivering reliable industrial supply and global trade solutions. Sourcing Solutions. Delivering Results.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about-section">About</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#industries">Industries</a></li>
+        <li><a href="brands.html">Brands</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Industries</h5>
+      <ul>
+        <li><a href="cement-industry.html">Cement</a></li>
+        <li><a href="oil-gas.html">Oil & Gas</a></li>
+        <li><a href="textile.html">Textile</a></li>
+        <li><a href="fertilizer.html">Fertilizer</a></li>
+        <li><a href="power.html">Power</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:03351503555">📞 0335-1503555</a></li>
+        <li><a href="mailto:info@nexus-is.co">📧 info@nexus-is.co</a></li>
+        <li><a href="contact.html">Send Enquiry</a></li>
+      </ul>
+      <div style="margin-top:1.2rem">
+        <h5>Compliance</h5>
+        <ul>
+          <li><a href="#">NTN: 123455</a></li>
+          <li><a href="#">STRN: 1233456</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Nexus Industrial Solutions. All rights reserved.</span>
+    <div class="footer-compliance">
+      <span>SECP Registered</span>
+      <span>NTN: 123455</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// Scroll-reveal
+const fades = document.querySelectorAll('.fade');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){
+      setTimeout(()=>e.target.classList.add('in'), i*70);
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.1});
+fades.forEach(el=>io.observe(el));
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+  });
+});
+</script>
+</body>
+</html>
