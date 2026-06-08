@@ -1,4 +1,4 @@
-'use client'
+se client'
 
 import { useState, useEffect } from 'react'
 
@@ -433,70 +433,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ============================================================
-          BRANDS SECTION — paste this AFTER the Industries </section>
-          and BEFORE the CTA <section>
-          ============================================================ */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Heading */}
-          <div className="text-center mb-14">
-            <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-3">Trusted Partners</p>
-            <h2 className="text-5xl font-black text-gray-900 mb-4">Brands We Source</h2>
-            <div className="w-16 h-1 bg-teal-700 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We source genuine products from 150+ globally trusted industrial brands — delivering quality you can count on.
-            </p>
-          </div>
-
-          {/* 12 Featured Brand Logos */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mb-12">
-            {[
-              { name: "ABB", logo: "https://www.zfcorporation.co.uk/storage/media/abb-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg" },
-              { name: "Siemens", logo: "https://www.zfcorporation.co.uk/storage/media/Siemens .jpg" },
-              { name: "Schneider Electric", logo: "https://www.zfcorporation.co.uk/storage/media/Schneider.jpg" },
-              { name: "Honeywell", logo: "https://www.zfcorporation.co.uk/storage/media/honeywell.jpg" },
-              { name: "Emerson", logo: "https://www.zfcorporation.co.uk/storage/media/Emerson.jpg" },
-              { name: "Yokogawa", logo: "https://www.zfcorporation.co.uk/storage/media/yokogawa.jpg" },
-              { name: "Parker Hannifin", logo: "https://www.zfcorporation.co.uk/storage/media/Parker.jpg" },
-              { name: "Danfoss", logo: "https://www.zfcorporation.co.uk/storage/media/Danfoss.jpg" },
-              { name: "Atlas Copco", logo: "https://www.zfcorporation.co.uk/storage/media/Atlas copco.jpg" },
-              { name: "Bosch", logo: "https://www.zfcorporation.co.uk/storage/media/Bosch.jpg" },
-              { name: "Fluke", logo: "https://www.zfcorporation.co.uk/storage/media/Fluke.jpg" },
-              { name: "Grundfos", logo: "https://www.zfcorporation.co.uk/storage/media/Grundfos.jpg" },
-            ].map((brand, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 border border-gray-200 rounded-xl px-3 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-teal-400 hover:-translate-y-0.5 transition-all duration-200 group"
-              >
-                <div className="h-12 w-full flex items-center justify-center">
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-200"
-                  />
-                </div>
-                <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider text-center leading-tight group-hover:text-teal-700 transition-colors">
-                  {brand.name}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* View All Button */}
-          <div className="text-center">
-            <a
-              href="/brands"
-              className="inline-flex items-center gap-2 bg-teal-700 text-white px-10 py-3 rounded-lg font-semibold hover:bg-teal-800 transition"
-            >
-              View All Brands <span>→</span>
-            </a>
-          </div>
-        </div>
-      </section>
-      {/* ============================================================
-          END BRANDS SECTION
-          ============================================================ */}
       {/* CTA */}
       <section className="bg-teal-700 text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
