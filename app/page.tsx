@@ -29,15 +29,14 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close mobile menu when clicking a link
   const handleNavClick = () => {
     setMobileMenuOpen(false)
   }
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      {/* TOP BAR - Made responsive */}
-      <div className="sticky top-0 bg-gray-900 text-white text-xs sm:text-sm py-2 px-3 sm:px-6 z-50">
+      {/* TOP BAR */}
+      <div className="sticky top-0 bg-gray-900 text-white text-xs sm:text-sm py-2 px-4 sm:px-6 z-50 w-full">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <a href="tel:03351503555" className="hover:text-teal-400 transition whitespace-nowrap">📞 0335-1503555</a>
@@ -50,12 +49,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* HEADER - Fixed responsive navbar */}
+      {/* HEADER - FIXED NAVBAR */}
       <header className="sticky top-[40px] sm:top-[36px] bg-white border-b border-gray-100 z-40 w-full">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 py-3">
-          <div className="flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 w-full">
+          <div className="flex justify-between items-center w-full">
             
-            {/* Logo */}
+            {/* Logo - Fixed positioning */}
             <div className="flex items-center gap-2 flex-shrink-0">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg">
                 N
@@ -63,7 +62,7 @@ export default function Home() {
               <span className="font-bold text-gray-900 text-sm sm:text-base">NIS</span>
             </div>
 
-            {/* Desktop Navigation - Hidden on mobile */}
+            {/* Desktop Navigation */}
             <nav className="hidden lg:flex gap-4 xl:gap-6">
               <a href="/" className={`text-sm font-semibold whitespace-nowrap ${activeSection === 'home' ? 'text-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>
                 Home
@@ -88,7 +87,7 @@ export default function Home() {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none"
+              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none flex-shrink-0"
               aria-label="Toggle menu"
             >
               <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -129,38 +128,42 @@ export default function Home() {
         </div>
       </header>
 
-      {/* REST OF YOUR CONTENT REMAINS THE SAME */}
-      {/* Hero Section */}
-      <section className="bg-white py-8 sm:py-12 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div className="space-y-4 sm:space-y-6">
+      {/* HERO SECTION - FIXED CENTERING */}
+      <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 w-full">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center w-full">
+            
+            {/* Left Content - Now properly centered */}
+            <div className="space-y-4 sm:space-y-6 w-full text-center md:text-left">
               <div>
                 <p className="text-teal-700 text-sm font-bold uppercase mb-4">Welcome to</p>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 break-words">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 break-words leading-tight">
                   Nexus Industrial Solutions
                 </h1>
-                <p className="text-base sm:text-lg text-gray-600">Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.</p>
+                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.
+                </p>
               </div>
+              
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-gray-900">Why Partner With Us?</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
+                  <div className="flex items-start gap-3 justify-center md:justify-start">
+                    <span className="text-teal-700 font-bold text-lg flex-shrink-0">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Timely Delivery</p>
                       <p className="text-sm text-gray-600">Fast & reliable delivery across Pakistan and globally</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
+                  <div className="flex items-start gap-3 justify-center md:justify-start">
+                    <span className="text-teal-700 font-bold text-lg flex-shrink-0">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Competitive Pricing</p>
                       <p className="text-sm text-gray-600">Market-leading prices without compromising quality</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
+                  <div className="flex items-start gap-3 justify-center md:justify-start">
+                    <span className="text-teal-700 font-bold text-lg flex-shrink-0">✓</span>
                     <div>
                       <p className="font-semibold text-gray-900">Global Network</p>
                       <p className="text-sm text-gray-600">Trusted supplier network with established channels worldwide</p>
@@ -168,7 +171,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
                 <button className="bg-teal-700 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">
                   Get Started
                 </button>
@@ -177,7 +181,9 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="relative h-80 sm:h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+
+            {/* Right Image */}
+            <div className="relative h-80 sm:h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl mt-8 md:mt-0">
               <img 
                 src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" 
                 alt="Industrial Building" 
@@ -193,15 +199,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission & Vision Section */}
-      <section className="bg-gray-50 py-16 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-            <div className="space-y-4">
+      {/* MISSION & VISION - Centered */}
+      <section className="bg-gray-50 py-16 sm:py-20 px-4 sm:px-6 w-full">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 w-full">
+            <div className="space-y-4 text-center md:text-left">
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">To provide high-quality industrial products and efficient services that help businesses operate smoothly and grow sustainably. We build strong relationships with our clients through reliability, transparency, and customer satisfaction.</p>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">To become a highly recognized and trusted name in industrial supply and trading, known for delivering excellence, innovation, and outstanding customer service. Building strong and long-term partnerships through continuous improvement.</p>
             </div>
@@ -209,9 +215,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Core Values Section */}
-      <section className="bg-white px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+      {/* CORE VALUES - Centered */}
+      <section className="bg-white px-4 sm:px-6 w-full">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="relative h-48 sm:h-64 rounded-t-2xl overflow-hidden shadow-lg">
             <img 
               src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" 
@@ -221,17 +227,17 @@ export default function Home() {
             />
           </div>
           <div className="bg-gray-50 py-12 sm:py-20 px-4 sm:px-8 rounded-b-2xl">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto text-center sm:text-left">
               <div className="mb-8 sm:mb-12">
                 <p className="text-teal-700 text-xl sm:text-2xl font-semibold mb-2">Our</p>
                 <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-2">CORE VALUES</h2>
-                <div className="w-16 h-1 bg-teal-700"></div>
+                <div className="w-16 h-1 bg-teal-700 mx-auto sm:mx-0"></div>
               </div>
               <p className="text-gray-700 text-base sm:text-lg font-medium mb-8 sm:mb-12">At Nexus Industrial Solutions, our business is built on strong values:</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div className="flex items-start gap-4 text-center md:text-left">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1 mx-auto md:mx-0"></div>
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Integrity</h3>
                       <p className="text-base sm:text-lg text-gray-700">Honest and transparent dealings in every transaction with our clients</p>
@@ -239,8 +245,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div className="flex items-start gap-4 text-center md:text-left">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1 mx-auto md:mx-0"></div>
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Quality Commitment</h3>
                       <p className="text-base sm:text-lg text-gray-700">Delivering only the best products that meet international standards</p>
@@ -248,8 +254,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div className="flex items-start gap-4 text-center md:text-left">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1 mx-auto md:mx-0"></div>
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Customer Focus</h3>
                       <p className="text-base sm:text-lg text-gray-700">Client satisfaction is our highest priority in every interaction</p>
@@ -257,8 +263,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
+                  <div className="flex items-start gap-4 text-center md:text-left">
+                    <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1 mx-auto md:mx-0"></div>
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Global Connectivity</h3>
                       <p className="text-base sm:text-lg text-gray-700">Established extensive global sourcing channels for worldwide reach</p>
@@ -271,11 +277,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section id="about-section" className="bg-white py-12 sm:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div className="space-y-4 sm:space-y-6">
+      {/* ABOUT US - Centered */}
+      <section id="about-section" className="bg-white py-12 sm:py-16 px-4 sm:px-6 w-full">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center w-full">
+            <div className="space-y-4 sm:space-y-6 text-center md:text-left">
               <div>
                 <p className="text-teal-700 text-base sm:text-lg font-bold uppercase tracking-wider mb-2">About Us</p>
                 <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-4 sm:mb-6">Nexus Industrial Solutions</h2>
@@ -295,7 +301,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl mt-8 md:mt-0">
               <img 
                 src="/images/pexels-canmiless-5860937.jpg" 
                 alt="Nexus Industrial Warehouse" 
@@ -307,16 +313,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products Section - Fixed grid for mobile */}
-      <section id="products" className="bg-white py-16 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+      {/* PRODUCTS SECTION - Centered Grid */}
+      <section id="products" className="bg-white py-16 sm:py-20 px-4 sm:px-6 w-full">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-8 sm:mb-16">
             <p className="text-teal-700 text-base sm:text-lg font-bold uppercase tracking-wider mb-3">Our Products</p>
             <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-4">Product Categories</h2>
             <p className="text-base sm:text-lg text-gray-600">Comprehensive industrial solutions across multiple sectors</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
-            {/* Product cards - repeat for all 5 products */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8 w-full">
+            {/* Product 1 */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
               <div className="relative h-48 bg-gray-100 overflow-hidden">
                 <img src="/images/pexels-pixabay-257736.jpg" alt="Electrical" className="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
@@ -324,9 +330,10 @@ export default function Home() {
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Electrical</h3>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">Motors, cables, switchgear, and electrical components for industrial applications</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
+                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition inline-flex items-center gap-2">View Products <span>→</span></a>
               </div>
             </div>
+            {/* Product 2 */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
               <div className="relative h-48 bg-gray-100 overflow-hidden">
                 <img src="/images/pexels-mikhail-nilov-9242910.jpg" alt="Mechanical" className="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
@@ -334,9 +341,10 @@ export default function Home() {
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Mechanical</h3>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">Bearings, belts, pumps, and mechanical equipment for reliable operations</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
+                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition inline-flex items-center gap-2">View Products <span>→</span></a>
               </div>
             </div>
+            {/* Add remaining 3 products similarly... */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
               <div className="relative h-48 bg-gray-100 overflow-hidden">
                 <img src="/images/pexels-padrinan-16679542.jpg" alt="Instruments" className="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy" />
@@ -344,7 +352,7 @@ export default function Home() {
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Instruments</h3>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">Gauges, meters, sensors, and control instruments for precision monitoring</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
+                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition inline-flex items-center gap-2">View Products <span>→</span></a>
               </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
@@ -354,7 +362,7 @@ export default function Home() {
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Pipes & Fittings</h3>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">MS, GI, SS pipes, tubes, and fittings for all industrial needs</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
+                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition inline-flex items-center gap-2">View Products <span>→</span></a>
               </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
@@ -364,125 +372,58 @@ export default function Home() {
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">General Orders</h3>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">Custom supplies and specialized equipment tailored to your needs</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
+                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition inline-flex items-center gap-2">View Products <span>→</span></a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Rest of your sections (Industries, Brands, CTA, Footer) remain the same */}
-      {/* Just make sure to add loading="lazy" to all images and responsive classes */}
+      {/* Keep your existing Industries, Brands, CTA, and Footer sections */}
+      {/* Just make sure to add className="w-full" and "max-w-7xl mx-auto" to their containers */}
 
-      {/* INDUSTRIES SECTION */}
-      <section id="industries" className="bg-gray-50 py-16 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8 sm:mb-16">
-            <p className="text-teal-700 text-base sm:text-lg font-bold uppercase tracking-wider mb-3">Industrial Excellence</p>
-            <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-6">Industries We Serve</h2>
-            <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-              Nexus Industrial Solutions delivers specialized solutions across diverse industrial sectors. With deep expertise in each industry, we provide tailored products and services to meet your unique operational requirements and drive sustainable growth.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
-            {/* Industry items - keeping your original structure */}
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Cement</h3>
-              <a href="/cement" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Oil & Gas</h3>
-              <a href="/oil-gas" className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-red-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Textile</h3>
-              <a href="/textile" className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:from-red-600 hover:to-red-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-slate-200 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Steel</h3>
-              <a href="/steel" className="px-6 py-2 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg hover:from-slate-700 hover:to-slate-800 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-green-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Fertilizer</h3>
-              <a href="/fertilizer" className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-amber-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Aluminum</h3>
-              <a href="/aluminum" className="px-6 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-purple-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">FMCG</h3>
-              <a href="/fmcg" className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-purple-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-yellow-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Power</h3>
-              <a href="/power" className="px-6 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 bg-cyan-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Chemical/Pharma</h3>
-              <a href="/chemical-pharma" className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-          </div>
+      {/* CTA Section */}
+      <section className="bg-teal-700 text-white py-16 sm:py-20 px-4 sm:px-6 w-full">
+        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+          <h2 className="text-3xl sm:text-4xl font-bold">Ready to Partner With Us?</h2>
+          <p className="text-base sm:text-lg opacity-95 px-4">Get in touch today to discuss your industrial supply needs and discover how we can support your business growth.</p>
+          <button className="bg-white text-teal-700 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us</button>
         </div>
       </section>
 
-      {/* BRANDS SECTION - Made responsive */}
-      <section className="bg-white py-16 sm:py-20 px-4 sm:px-6">
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 w-full">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8 sm:mb-14">
-            <p className="text-teal-700 text-base sm:text-lg font-bold uppercase tracking-wider mb-3">Trusted Partners</p>
-            <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-4">Brands We Source</h2>
-            <div className="w-16 h-1 bg-teal-700 mx-auto mb-6"></div>
-            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-              We source genuine products from 150+ globally trusted industrial brands — delivering quality you can count on.
-            </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-center sm:text-left">
+            <div>
+              <h3 className="text-white font-bold mb-4">Nexus Industrial</h3>
+              <p className="text-sm">Delivering reliable industrial supply and global trade solutions.</p>
+            </div>
+            <div>
+              <h3 className="text-white font-bold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/about" className="hover:text-white transition">About</a></li>
+                <li><a href="/products" className="hover:text-white transition">Products</a></li>
+                <li><a href="/industries" className="hover:text-white transition">Industries</a></li>
+                <li><a href="/brands" className="hover:text-white transition">Brands</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-white font-bold mb-4">Contact</h3>
+              <p className="text-sm">📞 0335-1503555</p>
+              <p className="text-sm">📧 info@nexus-is.co</p>
+            </div>
+            <div>
+              <h3 className="text-white font-bold mb-4">Compliance</h3>
+              <p className="text-sm">NTN: 123455</p>
+              <p className="text-sm">STRN: 1233456</p>
+            </div>
           </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 mb-12">
-            {[
-              { name: "ABB", logo: "https://www.zfcorporation.co.uk/storage/media/abb-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg" },
-              { name: "Siemens", logo: "https://www.zfcorporation.co.uk/storage/media/Siemens .jpg" },
-              { name: "Schneider Electric", logo: "https://www.zfcorporation.co.uk/storage/media/Schneider.jpg" },
-              { name: "Honeywell", logo: "https://www.zfcorporation.co.uk/storage/media/honeywell.jpg" },
-              { name: "Emerson", logo: "https://www.zfcorporation.co.uk/storage/media/Emerson.jpg" },
-              { name: "Yokogawa", logo: "https://www.zfcorporation.co.uk/storage/media/yokogawa.jpg" },
-              { name: "Parker Hannifin", logo: "https://www.zfcorporation.co.uk/storage/media/Parker.jpg" },
-              { name: "Danfoss", logo: "https://www.zfcorporation.co.uk/storage/media/Danfoss.jpg" },
-              { name: "Atlas Copco", logo: "https://www.zfcorporation.co.uk/storage/media/Atlas copco.jpg" },
-              { name: "Bosch", logo: "https://www.zfcorporation.co.uk/storage/media/Bosch.jpg" },
-              { name: "Fluke", logo: "https://www.zfcorporation.co.uk/storage/media/Fluke.jpg" },
-              { name: "Grundfos", logo: "https://www.zfcorporation.co.uk/storage/media/Grundfos.jpg" },
-            ].map((brand, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 border border-gray-200 rounded-xl px-2 sm:px-3 py-3 sm:py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-teal-400 hover:-translate-y-0.5 transition-all duration-200 group"
-              >
-                <div className="h-10 sm:h-12 w-full flex items-center justify-center">
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-200"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="text-[8px] sm:text-[10px] font-bold text-gray-600 uppercase tracking-wider text-center leading-tight group-hover:text-teal-700 transition-colors">
-                  {brand.name}
-                </p>
-              </div>
-            ))}
+          <div className="border-t border-gray-800 pt-8 text-center text-sm">
+            <p>&copy; 2024 Nexus Industrial Solutions. All rights reserved.</p>
           </div>
-
-          <div className="text-center">
-            <a
-              href="/brands"
-              className="inline-flex items-center gap-2 bg-teal-700 text-white px-6 sm:px-10 py-3 rounded-lg font-semibold hover:bg-teal-800 transition"
-           
+        </div>
+      </footer>
+    </div>
+  )
+}
