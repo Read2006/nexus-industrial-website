@@ -105,8 +105,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex gap-4 pt-4">
-                <a href="#contact-section" className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800">Get Started</a>
-                <a href="#about-section" className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50">Learn More</a>
+                <a href="#products" className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800">Get Started</a>
+                <a href="/about" className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50">Learn More</a>
               </div>
             </div>
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
