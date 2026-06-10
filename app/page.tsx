@@ -69,7 +69,7 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section id="top" className="bg-white py-12 px-6">
+      <section id="top" className="bg-white pt-8 pb-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
