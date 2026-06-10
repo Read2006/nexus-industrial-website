@@ -58,3 +58,30 @@ img, video, iframe {
   max-width: 100%;
   height: auto;
 }
+/* Fix navbar overflow */
+nav, .navbar {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+nav a, .navbar a {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  nav .nav-links {
+    gap: 0.75rem !important;
+  }
+  
+  nav a {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Ensure body doesn't scroll horizontally */
+body {
+  overflow-x: hidden !important;
+  position: relative;
+}
