@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom base styles */
 * {
   margin: 0;
   padding: 0;
@@ -18,113 +17,13 @@ body {
   background: white;
   color: #2c3e50;
   line-height: 1.6;
-  overflow-x: hidden;
-  width: 100%;
 }
 
-/* Prevent horizontal scroll on all elements */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Better touch targets for mobile */
-button, 
-a, 
-[role="button"] {
-  cursor: pointer;
-  touch-action: manipulation;
-}
-
-/* Smooth image loading */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Remove default button styles */
 button {
   font-family: inherit;
-  background: none;
-  border: none;
-}
-
-/* Smooth transitions */
-a, button {
-  transition: all 0.2s ease;
-}
-
-/* Custom scrollbar (optional) */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #0f766e;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #0d5c56;
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  
-  /* Improve tap highlights */
-  button, a {
-    -webkit-tap-highlight-color: transparent;
-  }
-}
-
-/* Performance optimization */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Loading optimization */
-body {
-  opacity: 0;
-  animation: fadeIn 0.2s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Fix for sticky elements on mobile */
-.sticky {
-  position: sticky;
-  z-index: 40;
-}
-
-/* Better form elements on mobile */
-input, 
-textarea, 
-select, 
-button {
-  font-size: 16px; /* Prevents zoom on iPhone */
-}
-
-/* Smooth focus states */
-:focus {
-  outline: none;
-  ring: 2px solid #0f766e;
-  ring-offset: 2px;
 }
