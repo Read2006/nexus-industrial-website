@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 👇 PASTE THE MOBILE FIXES HERE (after your existing code) */
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +17,6 @@ body {
   background: white;
   color: #2c3e50;
   line-height: 1.6;
-  overflow-x: hidden;  /* ← ADD THIS */
-  width: 100%;         /* ← ADD THIS */
 }
 
 a {
@@ -29,59 +26,4 @@ a {
 
 button {
   font-family: inherit;
-}
-
-/* 🆕 PASTE THE RESPONSIVE FIXES HERE */
-@layer components {
-  .touch-optimized {
-    @apply min-h-[44px] min-w-[44px];
-  }
-  
-  .container-responsive {
-    @apply px-4 sm:px-6 md:px-8 mx-auto;
-  }
-}
-
-@media (max-width: 360px) {
-  .hero-title {
-    font-size: 1.5rem !important;
-    word-break: break-word;
-  }
-  
-  .container {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-}
-
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-}
-/* Fix navbar overflow */
-nav, .navbar {
-  overflow-x: hidden !important;
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-nav a, .navbar a {
-  word-break: keep-all;
-  white-space: nowrap;
-}
-
-@media (max-width: 640px) {
-  nav .nav-links {
-    gap: 0.75rem !important;
-  }
-  
-  nav a {
-    font-size: 0.875rem !important;
-  }
-}
-
-/* Ensure body doesn't scroll horizontally */
-body {
-  overflow-x: hidden !important;
-  position: relative;
 }
