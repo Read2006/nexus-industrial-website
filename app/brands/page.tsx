@@ -35,7 +35,6 @@ export default function BrandsPage() {
     { name: "Carrier", logo: "https://www.zfcorporation.co.uk/storage/media/carrier.jpg" },
     { name: "Cashco", logo: "https://www.zfcorporation.co.uk/storage/media/Cashco.jpg" },
     { name: "Copeland", logo: "https://www.zfcorporation.co.uk/storage/media/Copeland.jpg" },
-    { name: "Danfoss", logo: "https://www.zfcorporation.co.uk/storage/media/Danfoss.jpg" },
     { name: "Decon", logo: "https://www.zfcorporation.co.uk/storage/media/Decon.jpg" },
     { name: "Dewalt", logo: "https://www.zfcorporation.co.uk/storage/media/Dewalt.jpg" },
     { name: "Donaldson", logo: "https://www.zfcorporation.co.uk/storage/media/Donaldson.jpg" },
@@ -72,16 +71,13 @@ export default function BrandsPage() {
     { name: "SICK", logo: "https://www.zfcorporation.co.uk/storage/media/sick.jpg" },
     { name: "SMC", logo: "https://www.zfcorporation.co.uk/storage/media/SMC.jpg" },
     { name: "SPX", logo: "https://www.zfcorporation.co.uk/storage/media/SPX.jpg" },
-    { name: "Swagelok", logo: "https://www.zfcorporation.co.uk/storage/media/swagelok.jpg" },
     { name: "Tescom", logo: "https://www.zfcorporation.co.uk/storage/media/tescom.jpg" },
     { name: "Tyco", logo: "https://www.zfcorporation.co.uk/storage/media/Tyco.jpg" },
     { name: "Wartsila", logo: "https://www.zfcorporation.co.uk/storage/media/Wartsila.jpg" },
-    { name: "Wika", logo: "https://www.zfcorporation.co.uk/storage/media/Wika.jpg" },
     { name: "WISE", logo: "https://www.zfcorporation.co.uk/storage/media/WISE.jpg" },
     { name: "Woodward", logo: "https://www.zfcorporation.co.uk/storage/media/Woodward.jpg" },
     { name: "Yanmar", logo: "https://www.zfcorporation.co.uk/storage/media/Yanmar.jpg" },
     { name: "Yuasa", logo: "https://www.zfcorporation.co.uk/storage/media/Yuasa.jpg" },
-    { name: "Yokogawa", logo: "https://www.zfcorporation.co.uk/storage/media/yokogawa.jpg" },
     { name: "Akasaka Diesel", logo: "https://www.zfcorporation.co.uk/storage/media/Akasaka Diesel .jpg" },
     { name: "Apollo Valve", logo: "https://www.zfcorporation.co.uk/storage/media/Apollo Valve.jpg" },
     { name: "Alcad", logo: "https://www.zfcorporation.co.uk/storage/media/alcad-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg" },
@@ -152,7 +148,6 @@ export default function BrandsPage() {
     { name: "Philips", logo: "https://www.zfcorporation.co.uk/storage/media/philips-logo.svg" },
     { name: "Restek", logo: "https://www.zfcorporation.co.uk/storage/media/restek-logo.svg" },
     { name: "Rossi", logo: "https://www.zfcorporation.co.uk/storage/media/rossi-logo.svg" },
-    { name: "SKF", logo: "https://www.zfcorporation.co.uk/storage/media/skf-logo.svg" },
     { name: "Socomec", logo: "https://www.zfcorporation.co.uk/storage/media/socomec-logo.svg" },
     { name: "Solar Turbines", logo: "https://www.zfcorporation.co.uk/storage/media/solar-turbines-logo.svg" },
     { name: "Stanley", logo: "https://www.zfcorporation.co.uk/storage/media/stanley-logo.svg" },
@@ -162,43 +157,41 @@ export default function BrandsPage() {
     { name: "Weidmuller", logo: "https://www.zfcorporation.co.uk/storage/media/weidmuller-logo.svg" },
     { name: "Weir", logo: "https://www.zfcorporation.co.uk/storage/media/weir-logo.svg" },
     { name: "Zebra Technologies", logo: "https://www.zfcorporation.co.uk/storage/media/zebra-technologies-logo.svg" },
-    // Text-only brands (no logo image)
-    { name: "Thermax", logo: null },
-    { name: "Thermo Fisher Scientific", logo: null },
-    { name: "TopWorx", logo: null },
-    { name: "TotalEnergies", logo: null },
-    { name: "Tuthill", logo: null },
-    { name: "Viking Pump", logo: null },
-    { name: "Auma", logo: null },
-    { name: "Barksdale", logo: null },
-    { name: "Baumer", logo: null },
-    { name: "Beamex", logo: null },
-    { name: "Borri", logo: null },
-    { name: "Brooks Instrument", logo: null },
-    { name: "Castrol", logo: null },
-    { name: "Chesterton", logo: null },
-    { name: "Chicago Pneumatic", logo: null },
-    { name: "Dwyer", logo: null },
-    { name: "EBRO", logo: null },
-    { name: "Foxboro", logo: null },
-    { name: "GEMU", logo: null },
-    { name: "Hach", logo: null },
-    { name: "Hi-Force", logo: null },
-    { name: "KNF", logo: null },
-    { name: "LEWA", logo: null },
-    { name: "Lovato Electric", logo: null },
-    { name: "Minebea Intec", logo: null },
-    { name: "Molykote", logo: null },
-    { name: "Moxa", logo: null },
-    { name: "MTL Instruments", logo: null },
-    { name: "MTU", logo: null },
-    { name: "Neway Valve", logo: null },
-    { name: "Nikkiso", logo: null },
-    { name: "Notifier", logo: null },
-    { name: "OMAL", logo: null },
+    { name: "Thermax", logo: "" },
+    { name: "Thermo Fisher Scientific", logo: "" },
+    { name: "TopWorx", logo: "" },
+    { name: "TotalEnergies", logo: "" },
+    { name: "Tuthill", logo: "" },
+    { name: "Viking Pump", logo: "" },
+    { name: "Auma", logo: "" },
+    { name: "Barksdale", logo: "" },
+    { name: "Baumer", logo: "" },
+    { name: "Beamex", logo: "" },
+    { name: "Borri", logo: "" },
+    { name: "Brooks Instrument", logo: "" },
+    { name: "Castrol", logo: "" },
+    { name: "Chesterton", logo: "" },
+    { name: "Chicago Pneumatic", logo: "" },
+    { name: "Dwyer", logo: "" },
+    { name: "EBRO", logo: "" },
+    { name: "Foxboro", logo: "" },
+    { name: "GEMU", logo: "" },
+    { name: "Hach", logo: "" },
+    { name: "Hi-Force", logo: "" },
+    { name: "KNF", logo: "" },
+    { name: "LEWA", logo: "" },
+    { name: "Lovato Electric", logo: "" },
+    { name: "Minebea Intec", logo: "" },
+    { name: "Molykote", logo: "" },
+    { name: "Moxa", logo: "" },
+    { name: "MTL Instruments", logo: "" },
+    { name: "MTU", logo: "" },
+    { name: "Neway Valve", logo: "" },
+    { name: "Nikkiso", logo: "" },
+    { name: "Notifier", logo: "" },
+    { name: "OMAL", logo: "" },
   ]
 
-  // Remove duplicates by name
   const uniqueBrands = brands.filter((brand, index, self) =>
     index === self.findIndex((b) => b.name === brand.name)
   )
@@ -275,15 +268,6 @@ export default function BrandsPage() {
                       src={brand.logo}
                       alt={brand.name}
                       className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-200"
-                      onError={(e) => {
-                        // Fallback to text if image fails to load
-                        const target = e.target as HTMLImageElement
-                        target.style.display = 'none'
-                        const parent = target.parentElement
-                        if (parent) {
-                          parent.innerHTML = `<span class="text-gray-800 font-bold text-sm text-center uppercase leading-tight">${brand.name}</span>`
-                        }
-                      }}
                     />
                   ) : (
                     <span className="text-gray-800 font-bold text-sm text-center uppercase leading-tight">{brand.name}</span>
