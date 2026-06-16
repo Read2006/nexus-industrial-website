@@ -290,9 +290,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <img 
-        src="https://github.com/Read2006/nexus-industrial-website/blob/main/public/images/CEMENT.jpeg?raw=true" 
-        alt="Cement" 
+              <img src="/images/CEMENT.jpeg?raw=trueimages/pexels-pixabay-257736.jpg?raw=true"  alt="Cement" 
         class="w-full h-full object-cover"
       />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Cement</h3>
