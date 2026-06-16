@@ -291,6 +291,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Cement</h3>
+              <img src="https://github.com/Read2006/nexus-industrial-website/blob/main/public/images/WhatsApp%20Image%202026-06-16%20at%209.13.50%20AM.jpeg?raw=true" alt="Cement texture and construction material" loading="lazy" >
               <a href="/cement" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
             </div>
             <div className="flex flex-col items-center">
