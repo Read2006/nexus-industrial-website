@@ -291,7 +291,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="relative w-48 h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
               <img 
-        src="https://github.com/Read2006/nexus-industrial-website/blob/main/public/images/WhatsApp%20Image%202026-06-16%20at%209.13.50%20AM.jpeg?raw=true" 
+        src="https://github.com/Read2006/nexus-industrial-website/blob/main/public/images/CEMENT.jpeg?raw=true" 
         alt="Cement" 
         class="w-full h-full object-cover"
       />
