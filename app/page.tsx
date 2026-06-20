@@ -24,18 +24,6 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navLink = (section: string, label: string, href: string) => {
-    const isActive = activeSection === section
-    return (
-      <a
-        href={href}
-        className={`text-sm font-semibold transition ${isActive ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}
-      >
-        {label}
-      </a>
-    )
-  }
-
   return (
     <div className="min-h-screen bg-white">
       {/* TOP BAR */}
@@ -240,7 +228,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Mechanical</h3>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">Bearings, belts, pumps, and mechanical equipment for reliable operations</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
+                <a href="/products/mechanical" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
               </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
@@ -289,7 +277,9 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-orange-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
+              <div className="relative w-48 h-48 mb-6 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden bg-orange-100">
+                <img src="/images/CEMENT.jpeg" alt="Cement" className="w-full h-full object-cover" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Cement</h3>
               <a href="/cement" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
             </div>
