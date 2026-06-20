@@ -123,23 +123,54 @@ export default function MechanicalProductsPage() {
       </header>
 
       {/* HERO */}
-      <section className="w-full bg-teal-700 py-10 md:py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-6">
-            <a href="/#products" className="inline-flex items-center gap-2 text-white hover:text-white/80 transition text-sm font-medium">
+      <section className="relative w-full overflow-hidden" style={{ background: 'linear-gradient(135deg, #0d1b1a 0%, #0f2e2a 35%, #0d4d42 70%, #115e4f 100%)' }}>
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(45,212,191,.25), transparent 50%)' }}></div>
+        <div className="max-w-7xl mx-auto px-6 py-14 md:py-20 relative z-10">
+          <div className="mb-8">
+            <a href="/#products" className="inline-flex items-center gap-2 text-teal-300 hover:text-white transition text-sm font-semibold">
               ← Back to Products
             </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div className="text-left space-y-3">
-              <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight">Mechanical Products</h1>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl">
-                Bearings, Pumps, Gearboxes, Belts &amp; More. Engineered for demanding industrial environments and operational efficiency.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="text-left space-y-5">
+              <div className="inline-flex items-center gap-2 bg-teal-400/10 border border-teal-400/30 text-teal-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+                ⚙️ Mechanical Products
+              </div>
+              <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
+                Engineered for<br /><span className="text-teal-300">Industrial Power</span>
+              </h1>
+              <p className="text-base md:text-lg text-teal-50/80 leading-relaxed max-w-xl">
+                Bearings, Pumps, Gearboxes, Belts &amp; More — genuine parts from globally trusted brands, engineered for demanding industrial environments.
               </p>
+              <div className="flex gap-8 pt-2">
+                <div>
+                  <p className="text-3xl font-black text-white">500+</p>
+                  <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">SKUs</p>
+                </div>
+                <div className="w-px bg-white/15"></div>
+                <div>
+                  <p className="text-3xl font-black text-white">20+</p>
+                  <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">Brands</p>
+                </div>
+                <div className="w-px bg-white/15"></div>
+                <div>
+                  <p className="text-3xl font-black text-white">5</p>
+                  <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">Categories</p>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-center md:justify-end">
-              <div className="w-full max-w-md h-56 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=700&h=450&fit=crop" alt="Mechanical Products" className="w-full h-full object-cover" />
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10" style={{ transform: 'perspective(1000px) rotateY(-6deg) rotateX(2deg)' }}>
+                <img
+                  src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=900&h=650&fit=crop&q=85"
+                  alt="Industrial mechanical equipment"
+                  className="w-full h-[320px] md:h-[400px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              </div>
+              <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-2xl px-5 py-3 hidden md:block">
+                <p className="text-2xl font-black text-teal-700 leading-none">100%</p>
+                <p className="text-gray-500 text-[11px] font-semibold mt-1">Genuine Parts</p>
               </div>
             </div>
           </div>
