@@ -9,14 +9,14 @@ const categories = [
     icon: '⚙️',
     desc: 'Complete range of industrial bearings for rotating equipment across all sectors.',
     products: [
-      { name: 'Deep Groove Ball Bearings', desc: 'High-speed, low-noise bearings for motors, pumps and gearboxes', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop' },
-      { name: 'Spherical Roller Bearings', desc: 'Self-aligning bearings for heavy radial and axial loads', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop' },
-      { name: 'Tapered Roller Bearings', desc: 'For combined radial and thrust loads in gearboxes and axles', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop' },
-      { name: 'Cylindrical Roller Bearings', desc: 'High radial load capacity for heavy industrial machinery', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop' },
-      { name: 'Thrust Ball Bearings', desc: 'Designed to handle axial loads in one or both directions', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop' },
-      { name: 'Needle Roller Bearings', desc: 'Compact design with high load capacity for tight spaces', img: 'https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?w=500&h=350&fit=crop' },
-      { name: 'Pillow Block Bearings', desc: 'Mounted bearing units for easy shaft alignment and support', img: 'https://images.unsplash.com/photo-1597149065429-37e5e2e2f2e5?w=500&h=350&fit=crop' },
-      { name: 'Linear Motion Bearings', desc: 'Precision bearings for linear guide systems and slides', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=350&fit=crop' },
+      { name: 'Deep Groove Ball Bearings', desc: 'High-speed, low-noise bearings for motors, pumps and gearboxes', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+      { name: 'Spherical Roller Bearings', desc: 'Self-aligning bearings for heavy radial and axial loads', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
+      { name: 'Tapered Roller Bearings', desc: 'For combined radial and thrust loads in gearboxes and axles', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
+      { name: 'Cylindrical Roller Bearings', desc: 'High radial load capacity for heavy industrial machinery', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
+      { name: 'Thrust Ball Bearings', desc: 'Designed to handle axial loads in one or both directions', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop&q=80' },
+      { name: 'Needle Roller Bearings', desc: 'Compact design with high load capacity for tight spaces', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop&q=80' },
+      { name: 'Pillow Block Bearings', desc: 'Mounted bearing units for easy shaft alignment and support', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+      { name: 'Linear Motion Bearings', desc: 'Precision bearings for linear guide systems and slides', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
     ]
   },
   {
@@ -25,14 +25,14 @@ const categories = [
     icon: '💧',
     desc: 'Industrial pumps for water, chemical, slurry and oil transfer applications.',
     products: [
-      { name: 'Centrifugal Pumps', desc: 'High-flow, low-pressure pumps for water and light fluids', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop' },
-      { name: 'Submersible Pumps', desc: 'For drainage, sewage and deep-well water extraction', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop' },
-      { name: 'Gear Pumps', desc: 'Positive displacement pumps for viscous fluids and oils', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop' },
-      { name: 'Diaphragm Pumps', desc: 'Chemical-resistant pumps for corrosive fluid transfer', img: 'https://images.unsplash.com/photo-1581244277493-9ad3ee35c11e?w=500&h=350&fit=crop' },
-      { name: 'Booster Pumps', desc: 'Pressure booster systems for water supply networks', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop' },
-      { name: 'Slurry Pumps', desc: 'Heavy-duty pumps for abrasive and thick slurry handling', img: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=500&h=350&fit=crop' },
-      { name: 'Vertical Turbine Pumps', desc: 'High-capacity pumps for deep well and process applications', img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500&h=350&fit=crop' },
-      { name: 'Dosing Pumps', desc: 'Precise metering pumps for chemical injection systems', img: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500&h=350&fit=crop' },
+      { name: 'Centrifugal Pumps', desc: 'High-flow, low-pressure pumps for water and light fluids', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
+      { name: 'Submersible Pumps', desc: 'For drainage, sewage and deep-well water extraction', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
+      { name: 'Gear Pumps', desc: 'Positive displacement pumps for viscous fluids and oils', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop&q=80' },
+      { name: 'Diaphragm Pumps', desc: 'Chemical-resistant pumps for corrosive fluid transfer', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop&q=80' },
+      { name: 'Booster Pumps', desc: 'Pressure booster systems for water supply networks', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+      { name: 'Slurry Pumps', desc: 'Heavy-duty pumps for abrasive and thick slurry handling', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
+      { name: 'Vertical Turbine Pumps', desc: 'High-capacity pumps for deep well and process applications', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
+      { name: 'Dosing Pumps', desc: 'Precise metering pumps for chemical injection systems', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
     ]
   },
   {
@@ -41,12 +41,12 @@ const categories = [
     icon: '🔧',
     desc: 'Industrial gearboxes and speed reducers for conveyors, mixers and heavy machinery.',
     products: [
-      { name: 'Helical Gearboxes', desc: 'Smooth, quiet operation for high-efficiency power transmission', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop' },
-      { name: 'Bevel Gearboxes', desc: 'Right-angle drive for change in shaft direction', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop' },
-      { name: 'Worm Gearboxes', desc: 'High reduction ratios in compact housing design', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop' },
-      { name: 'Planetary Gearboxes', desc: 'Compact and robust for servo and precision applications', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop' },
-      { name: 'Gear Couplings', desc: 'Flexible shaft couplings for misalignment compensation', img: 'https://images.unsplash.com/photo-1597149065429-37e5e2e2f2e5?w=500&h=350&fit=crop' },
-      { name: 'Right Angle Gearboxes', desc: 'Compact gear units for perpendicular shaft applications', img: 'https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?w=500&h=350&fit=crop' },
+      { name: 'Helical Gearboxes', desc: 'Smooth, quiet operation for high-efficiency power transmission', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop&q=80' },
+      { name: 'Bevel Gearboxes', desc: 'Right-angle drive for change in shaft direction', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop&q=80' },
+      { name: 'Worm Gearboxes', desc: 'High reduction ratios in compact housing design', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+      { name: 'Planetary Gearboxes', desc: 'Compact and robust for servo and precision applications', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
+      { name: 'Gear Couplings', desc: 'Flexible shaft couplings for misalignment compensation', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
+      { name: 'Right Angle Gearboxes', desc: 'Compact gear units for perpendicular shaft applications', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
     ]
   },
   {
@@ -55,12 +55,12 @@ const categories = [
     icon: '🔗',
     desc: 'V-belts, timing belts, conveyor belts and roller chains for power transmission.',
     products: [
-      { name: 'V-Belts', desc: 'Classical and narrow V-belts for general industrial drives', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop' },
-      { name: 'Timing Belts', desc: 'Synchronous belts for precise positioning and indexing', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop' },
-      { name: 'Conveyor Belts', desc: 'Heavy-duty rubber conveyor belts for bulk material handling', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop' },
-      { name: 'Roller Chains', desc: 'Standard and heavy-duty roller chains for industrial drives', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop' },
-      { name: 'Conveyor Chains', desc: 'Attachment chains for material handling and assembly lines', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop' },
-      { name: 'Flat Belts', desc: 'High-speed drives for textile and printing machinery', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop' },
+      { name: 'V-Belts', desc: 'Classical and narrow V-belts for general industrial drives', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop&q=80' },
+      { name: 'Timing Belts', desc: 'Synchronous belts for precise positioning and indexing', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop&q=80' },
+      { name: 'Conveyor Belts', desc: 'Heavy-duty rubber conveyor belts for bulk material handling', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+      { name: 'Roller Chains', desc: 'Standard and heavy-duty roller chains for industrial drives', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
+      { name: 'Conveyor Chains', desc: 'Attachment chains for material handling and assembly lines', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
+      { name: 'Flat Belts', desc: 'High-speed drives for textile and printing machinery', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
     ]
   },
   {
@@ -69,21 +69,21 @@ const categories = [
     icon: '🛡️',
     desc: 'Mechanical seals, oil seals, O-rings and gaskets for leak-free operation.',
     products: [
-      { name: 'Mechanical Seals', desc: 'Rotary shaft seals for pumps and compressors', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop' },
-      { name: 'Oil Seals (Lip Seals)', desc: 'Radial shaft seals to prevent lubricant leakage', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop' },
-      { name: 'Spiral Wound Gaskets', desc: 'High-pressure, high-temperature flange gaskets', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop' },
-      { name: 'O-Rings', desc: 'Elastomeric seals in NBR, EPDM, Viton for all fluids', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop' },
-      { name: 'Sheet Gaskets', desc: 'Cut gaskets in compressed fiber, PTFE and rubber', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop' },
-      { name: 'Packing Seals', desc: 'Braided packing for valve stems and pump stuffing boxes', img: 'https://images.unsplash.com/photo-1597149065429-37e5e2e2f2e5?w=500&h=350&fit=crop' },
+      { name: 'Mechanical Seals', desc: 'Rotary shaft seals for pumps and compressors', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop&q=80' },
+      { name: 'Oil Seals (Lip Seals)', desc: 'Radial shaft seals to prevent lubricant leakage', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop&q=80' },
+      { name: 'Spiral Wound Gaskets', desc: 'High-pressure, high-temperature flange gaskets', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+      { name: 'O-Rings', desc: 'Elastomeric seals in NBR, EPDM, Viton for all fluids', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
+      { name: 'Sheet Gaskets', desc: 'Cut gaskets in compressed fiber, PTFE and rubber', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
+      { name: 'Packing Seals', desc: 'Braided packing for valve stems and pump stuffing boxes', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
     ]
   },
 ]
 
 const relatedCategories = [
-  { name: 'Electrical Products', desc: 'Motors, cables & electrical systems', href: '/products/electrical' },
-  { name: 'Pipes & Fittings', desc: 'Valves, fittings & pipe systems', href: '/products/pipes-fittings' },
-  { name: 'Instruments', desc: 'Precision measurement tools', href: '/products/instruments' },
-  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general' },
+  { name: 'Electrical Products', desc: 'Motors, cables & electrical systems', href: '/products/electrical', img: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=350&fit=crop&q=80' },
+  { name: 'Pipes & Fittings', desc: 'Valves, fittings & pipe systems', href: '/products/pipes-fittings', img: 'https://images.unsplash.com/photo-1622957461302-2d6b4f9c1d76?w=500&h=350&fit=crop&q=80' },
+  { name: 'Instruments', desc: 'Precision measurement tools', href: '/products/instruments', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
+  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
 ]
 
 export default function MechanicalProductsPage() {
@@ -255,9 +255,13 @@ export default function MechanicalProductsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {relatedCategories.map((c, i) => (
               <a key={i} href={c.href} className="group">
-                <div className="rounded-lg border border-slate-200 shadow-sm h-full hover:shadow-md transition-all duration-300 hover:border-teal-300 bg-white">
-                  <div className="p-6 flex items-center gap-4">
-                    <span className="text-teal-700 text-2xl flex-shrink-0">→</span>
+                <div className="rounded-xl border border-slate-200 shadow-sm overflow-hidden h-full hover:shadow-lg transition-all duration-300 hover:border-teal-300 bg-white hover:-translate-y-1">
+                  <div className="aspect-video relative overflow-hidden">
+                    <img src={c.img} alt={c.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                  </div>
+                  <div className="p-5 flex items-center gap-3">
+                    <span className="text-teal-700 text-xl flex-shrink-0">→</span>
                     <div>
                       <h4 className="font-semibold text-slate-800 group-hover:text-teal-700 transition-colors">{c.name}</h4>
                       <p className="text-sm text-slate-500 mt-1">{c.desc}</p>
