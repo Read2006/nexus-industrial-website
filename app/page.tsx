@@ -2,412 +2,383 @@
 
 import { useState, useEffect } from 'react'
 
-export default function Home() {
-  const [activeSection, setActiveSection] = useState('home')
+const industries = [
+  { name: 'Oil & Gas', icon: '🛢️', href: '/oil-gas', img: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&h=400&fit=crop&q=80' },
+  { name: 'Cement', icon: '🏭', href: '/cement', img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&q=80' },
+  { name: 'Textile', icon: '🧵', href: '/textile', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&q=80' },
+  { name: 'Steel', icon: '⚙️', href: '/steel', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop&q=80' },
+  { name: 'Fertilizer', icon: '🌱', href: '/fertilizer', img: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop&q=80' },
+  { name: 'Aluminum', icon: '🔩', href: '/aluminum', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&h=400&fit=crop&q=80' },
+  { name: 'Power', icon: '⚡', href: '/power', img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop&q=80' },
+  { name: 'FMCG', icon: '📦', href: '/fmcg', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop&q=80' },
+]
+
+const products = [
+  { name: 'Mechanical Products', desc: 'Bearings, Pumps, Gearboxes, Belts & more', href: '/products/mechanical', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80', badge: 'Bearings · Pumps · Seals' },
+  { name: 'Electrical Products', desc: 'Motors, Cables, Switchgear & Panels', href: '/products/electrical', img: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&h=350&fit=crop&q=80', badge: 'Motors · Cables · MCCs' },
+  { name: 'Pipes & Fittings', desc: 'Valves, Flanges, Pipe systems & fittings', href: '/products/pipes-fittings', img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=350&fit=crop&q=80', badge: 'Valves · Flanges · Fittings' },
+  { name: 'Instruments', desc: 'Precision measurement & control instruments', href: '/products/instruments', img: 'https://images.unsplash.com/photo-1581093458791-9f3c3250e1ef?w=500&h=350&fit=crop&q=80', badge: 'Gauges · Transmitters · PLCs' },
+]
+
+const brands = [
+  'ABB', 'Siemens', 'SKF', 'NSK', 'FAG', 'Schneider', 'Danfoss', 'Bosch',
+  'Parker', 'Emerson', 'Honeywell', 'Endress+Hauser', 'Fluke', 'Rittal',
+  'Atlas Copco', 'Grundfos', 'KSB', 'Wilo', 'Rexnord', 'Dodge',
+  'Gates', 'Belden', 'Phoenix Contact', 'Wago',
+]
+
+const whyUs = [
+  { icon: '✅', title: 'Genuine Parts Only', desc: '100% authentic components sourced directly from OEM manufacturers and authorised distributors.' },
+  { icon: '⚡', title: '24-Hour Quote', desc: 'Submit your RFQ and receive a competitive price within 24 hours, every time.' },
+  { icon: '🌍', title: 'Global Sourcing Network', desc: 'Strong supplier relationships across Europe, Asia and the Americas to source any part.' },
+  { icon: '🔍', title: 'Hard-to-Find Parts', desc: 'Obsolete or rare components? Our team specialises in sourcing what others cannot.' },
+  { icon: '📋', title: 'Dedicated Support', desc: 'Every inquiry gets a personal response — no bots, no generic replies.' },
+  { icon: '🏆', title: 'Trusted by Industry', desc: 'Serving cement, oil & gas, textile, steel and power sectors across Pakistan.' },
+]
+
+const steps = [
+  { num: '01', title: 'Send Inquiry', desc: 'Share your part number or requirements via phone, email or contact form.' },
+  { num: '02', title: 'Get a Quote', desc: 'We source and deliver a competitive quote within 24 hours.' },
+  { num: '03', title: 'Confirm Order', desc: 'Approve the quote and we handle all procurement and logistics.' },
+  { num: '04', title: 'Fast Delivery', desc: 'Tracked, insured delivery straight to your facility.' },
+]
+
+export default function HomePage() {
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['about-section', 'products', 'industries', 'brands-section', 'contact-section']
-      const scrollY = window.scrollY + 120
-
-      let current = 'home'
-      for (const id of sections) {
-        const el = document.getElementById(id)
-        if (el && el.offsetTop <= scrollY) {
-          current = id
-        }
-      }
-      setActiveSection(current)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    const onScroll = () => setScrolled(window.scrollY > 10)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans">
+
       {/* TOP BAR */}
-      <div className="sticky top-0 bg-gray-900 text-white text-sm py-2 px-6 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="bg-[#0d2b26] text-[#98c4b8] text-xs py-2 hidden lg:block">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="tel:03351503555" className="hover:text-teal-400 transition">📞 0335-1503555</a>
-            <span className="text-gray-600">|</span>
-            <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">📧 info@nexus-is.co</a>
+            <span>📞 <a href="tel:03351503555" className="hover:text-teal-400 transition">0335-1503555</a></span>
+            <span className="text-white/20">|</span>
+            <span>📧 <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">info@nexus-is.co</a></span>
+            <span className="text-white/20">|</span>
+            <span>📍 DHA Phase 2, Islamabad</span>
           </div>
-          <div className="text-teal-400 font-semibold">Sourcing Solutions. Delivering Results.</div>
+          <span className="bg-teal-400/10 border border-teal-400/30 text-teal-300 px-3 py-0.5 rounded-full text-[10px] font-bold tracking-widest uppercase">⚡ Same Day Response · NTN: 123455</span>
         </div>
       </div>
 
       {/* HEADER */}
-      <header className="sticky top-[36px] bg-white border-b border-gray-100 z-40 w-full">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <img src="/images/logoofthenexus.jpeg" alt="NIS Logo" className="w-10 h-10 rounded-full object-cover" />
-            <span className="font-bold text-gray-900 text-sm">NIS</span>
-          </div>
-          <nav className="flex gap-6 items-center">
-            <a href="#top" className={`text-sm font-semibold transition ${activeSection === 'home' ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Home</a>
-            <a href="#about-section" className={`text-sm font-semibold transition ${activeSection === 'about-section' ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>About</a>
-            <a href="#products" className={`text-sm font-semibold transition ${activeSection === 'products' ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Products</a>
-            <a href="#industries" className={`text-sm font-semibold transition ${activeSection === 'industries' ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Industries</a>
-            <a href="#brands-section" className={`text-sm font-semibold transition ${activeSection === 'brands-section' ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Brands</a>
-            <a href="#contact-section" className={`text-sm font-semibold transition ${activeSection === 'contact-section' ? 'text-teal-700 border-b-2 border-teal-700' : 'text-gray-700 hover:text-teal-700'}`}>Contact</a>
+      <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-lg' : 'shadow-sm'}`}>
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-6">
+          <a href="/" className="flex items-center gap-3 shrink-0">
+            <img src="/images/logoofthenexus.jpeg" alt="NIS" className="h-12 w-12 rounded-full object-cover" />
+            <div className="hidden sm:block">
+              <p className="font-black text-gray-900 text-sm leading-tight">Nexus Industrial</p>
+              <p className="text-teal-700 text-[10px] font-bold tracking-wider uppercase">Solutions</p>
+            </div>
+          </a>
+
+          {/* NAV */}
+          <nav className="hidden lg:flex items-center gap-1">
+            {[['Home', '/'], ['About', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
+              <a key={label} href={href} className="text-sm font-bold text-gray-600 hover:text-teal-700 px-4 py-2 rounded-lg hover:bg-teal-50 transition-all">{label}</a>
+            ))}
           </nav>
+
+          <a href="/contact" className="hidden lg:inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition shrink-0">
+            Get a Quote →
+          </a>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 rounded-lg border border-gray-200">☰</button>
         </div>
+
+        {/* BOTTOM NAV BAR (ZFC style) */}
+        <div className="hidden lg:block bg-[#1a3d35] border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-10">
+            <ul className="flex items-center h-full">
+              {[['Home', '/'], ['About Us', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
+                <li key={label} className="h-full flex items-center">
+                  <a href={href} className="text-white/70 font-bold text-[11px] hover:text-teal-300 transition-colors uppercase tracking-widest h-full flex items-center px-4">{label}</a>
+                </li>
+              ))}
+            </ul>
+            <span className="border border-teal-400/40 text-teal-300 px-4 py-1 rounded-full font-black text-[10px] tracking-widest uppercase animate-pulse">⚡ GENUINE PARTS · FAST DELIVERY</span>
+          </div>
+        </div>
+
+        {/* MOBILE MENU */}
+        {menuOpen && (
+          <div className="lg:hidden bg-white border-t px-6 py-4 space-y-2">
+            {[['Home', '/'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
+              <a key={label} href={href} onClick={() => setMenuOpen(false)} className="block py-2 font-bold text-gray-700 hover:text-teal-700">{label}</a>
+            ))}
+          </div>
+        )}
       </header>
 
       {/* HERO */}
-      <section id="top" className="bg-white pt-8 pb-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="relative min-h-[92vh] overflow-hidden" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 40%, #0f3d32 70%, #155244 100%)' }}>
+        {/* subtle grid */}
+        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(rgba(79,195,161,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,195,161,1) 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+        {/* left accent line */}
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-teal-400/80 to-transparent"></div>
+
+        <div className="max-w-7xl mx-auto px-6 py-20 lg:py-0 lg:min-h-[92vh] flex items-center relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+
+            {/* LEFT */}
             <div className="space-y-6">
-              <div>
-                <p className="text-teal-700 text-sm font-bold uppercase mb-4">Welcome to</p>
-                <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h1>
-                <p className="text-lg text-gray-600">Delivering reliable industrial supply & global trade solutions. Your trusted partner in quality, efficiency, and business growth.</p>
+              <span className="inline-flex items-center gap-2 bg-teal-400/10 border border-teal-400/30 text-teal-300 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase">
+                <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+                Industrial Supply & Sourcing — Pakistan
+              </span>
+              <h1 className="text-white font-black leading-[0.95] tracking-tighter text-4xl md:text-5xl lg:text-6xl uppercase">
+                Your Trusted<br />
+                <span className="text-teal-400">Industrial</span><br />
+                Supply Partner
+              </h1>
+              <p className="text-teal-50/70 text-base md:text-lg leading-relaxed max-w-lg font-medium">
+                Genuine spare parts and equipment for Cement, Oil & Gas, Textile, Steel and Power industries. Competitive pricing, fast delivery across Pakistan.
+              </p>
+              <div className="flex flex-wrap gap-3 pt-2">
+                {['✅ Genuine Parts', '⚡ 24hr Quote', '🌍 Global Sourcing'].map(item => (
+                  <span key={item} className="flex items-center gap-1.5 text-white/60 text-xs font-bold uppercase tracking-wide">{item}</span>
+                ))}
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-gray-900">Why Partner With Us?</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
-                    <div>
-                      <p className="font-semibold text-gray-900">Timely Delivery</p>
-                      <p className="text-sm text-gray-600">Fast & reliable delivery across Pakistan and globally</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
-                    <div>
-                      <p className="font-semibold text-gray-900">Competitive Pricing</p>
-                      <p className="text-sm text-gray-600">Market-leading prices without compromising quality</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-teal-700 font-bold text-lg">✓</span>
-                    <div>
-                      <p className="font-semibold text-gray-900">Global Network</p>
-                      <p className="text-sm text-gray-600">Trusted supplier network with established channels worldwide</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-4 pt-4">
-                <a href="#products" className="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800">Get Started</a>
-                <a href="/about" className="border-2 border-teal-700 text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50">Learn More</a>
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <a href="/contact" className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg px-8 py-4 font-black text-sm tracking-widest uppercase bg-gradient-to-r from-teal-500 to-teal-700 text-white shadow-xl shadow-teal-500/30 hover:shadow-teal-500/60 hover:-translate-y-0.5 transition-all">
+                  <span>Get a Quote</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+                <a href="/#products" className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-teal-400/50 text-teal-300 px-8 py-4 font-black text-sm tracking-widest uppercase hover:bg-teal-400/10 transition-all">
+                  Browse Products
+                </a>
               </div>
             </div>
-            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Industrial Building" className="w-full h-full object-cover" />
-              <div className="absolute top-6 right-6 z-20 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
-                <p className="text-xs font-bold text-teal-700 uppercase">Registered</p>
-                <p className="text-xs text-gray-600 font-semibold">NTN: 123455</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Mission & Vision */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-4">
-              <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">To provide high-quality industrial products and efficient services that help businesses operate smoothly and grow sustainably. We build strong relationships with our clients through reliability, transparency, and customer satisfaction.</p>
+            {/* RIGHT — stats cards */}
+            <div className="hidden lg:grid grid-cols-2 gap-4">
+              {[
+                { val: '500+', label: 'Products Sourced', icon: '📦' },
+                { val: '150+', label: 'Brands Available', icon: '🏷️' },
+                { val: '9', label: 'Industries Served', icon: '🏭' },
+                { val: '24hr', label: 'Quote Turnaround', icon: '⚡' },
+              ].map(s => (
+                <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-teal-400/40 transition-all">
+                  <p className="text-3xl mb-1">{s.icon}</p>
+                  <p className="text-white font-black text-3xl leading-none">{s.val}</p>
+                  <p className="text-teal-200/60 text-xs font-bold uppercase tracking-widest mt-1">{s.label}</p>
+                </div>
+              ))}
             </div>
-            <div className="space-y-4">
-              <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">To become a highly recognized and trusted name in industrial supply and trading, known for delivering excellence, innovation, and outstanding customer service. Building strong and long-term partnerships through continuous improvement.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Core Values */}
-      <section className="bg-white py-0 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative h-64 rounded-t-2xl overflow-hidden shadow-lg">
-            <img src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg" alt="Industrial Complex" className="w-full h-full object-cover" />
-          </div>
-          <div className="bg-gray-50 py-20 px-8 rounded-b-2xl">
-            <div className="max-w-5xl mx-auto">
-              <div className="mb-12">
-                <p className="text-teal-700 text-2xl font-semibold mb-2">Our</p>
-                <h2 className="text-5xl font-bold text-gray-900 mb-2">CORE VALUES</h2>
-                <div className="w-16 h-1 bg-teal-700"></div>
-              </div>
-              <p className="text-gray-700 text-lg font-medium mb-12">At Nexus Industrial Solutions, our business is built on strong values:</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div className="flex items-start gap-4">
-                  <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Integrity</h3>
-                    <p className="text-lg text-gray-700">Honest and transparent dealings in every transaction with our clients</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Quality Commitment</h3>
-                    <p className="text-lg text-gray-700">Delivering only the best products that meet international standards</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Customer Focus</h3>
-                    <p className="text-lg text-gray-700">Client satisfaction is our highest priority in every interaction</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-5 h-5 bg-teal-700 rounded-sm flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Global Connectivity</h3>
-                    <p className="text-lg text-gray-700">Established extensive global sourcing channels for worldwide reach</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
 
-      {/* ABOUT US */}
-      <section id="about-section" className="bg-white py-12 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div>
-                <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-2">About Us</p>
-                <h2 className="text-5xl font-black text-gray-900 mb-6">Nexus Industrial Solutions</h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality across multiple industrial sectors.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900">Our Commitment</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  We proudly serve manufacturing, construction, engineering, FMCG, power, and trading industries. We are committed to delivering excellence and building long-term business relationships based on trust, reliability, and exceptional performance.
-                </p>
-              </div>
-              <div>
-                <a href="/about" className="inline-block bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">Learn More</a>
-              </div>
-            </div>
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-              <img src="/images/pexels-canmiless-5860937.jpg" alt="Nexus Industrial Warehouse" className="w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
+        {/* bottom fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
       {/* PRODUCTS SECTION */}
-      <section id="products" className="bg-white py-20 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-3">Our Products</p>
-            <h2 className="text-5xl font-black text-gray-900 mb-4">Product Categories</h2>
-            <p className="text-lg text-gray-600">Comprehensive industrial solutions across multiple sectors</p>
+      <section id="products" className="py-20 lg:py-28 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14">
+            <div>
+              <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">WHAT WE SUPPLY</span>
+              <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Our Product <span className="text-teal-700">Categories</span></h2>
+            </div>
+            <a href="/brands" className="inline-flex items-center gap-2 border-2 border-teal-700 text-teal-700 hover:bg-teal-700 hover:text-white font-black text-xs tracking-widest px-6 py-3 rounded-lg transition-all uppercase shrink-0">View All Brands →</a>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
-              <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/pexels-pixabay-257736.jpg" alt="Electrical" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Electrical</h3>
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">Motors, cables, switchgear, and electrical components for industrial applications</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
-              <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/pexels-mikhail-nilov-9242910.jpg" alt="Mechanical" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Mechanical</h3>
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">Bearings, belts, pumps, and mechanical equipment for reliable operations</p>
-                <a href="/products/mechanical" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
-              <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/pexels-padrinan-16679542.jpg" alt="Instruments" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Instruments</h3>
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">Gauges, meters, sensors, and control instruments for precision monitoring</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
-              <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/pexels-zakhar-36878027.jpg" alt="Pipes & Fittings" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Pipes & Fittings</h3>
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">MS, GI, SS pipes, tubes, and fittings for all industrial needs</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-200">
-              <div className="relative h-48 bg-gray-100 overflow-hidden">
-                <img src="/images/WhatsApp Image 2026-05-07 at 8.54.00 PM.jpeg" alt="General Orders" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">General Orders</h3>
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">Custom supplies and specialized equipment tailored to your needs</p>
-                <a href="#" className="text-teal-700 font-semibold hover:text-teal-800 transition flex items-center gap-2">View Products <span>→</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* INDUSTRIES SECTION */}
-      <section id="industries" className="bg-gray-50 py-20 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-3">Industrial Excellence</p>
-            <h2 className="text-5xl font-black text-gray-900 mb-6">Industries We Serve</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Nexus Industrial Solutions delivers specialized solutions across diverse industrial sectors. With deep expertise in each industry, we provide tailored products and services to meet your unique operational requirements and drive sustainable growth.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden bg-orange-100">
-                <img src="/images/CEMENT.jpeg" alt="Cement" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Cement</h3>
-              <a href="/cement" className="px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-blue-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Oil & Gas</h3>
-              <a href="/oil-gas" className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-red-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Textile</h3>
-              <a href="/textile" className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:from-red-600 hover:to-red-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-slate-200 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Steel</h3>
-              <a href="/steel" className="px-6 py-2 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg hover:from-slate-700 hover:to-slate-800 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-green-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Fertilizer</h3>
-              <a href="/fertilizer" className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-amber-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Aluminum</h3>
-              <a href="/aluminum" className="px-6 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-purple-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">FMCG</h3>
-              <a href="/fmcg" className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-purple-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-yellow-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Power</h3>
-              <a href="/power" className="px-6 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="relative w-48 h-48 mb-6 bg-cyan-100 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Chemical/Pharma</h3>
-              <a href="/chemical-pharma" className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition transform hover:scale-105 shadow-md">View Solutions</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BRANDS SECTION */}
-      <section id="brands-section" className="bg-white py-20 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-teal-700 text-lg font-bold uppercase tracking-wider mb-3">Trusted Partners</p>
-            <h2 className="text-5xl font-black text-gray-900 mb-4">Brands We Source</h2>
-            <div className="w-16 h-1 bg-teal-700 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We source genuine products from 150+ globally trusted industrial brands — delivering quality you can count on.
-            </p>
-          </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mb-12">
-            {[
-              { name: "ABB", logo: "https://www.zfcorporation.co.uk/storage/media/abb-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg" },
-              { name: "Siemens", logo: "https://www.zfcorporation.co.uk/storage/media/Siemens .jpg" },
-              { name: "Schneider Electric", logo: "https://www.zfcorporation.co.uk/storage/media/Schneider.jpg" },
-              { name: "Honeywell", logo: "https://www.zfcorporation.co.uk/storage/media/honeywell.jpg" },
-              { name: "Emerson", logo: "https://www.zfcorporation.co.uk/storage/media/Emerson.jpg" },
-              { name: "Yokogawa", logo: "https://www.zfcorporation.co.uk/storage/media/yokogawa.jpg" },
-              { name: "Parker Hannifin", logo: "https://www.zfcorporation.co.uk/storage/media/Parker.jpg" },
-              { name: "Danfoss", logo: "https://www.zfcorporation.co.uk/storage/media/Danfoss.jpg" },
-              { name: "Atlas Copco", logo: "https://www.zfcorporation.co.uk/storage/media/Atlas copco.jpg" },
-              { name: "Bosch", logo: "https://www.zfcorporation.co.uk/storage/media/Bosch.jpg" },
-              { name: "Fluke", logo: "https://www.zfcorporation.co.uk/storage/media/Fluke.jpg" },
-              { name: "Grundfos", logo: "https://www.zfcorporation.co.uk/storage/media/Grundfos.jpg" },
-            ].map((brand, index) => (
-              <div key={index} className="bg-gray-50 border border-gray-200 rounded-xl px-3 py-5 flex flex-col items-center justify-center gap-2 hover:shadow-md hover:border-teal-400 hover:-translate-y-0.5 transition-all duration-200 group">
-                <div className="h-12 w-full flex items-center justify-center">
-                  <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-200" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {products.map((p) => (
+              <a key={p.name} href={p.href} className="group rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-400/60 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
+                <div className="aspect-video relative overflow-hidden">
+                  <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
+                  <span className="absolute bottom-3 left-3 bg-teal-500 text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-widest">{p.badge}</span>
                 </div>
-                <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider text-center leading-tight group-hover:text-teal-700 transition-colors">{brand.name}</p>
+                <div className="p-5">
+                  <h3 className="font-black text-gray-900 text-base mb-1 group-hover:text-teal-700 transition-colors">{p.name}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{p.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-teal-700 font-black text-[10px] uppercase tracking-widest mt-3">Explore →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section className="py-20 lg:py-28" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 50%, #0f3d32 100%)' }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-teal-400 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">SIMPLE PROCESS</span>
+            <h2 className="text-white text-3xl lg:text-4xl font-black tracking-tighter uppercase">How It <span className="text-teal-400">Works</span></h2>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative">
+            <div className="hidden lg:block absolute top-10 left-24 right-24 h-px border-t-2 border-dashed border-white/10"></div>
+            {steps.map((s, i) => (
+              <div key={s.num} className="text-center space-y-4 group">
+                <div className={`w-20 h-20 mx-auto rounded-full border-4 flex items-center justify-center transition-all duration-300 ${i === 3 ? 'bg-gradient-to-br from-teal-400 to-teal-600 border-teal-400' : 'bg-[#0d2b24] border-white/10 group-hover:border-teal-400'}`}>
+                  <span className="text-white font-black text-xl">{s.num}</span>
+                </div>
+                <div>
+                  <h3 className="text-white font-black text-lg uppercase tracking-tighter">{s.title}</h3>
+                  <p className="text-teal-200/60 text-sm leading-relaxed mt-2">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
-          <div className="text-center">
-            <a href="/brands" className="inline-flex items-center gap-2 bg-teal-700 text-white px-10 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">
-              View All Brands <span>→</span>
+        </div>
+      </section>
+
+      {/* INDUSTRIES */}
+      <section id="industries" className="py-20 lg:py-28 bg-gradient-to-br from-teal-50/50 via-white to-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">SECTORS WE SERVE</span>
+            <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Industries We <span className="text-teal-700">Support</span></h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+            {industries.map((ind) => (
+              <a key={ind.name} href={ind.href} className="group rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-400/60 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white">
+                <div className="relative h-36 md:h-44 overflow-hidden">
+                  <img src={ind.img} alt={ind.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-400 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 className="text-white font-black text-base uppercase tracking-tight">{ind.name}</h3>
+                    <span className="text-teal-400 text-[9px] font-black tracking-widest uppercase">Sector Expert</span>
+                  </div>
+                </div>
+                <div className="p-3">
+                  <span className="inline-flex items-center gap-1 text-teal-700 font-black text-[10px] uppercase tracking-widest">Explore →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY US */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+            <div>
+              <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">WHY CHOOSE NIS</span>
+              <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase leading-tight mb-4">Your Trusted Advantage in <span className="text-teal-700">Industrial Sourcing</span></h2>
+              <p className="text-gray-500 text-base leading-relaxed mb-8">At Nexus Industrial Solutions, we go beyond supply — we deliver certainty. Our clients choose us for our industry expertise, global reach, and commitment to performance.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {whyUs.map(w => (
+                  <div key={w.title} className="flex items-start gap-3">
+                    <span className="text-xl shrink-0 mt-0.5">{w.icon}</span>
+                    <div>
+                      <h4 className="font-black text-gray-900 text-sm">{w.title}</h4>
+                      <p className="text-gray-500 text-xs leading-relaxed mt-1">{w.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop&q=85" alt="Industrial facility" className="w-full h-full object-cover" />
+              </div>
+              <div className="absolute -bottom-5 -left-5 bg-teal-700 rounded-xl shadow-xl px-6 py-4 hidden md:block">
+                <p className="text-3xl font-black text-white leading-none">DHA</p>
+                <p className="text-teal-200 text-xs font-bold mt-1">Islamabad, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BRANDS */}
+      <section id="brands-section" className="py-20 lg:py-28 bg-gray-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">TRUSTED MANUFACTURERS</span>
+            <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Brands We <span className="text-teal-700">Stock</span></h2>
+          </div>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+            {brands.map(brand => (
+              <div key={brand} className="bg-white border border-slate-200 rounded-xl p-4 flex items-center justify-center hover:border-teal-400 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                <span className="text-gray-700 font-black text-xs text-center group-hover:text-teal-700 transition-colors">{brand}</span>
+              </div>
+            ))}
+            <a href="/brands" className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-xl p-4 flex flex-col items-center justify-center text-center hover:from-teal-600 hover:to-teal-800 transition-all">
+              <span className="text-teal-300 font-black text-lg">150+</span>
+              <span className="text-white text-[9px] font-black tracking-widest uppercase mt-1">View All →</span>
             </a>
           </div>
         </div>
       </section>
 
-      {/* CTA / CONTACT */}
-      <section id="contact-section" className="bg-teal-700 text-white py-20 px-6 scroll-mt-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl font-bold">Ready to Partner With Us?</h2>
-          <p className="text-lg opacity-95">Get in touch today to discuss your industrial supply needs and discover how we can support your business growth.</p>
-          <a href="/contact" className="inline-block bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contact Us</a>
+      {/* CTA */}
+      <section id="contact-section" className="py-20 scroll-mt-20" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 50%, #0f3d32 100%)' }}>
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <div className="inline-flex items-center gap-2 bg-teal-400/10 border border-teal-400/25 rounded-full px-4 py-1.5 mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+            <span className="text-teal-400 font-black text-[10px] tracking-[0.3em] uppercase">Ready to Source?</span>
+          </div>
+          <h2 className="text-white text-3xl lg:text-5xl font-black tracking-tighter uppercase leading-tight mb-4">Ready to Power <span className="text-teal-400">Your Operations?</span></h2>
+          <p className="text-white/60 text-base max-w-xl mx-auto leading-relaxed mb-8">Send us your requirement and receive a competitive quote within 24 hours from our industrial sourcing team.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-white px-10 py-4 rounded-lg font-black text-sm tracking-[0.2em] uppercase shadow-lg shadow-teal-500/20 hover:-translate-y-1 transition-all">
+              CONTACT US NOW →
+            </a>
+            <a href="tel:03351503555" className="inline-flex items-center justify-center gap-2 border border-white/20 text-white/80 px-10 py-4 rounded-lg font-black text-sm tracking-[0.2em] uppercase hover:bg-white/5 hover:border-white/40 transition-all">
+              📞 CALL US
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-bold mb-4">Nexus Industrial</h3>
-              <p className="text-sm">Delivering reliable industrial supply and global trade solutions.</p>
+      {/* FOOTER */}
+      <footer className="bg-[#050f0d] text-gray-400 pt-16 pb-6 border-t-4 border-teal-700">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+            <div className="col-span-2 md:col-span-1">
+              <div className="flex items-center gap-3 mb-4">
+                <img src="/images/logoofthenexus.jpeg" alt="NIS" className="h-10 w-10 rounded-full object-cover" />
+                <div>
+                  <p className="text-white font-black text-sm">Nexus Industrial</p>
+                  <p className="text-teal-400 text-[10px] font-bold uppercase tracking-widest">Solutions</p>
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-500">Delivering reliable industrial supply and global trade solutions across Pakistan's key industries.</p>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/about" className="hover:text-white transition">About</a></li>
-                <li><a href="#products" className="hover:text-white transition">Products</a></li>
-                <li><a href="#industries" className="hover:text-white transition">Industries</a></li>
-                <li><a href="/brands" className="hover:text-white transition">Brands</a></li>
+              <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Quick Links</h4>
+              <ul className="space-y-3 text-sm">
+                {[['About', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([l, h]) => (
+                  <li key={l}><a href={h} className="hover:text-teal-400 transition-colors">{l}</a></li>
+                ))}
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">Contact</h3>
-              <p className="text-sm">📞 0335-1503555</p>
-              <p className="text-sm">📧 info@nexus-is.co</p>
+              <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Products</h4>
+              <ul className="space-y-3 text-sm">
+                {[['Mechanical', '/products/mechanical'], ['Electrical', '/products/electrical'], ['Pipes & Fittings', '/products/pipes-fittings'], ['Instruments', '/products/instruments']].map(([l, h]) => (
+                  <li key={l}><a href={h} className="hover:text-teal-400 transition-colors">{l}</a></li>
+                ))}
+              </ul>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">Compliance</h3>
-              <p className="text-sm">NTN: 123455</p>
-              <p className="text-sm">STRN: 1233456</p>
+              <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Contact</h4>
+              <div className="space-y-3 text-sm">
+                <p>📞 <a href="tel:03351503555" className="hover:text-teal-400 transition">0335-1503555</a></p>
+                <p>📧 <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">info@nexus-is.co</a></p>
+                <p>📍 DHA Phase 2, Islamabad</p>
+                <p className="text-gray-600">NTN: 123455 | STRN: 1233456</p>
+              </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>&copy; 2024 Nexus Industrial Solutions. All rights reserved.</p>
+          <div className="border-t border-white/5 pt-6 text-center text-xs text-gray-600">
+            <p>© 2024 Nexus Industrial Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>
