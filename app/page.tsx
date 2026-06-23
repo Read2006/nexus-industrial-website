@@ -1,4 +1,4 @@
-]'use client'
+'use client'
 
 import { useState, useEffect } from 'react'
 
@@ -141,7 +141,6 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative min-h-[92vh] overflow-hidden" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 40%, #0f3d32 70%, #155244 100%)' }}>
-          {/* Industrial background image */}
         <img
           src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1800&h=1000&fit=crop&q=80"
           alt=""
@@ -149,9 +148,7 @@ export default function HomePage() {
           className="absolute inset-0 w-full h-full object-cover object-center"
           style={{ filter: 'brightness(0.18) saturate(0.6)' }}
         />
-        {/* teal gradient overlay on top of image */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(7,26,22,0.92) 0%, rgba(13,43,36,0.85) 40%, rgba(15,61,50,0.75) 100%)' }}></div>
-        {/* left accent line */}
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-teal-400/80 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6 py-20 lg:py-0 lg:min-h-[92vh] flex items-center relative z-10">
@@ -187,7 +184,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* RIGHT — industrial image with teal overlay */}
+            {/* RIGHT */}
             <div className="hidden lg:block relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ height: '480px' }}>
                 <img
@@ -198,7 +195,6 @@ export default function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-teal-900/60 via-transparent to-transparent rounded-2xl"></div>
               </div>
-              {/* stat overlays on the image */}
               <div className="absolute bottom-6 left-6 right-6 grid grid-cols-2 gap-3">
                 {[
                   { val: '500+', label: 'Products Sourced' },
@@ -217,7 +213,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
@@ -226,7 +221,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-            {/* LEFT — text */}
+            {/* LEFT */}
             <div className="space-y-6">
               <div>
                 <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">ABOUT US</span>
@@ -264,7 +259,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* RIGHT — your industrial image */}
+            {/* RIGHT */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: '580px' }}>
               <img
                 src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg"
@@ -398,33 +393,41 @@ export default function HomePage() {
         </div>
       </section>
 
-   {/* BRANDS */}
-<section id="brands-section" className="py-20 lg:py-28 bg-gray-50 scroll-mt-20">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-14">
-      <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">TRUSTED MANUFACTURERS</span>
-      <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Brands We <span className="text-teal-700">Stock</span></h2>
-    </div>
-    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
-      {/* 1. Changed 'brand' to access 'brand.name' below */}
-      {brands.map((brand, index) => (
-        <div 
-          key={brand.name || index} // Use brand.name as the key safely
-          className="bg-white border border-slate-200 rounded-xl p-4 flex items-center justify-center hover:border-teal-400 hover:shadow-md hover:-translate-y-0.5 transition-all group"
-        >
-          {/* 2. Changed {brand} to {brand.name} so React renders text, not an object */}
-          <span className="text-gray-700 font-black text-xs text-center group-hover:text-teal-700 transition-colors">
-            {brand.name}
-          </span>
+      {/* BRANDS */}
+      <section id="brands-section" className="py-20 lg:py-28 bg-gray-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">TRUSTED MANUFACTURERS</span>
+            <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Brands We <span className="text-teal-700">Stock</span></h2>
+          </div>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+            {brands.map((brand, index) => (
+              <div 
+                key={brand.name || index} 
+                className="bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-center justify-center hover:border-teal-400 hover:shadow-md hover:-translate-y-0.5 transition-all group min-h-[90px]"
+              >
+                {/* Clean image support with an alternative text backup if image fails */}
+                {brand.logo ? (
+                  <img 
+                    src={brand.logo} 
+                    alt={brand.name} 
+                    className="max-h-12 max-w-full object-contain filter contrast-125 mix-blend-multiply group-hover:scale-105 transition-transform" 
+                    loading="lazy" 
+                  />
+                ) : (
+                  <span className="text-gray-700 font-black text-xs text-center group-hover:text-teal-700 transition-colors">
+                    {brand.name}
+                  </span>
+                )}
+              </div>
+            ))}
+            <a href="/brands" className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-xl p-4 flex flex-col items-center justify-center text-center hover:from-teal-600 hover:to-teal-800 transition-all min-h-[90px]">
+              <span className="text-teal-300 font-black text-lg">150+</span>
+              <span className="text-white text-[9px] font-black tracking-widest uppercase mt-1">View All →</span>
+            </a>
+          </div>
         </div>
-      ))}
-      <a href="/brands" className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-xl p-4 flex flex-col items-center justify-center text-center hover:from-teal-600 hover:to-teal-800 transition-all">
-        <span className="text-teal-300 font-black text-lg">150+</span>
-        <span className="text-white text-[9px] font-black tracking-widest uppercase mt-1">View All →</span>
-      </a>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* CTA */}
       <section id="contact-section" className="py-20 scroll-mt-20" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 50%, #0f3d32 100%)' }}>
