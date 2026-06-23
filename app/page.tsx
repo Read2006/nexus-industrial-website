@@ -1,4 +1,4 @@
-'use client'
+]'use client'
 
 import { useState, useEffect } from 'react'
 
@@ -18,13 +18,34 @@ const products = [
   { name: 'Electrical Products', desc: 'Motors, Cables, Switchgear & Panels', href: '/products/electrical', img: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&h=350&fit=crop&q=80', badge: 'Motors · Cables · MCCs' },
   { name: 'Pipes & Fittings', desc: 'Valves, Flanges, Pipe systems & fittings', href: '/products/pipes-fittings', img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=350&fit=crop&q=80', badge: 'Valves · Flanges · Fittings' },
   { name: 'Instruments', desc: 'Precision measurement & control instruments', href: '/products/instruments', img: 'https://images.unsplash.com/photo-1581093458791-9f3c3250e1ef?w=500&h=350&fit=crop&q=80', badge: 'Gauges · Transmitters · PLCs' },
+  { name: 'General Orders', desc: 'Custom sourcing for any industrial product or equipment', href: '/contact', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=350&fit=crop&q=80', badge: 'Custom · Bulk · Procurement' },
 ]
 
 const brands = [
-  'ABB', 'Siemens', 'SKF', 'NSK', 'FAG', 'Schneider', 'Danfoss', 'Bosch',
-  'Parker', 'Emerson', 'Honeywell', 'Endress+Hauser', 'Fluke', 'Rittal',
-  'Atlas Copco', 'Grundfos', 'KSB', 'Wilo', 'Rexnord', 'Dodge',
-  'Gates', 'Belden', 'Phoenix Contact', 'Wago',
+  { name: 'ABB', logo: 'https://www.zfcorporation.co.uk/storage/media/abb-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg' },
+  { name: 'Siemens', logo: 'https://www.zfcorporation.co.uk/storage/media/Siemens .jpg' },
+  { name: 'Schneider', logo: 'https://www.zfcorporation.co.uk/storage/media/Schneider.jpg' },
+  { name: 'Honeywell', logo: 'https://www.zfcorporation.co.uk/storage/media/honeywell.jpg' },
+  { name: 'Emerson', logo: 'https://www.zfcorporation.co.uk/storage/media/Emerson.jpg' },
+  { name: 'Endress+Hauser', logo: 'https://www.zfcorporation.co.uk/storage/media/Endress.jpg' },
+  { name: 'Fluke', logo: 'https://www.zfcorporation.co.uk/storage/media/Fluke.jpg' },
+  { name: 'Parker', logo: 'https://www.zfcorporation.co.uk/storage/media/Parker.jpg' },
+  { name: 'SKF', logo: 'https://www.zfcorporation.co.uk/storage/media/SKF.jpg' },
+  { name: 'NSK', logo: 'https://www.zfcorporation.co.uk/storage/media/NSK.jpg' },
+  { name: 'FAG', logo: 'https://www.zfcorporation.co.uk/storage/media/FAG.jpg' },
+  { name: 'Bosch', logo: 'https://www.zfcorporation.co.uk/storage/media/Bosch.jpg' },
+  { name: 'Danfoss', logo: 'https://www.zfcorporation.co.uk/storage/media/Danfoss.jpg' },
+  { name: 'Atlas Copco', logo: 'https://www.zfcorporation.co.uk/storage/media/Atlas copco.jpg' },
+  { name: 'Grundfos', logo: 'https://www.zfcorporation.co.uk/storage/media/Grundfos.jpg' },
+  { name: 'KSB', logo: 'https://www.zfcorporation.co.uk/storage/media/KSB.jpg' },
+  { name: 'Rittal', logo: 'https://www.zfcorporation.co.uk/storage/media/Rittal.jpg' },
+  { name: 'Wilo', logo: 'https://www.zfcorporation.co.uk/storage/media/Wilo.jpg' },
+  { name: 'Belden', logo: 'https://www.zfcorporation.co.uk/storage/media/Belden.jpg' },
+  { name: 'Caterpillar', logo: 'https://www.zfcorporation.co.uk/storage/media/Caterpillar.jpg' },
+  { name: 'Cummins', logo: 'https://www.zfcorporation.co.uk/storage/media/Cummins.jpg' },
+  { name: 'Eaton', logo: 'https://www.zfcorporation.co.uk/storage/media/Eaton.jpg' },
+  { name: 'Gates', logo: 'https://www.zfcorporation.co.uk/storage/media/Gates.jpg' },
+  { name: 'Alfa Laval', logo: 'https://www.zfcorporation.co.uk/storage/media/alfa-laval-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg' },
 ]
 
 const whyUs = [
@@ -166,20 +187,31 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* RIGHT — stats cards */}
-            <div className="hidden lg:grid grid-cols-2 gap-4">
-              {[
-                { val: '500+', label: 'Products Sourced', icon: '📦' },
-                { val: '150+', label: 'Brands Available', icon: '🏷️' },
-                { val: '9', label: 'Industries Served', icon: '🏭' },
-                { val: '24hr', label: 'Quote Turnaround', icon: '⚡' },
-              ].map(s => (
-                <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-teal-400/40 transition-all">
-                  <p className="text-3xl mb-1">{s.icon}</p>
-                  <p className="text-white font-black text-3xl leading-none">{s.val}</p>
-                  <p className="text-teal-200/60 text-xs font-bold uppercase tracking-widest mt-1">{s.label}</p>
-                </div>
-              ))}
+            {/* RIGHT — industrial image with teal overlay */}
+            <div className="hidden lg:block relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ height: '480px' }}>
+                <img
+                  src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg"
+                  alt="Industrial facility"
+                  className="w-full h-full object-cover"
+                  style={{ filter: 'brightness(0.75) saturate(0.8)' }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-teal-900/60 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              {/* stat overlays on the image */}
+              <div className="absolute bottom-6 left-6 right-6 grid grid-cols-2 gap-3">
+                {[
+                  { val: '500+', label: 'Products Sourced' },
+                  { val: '150+', label: 'Brands Available' },
+                  { val: '9', label: 'Industries Served' },
+                  { val: '24hr', label: 'Quote Turnaround' },
+                ].map(s => (
+                  <div key={s.label} className="bg-black/50 backdrop-blur-sm border border-white/20 rounded-xl p-4">
+                    <p className="text-teal-400 font-black text-2xl leading-none">{s.val}</p>
+                    <p className="text-white/70 text-[10px] font-bold uppercase tracking-widest mt-1">{s.label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
           </div>
@@ -193,19 +225,8 @@ export default function HomePage() {
       <section id="about-section" className="py-20 lg:py-28 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop&q=85" alt="Industrial facility" className="w-full h-full object-cover" />
-              </div>
-              <div className="absolute -bottom-5 -right-5 bg-teal-700 rounded-xl shadow-xl px-6 py-4 hidden md:block">
-                <p className="text-3xl font-black text-white leading-none">ISB</p>
-                <p className="text-teal-200 text-xs font-bold mt-1">Based in Islamabad</p>
-              </div>
-              <div className="absolute -top-5 -left-5 bg-white border border-teal-100 rounded-xl shadow-xl px-5 py-3 hidden md:flex items-center gap-3">
-                <span className="text-teal-700 text-2xl font-black leading-none">9+</span>
-                <span className="text-gray-500 text-xs font-bold leading-tight">Industries<br/>Served</span>
-              </div>
-            </div>
+
+            {/* LEFT — text */}
             <div className="space-y-6">
               <div>
                 <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">ABOUT US</span>
@@ -219,12 +240,7 @@ export default function HomePage() {
               <p className="text-gray-500 text-base leading-relaxed">
                 We proudly serve multiple sectors including manufacturing, construction, engineering, FMCG, power, and trading industries — committed to delivering excellence and building long-term business relationships based on trust and performance.
               </p>
-              <div className="bg-teal-50 border border-teal-100 rounded-xl p-4">
-                <p className="text-teal-800 text-xs leading-relaxed font-medium">
-                  <span className="font-black">Compliance Note:</span> Nexus Industrial Solutions is a General Order Supplier and Procurement Contractor. We source products as per client technical specifications from reputable local and international markets. We do not represent ourselves as an authorized distributor, dealer, or agent of any manufacturer unless separately appointed in writing.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 gap-4 pt-2">
+              <div className="grid grid-cols-2 gap-4">
                 {[
                   { val: '150+', label: 'Global Brands' },
                   { val: '500+', label: 'Products Sourced' },
@@ -237,11 +253,32 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="bg-teal-50 border border-teal-100 rounded-xl p-4">
+                <p className="text-teal-800 text-xs leading-relaxed font-medium">
+                  <span className="font-black">Compliance Note:</span> Nexus Industrial Solutions is a General Order Supplier and Procurement Contractor. We source products as per client technical specifications from reputable local and international markets. We do not represent ourselves as an authorized distributor, dealer, or agent of any manufacturer unless separately appointed in writing.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4">
                 <a href="/contact" className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-lg font-black text-sm uppercase tracking-wide transition">Get In Touch →</a>
                 <a href="/#products" className="inline-flex items-center gap-2 border-2 border-teal-700 text-teal-700 hover:bg-teal-50 px-6 py-3 rounded-lg font-black text-sm uppercase tracking-wide transition">Our Products</a>
               </div>
             </div>
+
+            {/* RIGHT — your industrial image */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ height: '580px' }}>
+              <img
+                src="/images/WhatsApp Image 2026-05-02 at 4.42.44 PM.jpeg"
+                alt="Nexus Industrial Solutions facility"
+                className="w-full h-full object-cover"
+                style={{ filter: 'brightness(0.85) saturate(0.85)' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-teal-900/50 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3">
+                <p className="text-white font-black text-sm uppercase tracking-wider">Nexus Industrial Solutions</p>
+                <p className="text-teal-300 text-xs font-bold mt-0.5">DHA Phase 2, Islamabad</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -257,7 +294,7 @@ export default function HomePage() {
             <a href="/brands" className="inline-flex items-center gap-2 border-2 border-teal-700 text-teal-700 hover:bg-teal-700 hover:text-white font-black text-xs tracking-widest px-6 py-3 rounded-lg transition-all uppercase shrink-0">View All Brands →</a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {products.map((p) => (
               <a key={p.name} href={p.href} className="group rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-400/60 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
                 <div className="aspect-video relative overflow-hidden">
@@ -361,26 +398,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* BRANDS */}
-      <section id="brands-section" className="py-20 lg:py-28 bg-gray-50 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">TRUSTED MANUFACTURERS</span>
-            <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Brands We <span className="text-teal-700">Stock</span></h2>
-          </div>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
-            {brands.map(brand => (
-              <div key={brand} className="bg-white border border-slate-200 rounded-xl p-4 flex items-center justify-center hover:border-teal-400 hover:shadow-md hover:-translate-y-0.5 transition-all group">
-                <span className="text-gray-700 font-black text-xs text-center group-hover:text-teal-700 transition-colors">{brand}</span>
-              </div>
-            ))}
-            <a href="/brands" className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-xl p-4 flex flex-col items-center justify-center text-center hover:from-teal-600 hover:to-teal-800 transition-all">
-              <span className="text-teal-300 font-black text-lg">150+</span>
-              <span className="text-white text-[9px] font-black tracking-widest uppercase mt-1">View All →</span>
-            </a>
-          </div>
+   {/* BRANDS */}
+<section id="brands-section" className="py-20 lg:py-28 bg-gray-50 scroll-mt-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-14">
+      <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">TRUSTED MANUFACTURERS</span>
+      <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase">Brands We <span className="text-teal-700">Stock</span></h2>
+    </div>
+    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+      {/* 1. Changed 'brand' to access 'brand.name' below */}
+      {brands.map((brand, index) => (
+        <div 
+          key={brand.name || index} // Use brand.name as the key safely
+          className="bg-white border border-slate-200 rounded-xl p-4 flex items-center justify-center hover:border-teal-400 hover:shadow-md hover:-translate-y-0.5 transition-all group"
+        >
+          {/* 2. Changed {brand} to {brand.name} so React renders text, not an object */}
+          <span className="text-gray-700 font-black text-xs text-center group-hover:text-teal-700 transition-colors">
+            {brand.name}
+          </span>
         </div>
-      </section>
+      ))}
+      <a href="/brands" className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-xl p-4 flex flex-col items-center justify-center text-center hover:from-teal-600 hover:to-teal-800 transition-all">
+        <span className="text-teal-300 font-black text-lg">150+</span>
+        <span className="text-white text-[9px] font-black tracking-widest uppercase mt-1">View All →</span>
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section id="contact-section" className="py-20 scroll-mt-20" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 50%, #0f3d32 100%)' }}>
