@@ -120,8 +120,16 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative min-h-[92vh] overflow-hidden" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 40%, #0f3d32 70%, #155244 100%)' }}>
-        {/* subtle grid */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(rgba(79,195,161,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,195,161,1) 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+          {/* Industrial background image */}
+        <img
+          src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1800&h=1000&fit=crop&q=80"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ filter: 'brightness(0.18) saturate(0.6)' }}
+        />
+        {/* teal gradient overlay on top of image */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(7,26,22,0.92) 0%, rgba(13,43,36,0.85) 40%, rgba(15,61,50,0.75) 100%)' }}></div>
         {/* left accent line */}
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-teal-400/80 to-transparent"></div>
 
@@ -181,8 +189,60 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
+      {/* ABOUT SECTION */}
+      <section id="about-section" className="py-20 lg:py-28 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop&q=85" alt="Industrial facility" className="w-full h-full object-cover" />
+              </div>
+              <div className="absolute -bottom-5 -right-5 bg-teal-700 rounded-xl shadow-xl px-6 py-4 hidden md:block">
+                <p className="text-3xl font-black text-white leading-none">ISB</p>
+                <p className="text-teal-200 text-xs font-bold mt-1">Based in Islamabad</p>
+              </div>
+              <div className="absolute -top-5 -left-5 bg-white border border-teal-100 rounded-xl shadow-xl px-5 py-3 hidden md:flex items-center gap-3">
+                <span className="text-teal-700 text-2xl font-black leading-none">9+</span>
+                <span className="text-gray-500 text-xs font-bold leading-tight">Industries<br/>Served</span>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">ABOUT US</span>
+                <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase leading-tight">
+                  Islamabad's Leading <span className="text-teal-700">Industrial Supply</span> Company
+                </h2>
+              </div>
+              <p className="text-gray-500 text-base leading-relaxed">
+                Nexus Industrial Solutions (NIS) is a Pakistan-based industrial supply company headquartered in DHA Phase 2, Islamabad. We specialise in sourcing and supplying genuine spare parts, mechanical components, electrical equipment and instrumentation for Pakistan's key industrial sectors.
+              </p>
+              <p className="text-gray-500 text-base leading-relaxed">
+                Our global sourcing network spans Europe, Asia and the Americas — allowing us to deliver authentic parts from 150+ trusted brands directly to your facility, on time and at competitive prices.
+              </p>
+              <div className="grid grid-cols-2 gap-4 pt-2">
+                {[
+                  { val: '150+', label: 'Global Brands' },
+                  { val: '500+', label: 'Products Sourced' },
+                  { val: '24hr', label: 'Quote Turnaround' },
+                  { val: '9', label: 'Industries Served' },
+                ].map(s => (
+                  <div key={s.label} className="border border-teal-100 rounded-xl p-4 bg-teal-50/50">
+                    <p className="text-teal-700 font-black text-2xl leading-none">{s.val}</p>
+                    <p className="text-gray-500 text-xs font-bold uppercase tracking-wide mt-1">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-lg font-black text-sm uppercase tracking-wide transition">Get In Touch →</a>
+                <a href="/#products" className="inline-flex items-center gap-2 border-2 border-teal-700 text-teal-700 hover:bg-teal-50 px-6 py-3 rounded-lg font-black text-sm uppercase tracking-wide transition">Our Products</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRODUCTS SECTION */}
-      <section id="products" className="py-20 lg:py-28 bg-white scroll-mt-20">
+      <section id="products" className="py-20 lg:py-28 bg-gray-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14">
             <div>
