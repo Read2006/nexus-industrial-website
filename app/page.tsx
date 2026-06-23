@@ -210,15 +210,20 @@ export default function HomePage() {
               <div>
                 <span className="text-teal-700 font-black tracking-[0.4em] text-[11px] uppercase mb-3 block">ABOUT US</span>
                 <h2 className="text-gray-900 text-3xl lg:text-4xl font-black tracking-tighter uppercase leading-tight">
-                  Islamabad's Leading <span className="text-teal-700">Industrial Supply</span> Company
+                  Dynamic & Reliable <span className="text-teal-700">Industrial Supply</span> Partner
                 </h2>
               </div>
               <p className="text-gray-500 text-base leading-relaxed">
-                Nexus Industrial Solutions (NIS) is a Pakistan-based industrial supply company headquartered in DHA Phase 2, Islamabad. We specialise in sourcing and supplying genuine spare parts, mechanical components, electrical equipment and instrumentation for Pakistan's key industrial sectors.
+                Nexus Industrial Solutions is a dynamic and reliable provider specializing in supply, distribution, and import/export of high-quality industrial products. With established global sourcing channels and deep industry expertise, we ensure timely delivery, competitive pricing, and consistent product quality.
               </p>
               <p className="text-gray-500 text-base leading-relaxed">
-                Our global sourcing network spans Europe, Asia and the Americas — allowing us to deliver authentic parts from 150+ trusted brands directly to your facility, on time and at competitive prices.
+                We proudly serve multiple sectors including manufacturing, construction, engineering, FMCG, power, and trading industries — committed to delivering excellence and building long-term business relationships based on trust and performance.
               </p>
+              <div className="bg-teal-50 border border-teal-100 rounded-xl p-4">
+                <p className="text-teal-800 text-xs leading-relaxed font-medium">
+                  <span className="font-black">Compliance Note:</span> Nexus Industrial Solutions is a General Order Supplier and Procurement Contractor. We source products as per client technical specifications from reputable local and international markets. We do not represent ourselves as an authorized distributor, dealer, or agent of any manufacturer unless separately appointed in writing.
+                </p>
+              </div>
               <div className="grid grid-cols-2 gap-4 pt-2">
                 {[
                   { val: '150+', label: 'Global Brands' },
