@@ -1,2 +1,288 @@
-// This file has been deprecated. Use /app/textile/page.tsx instead.
-export { default } from '../textile/page'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Textile Industry Solutions | ABT Europe</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0d1b2e;--navy2:#0f2137;--navy3:#162840;--teal:#0d9488;--teal2:#14b8a6;--emerald:#10b981;--emerald2:#34d399;--blue:#2563eb;--green:#16a34a;--green2:#4ade80;--white:#fff;--gray:#94a3b8;--gray2:#64748b}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#091422 0%,#0d1f3c 40%,#0e2244 70%,#182c4e 100%);min-height:580px;display:flex;align-items:center;padding:70px 48px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(13,148,136,.15),transparent)}
+.hero-left{flex:1;max-width:580px;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(13,148,136,.15);border:1px solid rgba(13,148,136,.4);color:var(--teal);font-size:11px;font-weight:700;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;margin-bottom:26px;text-transform:uppercase}
+.hero h1{font-size:56px;font-weight:900;line-height:1.04;letter-spacing:-2px;margin-bottom:20px}
+.hero h1 .teal{color:var(--teal);display:block}
+.hero-desc{font-size:15.5px;color:var(--gray);line-height:1.8;max-width:460px;margin-bottom:32px}
+.hero-stats{display:flex;gap:32px;margin-bottom:36px}
+.hs-num{font-size:28px;font-weight:900;color:var(--teal);line-height:1}
+.hs-lbl{font-size:12px;color:var(--gray);margin-top:3px}
+.hero-btns{display:flex;gap:12px}
+.btn-teal{background:var(--teal);color:#000;padding:14px 28px;font-weight:700;font-size:14px;border-radius:8px;display:inline-flex;align-items:center;gap:8px}
+.btn-drk{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:var(--white);padding:14px 28px;font-weight:600;font-size:14px;border-radius:8px;display:inline-flex;align-items:center;gap:8px}
+.hero-right{position:relative;z-index:2;flex-shrink:0;margin-left:52px}
+.hero-img-wrap{position:relative;width:460px;height:320px;border-radius:12px;overflow:hidden}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover}
+.fc{position:absolute;background:white;color:#000;border-radius:10px;padding:11px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.fc.tr{top:-14px;right:-14px}
+.fc-icon{width:34px;height:34px;background:var(--emerald);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.fc .fn{font-size:18px;font-weight:900;color:#000;line-height:1}
+.fc .fl{font-size:11px;color:#666;margin-top:2px}
+.fc.bl{bottom:-14px;left:-14px;background:var(--teal);color:white;border-radius:10px;padding:12px 18px}
+.fc.bl .fn{font-size:22px;font-weight:900;color:white}
+.fc.bl .fl{font-size:11px;color:rgba(255,255,255,.7);margin-top:2px}
+.fc-cert{position:absolute;bottom:-14px;right:40px;background:rgba(13,27,46,.95);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:11px 16px}
+.fc-cert p{font-size:11px;color:var(--gray);margin-bottom:3px}
+.fc-cert strong{font-size:12px;font-weight:700;color:white}
+.explore{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);text-align:center;color:var(--gray);font-size:10px;letter-spacing:2px;text-transform:uppercase;z-index:2}
+.mouse{width:22px;height:34px;border:2px solid var(--gray);border-radius:11px;margin:7px auto 0;position:relative}
+.mouse::after{content:'';width:3px;height:7px;background:var(--teal);border-radius:2px;position:absolute;top:5px;left:50%;transform:translateX(-50%);animation:sc 1.5s infinite}
+@keyframes sc{0%{opacity:1;top:5px}100%{opacity:0;top:17px}}
+
+/* STATS */
+.stats{background:linear-gradient(180deg,#091422,#0f1e35);padding:52px 48px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 24px;text-align:center;transition:border-color .2s}
+.sc:hover{border-color:rgba(13,148,136,.3)}
+.sc-icon{width:52px;height:52px;background:var(--teal);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 18px}
+.sc .num{font-size:44px;font-weight:900;color:var(--white);line-height:1;margin-bottom:6px}
+.sc .lbl{font-size:13px;color:var(--gray)}
+
+/* VALUE CHAIN */
+.vc-section{background:#fff;padding:80px 48px;color:#111}
+.sec-center{text-align:center;margin-bottom:52px}
+.tag-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(13,148,136,.1);border:1px solid rgba(13,148,136,.3);color:var(--teal);font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:16px;text-transform:uppercase}
+.vc-section h2{font-size:40px;font-weight:900;color:#111;letter-spacing:-1.5px;margin-bottom:10px}
+.vc-section h2 span{color:var(--teal)}
+.sec-sub{font-size:15px;color:#666;max-width:480px;margin:0 auto}
+.vc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.vcc{border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;transition:box-shadow .25s,transform .25s}
+.vcc:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.1)}
+.vch{padding:26px 26px 22px;position:relative;overflow:hidden}
+.vch.teal{background:linear-gradient(135deg,#0d9488,#0f766e)}
+.vch.emerald{background:linear-gradient(135deg,#10b981,#059669)}
+.vch.cyan{background:linear-gradient(135deg,#0891b2,#0e7490)}
+.vch::after{content:'';position:absolute;top:-30px;right:-30px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.1)}
+.vch-icon{width:46px;height:46px;background:rgba(255,255,255,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:14px}
+.vch h3{font-size:21px;font-weight:800;color:white;margin-bottom:3px}
+.vch p{font-size:12px;color:rgba(255,255,255,.75);font-weight:500}
+.vcb{padding:22px 26px}
+.vcb .desc{font-size:13.5px;color:#555;line-height:1.65;margin-bottom:16px}
+.vcm{display:flex;gap:24px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #f0f0f0}
+.vm-val{font-size:19px;font-weight:800;color:#111}
+.vm-val.g{color:var(--teal)}
+.vm-lbl{font-size:11.5px;color:#888;margin-top:2px}
+.vc-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.vc-list li{display:flex;align-items:center;gap:9px;font-size:13.5px;color:#444}
+.vc-list li::before{content:'✓';width:19px;height:19px;min-width:19px;background:#d1fae5;color:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
+
+/* QUALITY & SUSTAINABILITY SECTION */
+.safety{position:relative;padding:90px 48px;text-align:center;overflow:hidden}
+.s-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.s-ov{position:absolute;inset:0;background:rgba(6,16,32,.83)}
+.s-cnt{position:relative;z-index:2}
+.s-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.4);color:#4ade80;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:20px;text-transform:uppercase}
+.safety h2{font-size:44px;font-weight:900;letter-spacing:-1.5px;margin-bottom:14px}
+.safety h2 span{color:#4ade80}
+.s-sub{font-size:15.5px;color:rgba(255,255,255,.6);max-width:540px;margin:0 auto 48px;line-height:1.7}
+.s-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:24px}
+.s-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px 18px;text-align:left;backdrop-filter:blur(8px)}
+.s-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.s-card-ico{width:34px;height:34px;background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.35);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#4ade80}
+.s-val{font-size:22px;font-weight:900;color:#4ade80}
+.s-card h4{font-size:13px;font-weight:700;color:white;margin-bottom:5px}
+.s-card p{font-size:12px;color:rgba(255,255,255,.5);line-height:1.55}
+.cert-row{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:18px 28px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap}
+.ci{display:flex;align-items:center;gap:9px}
+.ci-chk{color:#4ade80;font-size:15px}
+.ci strong{font-size:13px;color:white;font-weight:700}
+.ci span{font-size:11px;color:rgba(255,255,255,.5);display:block;margin-top:1px}
+
+/* TEXTILE PROCESS LIFECYCLE */
+.lifecycle{background:#fff;padding:80px 48px;color:#111}
+.lifecycle h2{font-size:40px;font-weight:900;color:#111;letter-spacing:-1.5px;margin-bottom:10px}
+.lifecycle h2 span{color:var(--teal)}
+.lc-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(13,148,136,.1);border:1px solid rgba(13,148,136,.25);color:var(--teal);font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:16px;text-transform:uppercase}
+.tl{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:56px}
+.tl::before{content:'';position:absolute;top:38px;left:6.5%;right:6.5%;height:3px;background:linear-gradient(90deg,#0d9488,#10b981,#14b8a6,#0d9488,#0f766e,#111827);z-index:0}
+.tl-s{text-align:center;position:relative;z-index:1;padding:0 8px}
+.tl-ico{width:76px;height:76px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;position:relative;z-index:1;transition:transform .2s}
+.tl-s:last-child .tl-ico{background:#111827}
+.tl-s:hover .tl-ico{transform:scale(1.08)}
+.tl-num{font-size:10px;font-weight:700;letter-spacing:1.5px;color:#999;margin-bottom:7px;text-transform:uppercase}
+.tl-s h4{font-size:15px;font-weight:800;color:#111;margin-bottom:7px}
+.tl-s p{font-size:12px;color:#666;line-height:1.6}
+
+/* PRODUCTS SECTION */
+.products-section{background:#f9fafb;padding:80px 48px;color:#111}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+.prod-card{background:white;border-radius:16px;overflow:hidden;border:1px solid #e5e7eb;transition:all .3s}
+.prod-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.1);border-color:var(--teal)}
+.prod-img{height:180px;background:linear-gradient(135deg,#0d9488,#14b8a6);display:flex;align-items:center;justify-content:center;font-size:48px}
+.prod-info{padding:20px}
+.prod-info h4{font-size:18px;font-weight:800;margin-bottom:8px}
+.prod-info p{font-size:13px;color:#666;line-height:1.6}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,#091422,#0f2137,#162840);padding:72px 48px;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(13,148,136,.07),transparent)}
+.cta h2{font-size:40px;font-weight:900;letter-spacing:-1.5px;margin-bottom:12px;position:relative}
+.cta h2 span{color:var(--teal)}
+.cta p{color:var(--gray);font-size:16px;max-width:480px;margin:0 auto 32px;line-height:1.7;position:relative}
+.cta-btns{display:flex;justify-content:center;gap:12px;position:relative}
+</style>
+</head>
+<body>
+
+<!-- HERO - Textile Industry -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">🧵 TEXTILE INDUSTRY SOLUTIONS</div>
+    <h1>Powering Global<span class="teal">Textile Operations</span></h1>
+    <p class="hero-desc">Comprehensive solutions for fiber production, yarn manufacturing, fabric processing, and finished textile products. Trusted by leading textile companies across 40+ countries.</p>
+    <div class="hero-stats">
+      <div><div class="hs-num">200+</div><div class="hs-lbl">Projects</div></div>
+      <div><div class="hs-num">30+</div><div class="hs-lbl">Years</div></div>
+      <div><div class="hs-num">40+</div><div class="hs-lbl">Countries</div></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#" class="btn-teal">Request Quote →</a>
+      <a href="#" class="btn-drk">▶ View Capabilities</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=900&q=85" alt="Textile factory"/>
+      <div class="fc tr">
+        <div class="fc-icon">🧵</div>
+        <div><div class="fn">8M+</div><div class="fl">Safe Man-Hours</div></div>
+      </div>
+      <div class="fc bl">
+        <div><div class="fn">Zero LTI</div><div class="fl">Safety Record</div></div>
+      </div>
+      <div class="fc-cert">
+        <p>OEKO-TEX &amp; GOTS Certified</p>
+        <strong>Quality Management System</strong>
+      </div>
+    </div>
+  </div>
+  <div class="explore">EXPLORE<div class="mouse"></div></div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="sc"><div class="sc-icon">📋</div><div class="num">200+</div><div class="lbl">Projects Delivered</div></div>
+    <div class="sc"><div class="sc-icon">🏆</div><div class="num">30+</div><div class="lbl">Years Experience</div></div>
+    <div class="sc"><div class="sc-icon">🌐</div><div class="num">40+</div><div class="lbl">Countries Served</div></div>
+    <div class="sc"><div class="sc-icon">⛑️</div><div class="num">8M+</div><div class="lbl">Safe Man-Hours</div></div>
+  </div>
+</section>
+
+<!-- VALUE CHAIN - Textile Manufacturing Process -->
+<section class="vc-section">
+  <div class="sec-center">
+    <div class="tag-pill">🔗 TEXTILE VALUE CHAIN</div>
+    <h2>Complete <span>Textile</span> Manufacturing Chain</h2>
+    <p class="sec-sub">End-to-end solutions covering every segment of textile production</p>
+  </div>
+  <div class="vc-grid">
+    <div class="vcc">
+      <div class="vch teal"><div class="vch-icon">🌾</div><h3>Fiber Production</h3><p>Natural &amp; Synthetic Fibers</p></div>
+      <div class="vcb">
+        <p class="desc">Equipment and services for cotton, wool, polyester, nylon, and specialty fiber production.</p>
+        <div class="vcm"><div><div class="vm-val">50+</div><div class="vm-lbl">Projects</div></div><div><div class="vm-val g">99.5%</div><div class="vm-lbl">Uptime</div></div></div>
+        <ul class="vc-list"><li>Cotton Ginning</li><li>Polymer Extrusion</li><li>Staple Fiber Lines</li><li>Bale Press Systems</li></ul>
+      </div>
+    </div>
+    <div class="vcc">
+      <div class="vch emerald"><div class="vch-icon">🔄</div><h3>Yarn Manufacturing</h3><p>Spinning &amp; Twisting</p></div>
+      <div class="vcb">
+        <p class="desc">Complete spinning solutions including blow room, carding, drawing, roving, and ring spinning.</p>
+        <div class="vcm"><div><div class="vm-val">80+</div><div class="vm-lbl">Projects</div></div><div><div class="vm-val g">99.3%</div><div class="vm-lbl">Uptime</div></div></div>
+        <ul class="vc-list"><li>Ring Spinning</li><li>Open End Rotor</li><li>Air Jet Spinning</li><li>Twisting Machines</li></ul>
+      </div>
+    </div>
+    <div class="vcc">
+      <div class="vch cyan"><div class="vch-icon">📊</div><h3>Fabric Processing</h3><p>Weaving &amp; Knitting</p></div>
+      <div class="vcb">
+        <p class="desc">Advanced weaving, knitting, and non-woven fabric production technologies.</p>
+        <div class="vcm"><div><div class="vm-val">70+</div><div class="vm-lbl">Projects</div></div><div><div class="vm-val g">98.9%</div><div class="vm-lbl">Uptime</div></div></div>
+        <ul class="vc-list"><li>Air Jet Looms</li><li>Rapier Looms</li><li>Circular Knitting</li><li>Non-Woven Lines</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY & SUSTAINABILITY SECTION -->
+<section class="safety">
+  <img class="s-bg" src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=1600&q=80" alt="Textile quality control"/>
+  <div class="s-ov"></div>
+  <div class="s-cnt">
+    <div class="s-tag">🏭 QUALITY &amp; SUSTAINABILITY</div>
+    <h2>Excellence in <span>Textile Manufacturing</span></h2>
+    <p class="s-sub">Commitment to quality, sustainability, and ethical production across all textile operations.</p>
+    <div class="s-cards">
+      <div class="s-card"><div class="s-card-top"><div class="s-card-ico">✅</div><div class="s-val">99.7%</div></div><h4>Quality Yield</h4><p>First-pass quality yield across all textile production lines</p></div>
+      <div class="s-card"><div class="s-card-top"><div class="s-card-ico">🌱</div><div class="s-val">100%</div></div><h4>Sustainable</h4><p>Commitment to eco-friendly and sustainable manufacturing</p></div>
+      <div class="s-card"><div class="s-card-top"><div class="s-card-ico">⚡</div><div class="s-val">15%</div></div><h4>Energy Reduction</h4><p>Average energy savings through modern efficient equipment</p></div>
+      <div class="s-card"><div class="s-card-top"><div class="s-card-ico">🏅</div><div class="s-val">ISO</div></div><h4>Quality Assurance</h4><p>ISO 9001 and OEKO-TEX certified quality systems</p></div>
+    </div>
+    <div class="cert-row">
+      <div class="ci"><span class="ci-chk">✓</span><div><strong>OEKO-TEX</strong><span>Standard 100</span></div></div>
+      <div class="ci"><span class="ci-chk">✓</span><div><strong>GOTS</strong><span>Organic Certified</span></div></div>
+      <div class="ci"><span class="ci-chk">✓</span><div><strong>ISO 9001</strong><span>Quality Systems</span></div></div>
+      <div class="ci"><span class="ci-chk">✓</span><div><strong>ISO 14001</strong><span>Environmental</span></div></div>
+      <div class="ci"><span class="ci-chk">✓</span><div><strong>BS OHSAS</strong><span>Health &amp; Safety</span></div></div>
+      <div class="ci"><span class="ci-chk">✓</span><div><strong>GRS</strong><span>Recycled Claim</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXTILE PROCESS LIFECYCLE -->
+<section class="lifecycle">
+  <div class="sec-center">
+    <div class="lc-tag">🔄 TEXTILE MANUFACTURING PROCESS</div>
+    <h2>From Fiber to <span>Finished Fabric</span></h2>
+    <p class="sec-sub">Our solutions support every stage of textile production</p>
+  </div>
+  <div class="tl">
+    <div class="tl-s"><div class="tl-ico">🌾</div><div class="tl-num">STEP 01</div><h4>Fiber Production</h4><p>Natural fiber processing and synthetic fiber extrusion for raw material preparation.</p></div>
+    <div class="tl-s"><div class="tl-ico">🔄</div><div class="tl-num">STEP 02</div><h4>Spinning</h4><p>Conversion of fibers into yarn through blow room, carding, drawing, and roving.</p></div>
+    <div class="tl-s"><div class="tl-ico">📊</div><div class="tl-num">STEP 03</div><h4>Weaving/Knitting</h4><p>Fabric formation using advanced looms and knitting machines.</p></div>
+    <div class="tl-s"><div class="tl-ico">🎨</div><div class="tl-num">STEP 04</div><h4>Processing</h4><p>Pretreatment, dyeing, printing, and finishing of fabrics.</p></div>
+    <div class="tl-s"><div class="tl-ico">👕</div><div class="tl-num">STEP 05</div><h4>Garmenting</h4><p>Cutting, sewing, and assembly of finished textile products.</p></div>
+    <div class="tl-s"><div class="tl-ico" style="background:#111827">📦</div><div class="tl-num">STEP 06</div><h4>Distribution</h4><p>Packaging and global logistics for textile products.</p></div>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION - Textile Equipment -->
+<section class="products-section">
+  <div class="sec-center">
+    <div class="tag-pill">🏭 TEXTILE EQUIPMENT</div>
+    <h2>Advanced <span>Textile Machinery</span></h2>
+    <p class="sec-sub">State-of-the-art equipment for modern textile manufacturing</p>
+  </div>
+  <div class="products-grid">
+    <div class="prod-card"><div class="prod-img">🏭</div><div class="prod-info"><h4>Spinning Machinery</h4><p>Ring frames, rotor spinning, blow room lines, and carding machines.</p></div></div>
+    <div class="prod-card"><div class="prod-img">📊</div><div class="prod-info"><h4>Weaving Looms</h4><p>Air jet, rapier, projectile, and water jet looms for all fabric types.</p></div></div>
+    <div class="prod-card"><div class="prod-img">🔵</div><div class="prod-info"><h4>Knitting Machines</h4><p>Circular knitting, flat knitting, and warp knitting equipment.</p></div></div>
+    <div class="prod-card"><div class="prod-img">🎨</div><div class="prod-info"><h4>Dyeing & Finishing</h4><p>Jet dyeing, padding, stenter frames, and calendering machines.</p></div></div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta">
+  <h2>Ready to <span>Partner</span> With Us?</h2>
+  <p>Get in touch today to discuss your Textile industry supply needs and discover how we can support your manufacturing operations.</p>
+  <div class="cta-btns"><a href="#" class="btn-teal">Request a Quote →</a><a href="#" class="btn-drk">View All Products</a></div>
+</section>
+
+</body>
+</html>
