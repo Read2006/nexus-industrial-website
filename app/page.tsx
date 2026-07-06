@@ -115,20 +115,6 @@ export default function HomePage() {
           <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 rounded-lg border border-gray-200">☰</button>
         </div>
 
-        {/* BOTTOM NAV BAR (ZFC style) */}
-        <div className="hidden lg:block bg-[#1a3d35] border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-10">
-            <ul className="flex items-center h-full">
-              {[['Home', '/'], ['About Us', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
-                <li key={label} className="h-full flex items-center">
-                  <a href={href} className="text-white/70 font-bold text-[11px] hover:text-teal-300 transition-colors uppercase tracking-widest h-full flex items-center px-4">{label}</a>
-                </li>
-              ))}
-            </ul>
-            <span className="border border-teal-400/40 text-teal-300 px-4 py-1 rounded-full font-black text-[10px] tracking-widest uppercase animate-pulse">⚡ GENUINE PARTS · FAST DELIVERY</span>
-          </div>
-        </div>
-
         {/* MOBILE MENU */}
         {menuOpen && (
           <div className="lg:hidden bg-white border-t px-6 py-4 space-y-2">
