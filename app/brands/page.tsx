@@ -198,35 +198,6 @@ export default function BrandsPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* TOP BAR */}
-      <div className="sticky top-0 bg-gray-900 text-white text-sm py-2 px-6 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <a href="tel:03351503555" className="hover:text-teal-400 transition">📞 0335-1503555</a>
-            <span className="text-gray-600">|</span>
-            <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">📧 info@nexus-is.co</a>
-          </div>
-          <div className="text-teal-400 font-semibold">Sourcing Solutions. Delivering Results.</div>
-        </div>
-      </div>
-
-      {/* HEADER */}
-      <header className="sticky top-[36px] bg-white border-b border-gray-100 z-40 w-full">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center text-white font-bold text-lg">N</div>
-            <span className="font-bold text-gray-900 text-sm">NIS</span>
-          </div>
-          <nav className="flex gap-6">
-            <a href="/" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Home</a>
-            <a href="/#about-section" className="text-sm font-semibold text-gray-700 hover:text-teal-700">About</a>
-            <a href="/#products" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Products</a>
-            <a href="/industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
-            <a href="/brands" className="text-sm font-semibold text-teal-700 border-b-2 border-teal-700">Brands</a>
-            <a href="/contact" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Contact</a>
-          </nav>
-        </div>
-      </header>
 
       {/* HERO BANNER */}
       <section className="bg-gray-900 py-16 px-6">
@@ -298,39 +269,6 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-bold mb-4">Nexus Industrial</h3>
-              <p className="text-sm">Delivering reliable industrial supply and global trade solutions.</p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/about" className="hover:text-white transition">About</a></li>
-                <li><a href="/products" className="hover:text-white transition">Products</a></li>
-                <li><a href="/industries" className="hover:text-white transition">Industries</a></li>
-                <li><a href="/brands" className="hover:text-white transition">Brands</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Contact</h3>
-              <p className="text-sm">📞 0335-1503555</p>
-              <p className="text-sm">📧 info@nexus-is.co</p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Compliance</h3>
-              <p className="text-sm">NTN: 123455</p>
-              <p className="text-sm">STRN: 1233456</p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>&copy; 2024 Nexus Industrial Solutions. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
