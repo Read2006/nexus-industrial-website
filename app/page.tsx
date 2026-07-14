@@ -1,26 +1,23 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-
 const industries = [
-  { name: 'Oil & Gas', icon: '🛢️', href: '/oil-gas', img: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&h=400&fit=crop&q=80' },
-  { name: 'Cement', icon: '🏭', href: '/cement', img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&q=80' },
-  { name: 'Textile', icon: '🧵', href: '/textile', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&q=80' },
-  { name: 'Steel', icon: '⚙️', href: '/steel', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop&q=80' },
+  { name: 'Oil & Gas', icon: '🛢️', href: '/oil-gas', img: '/new-images/oil and gas.jfif' },
+  { name: 'Cement', icon: '🏭', href: '/cement', img: '/new-images/cement.jfif' },
+  { name: 'Textile', icon: '🧵', href: '/textile', img: '/new-images/textile.jfif' },
+  { name: 'Steel/Aluminium', icon: '⚙️', href: '/steel', img: '/new-images/steel.jfif' },
   { name: 'Fertilizer', icon: '🌱', href: '/fertilizer', img: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop&q=80' },
-  { name: 'Aluminum', icon: '🔩', href: '/aluminum', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&h=400&fit=crop&q=80' },
-  { name: 'Power', icon: '⚡', href: '/power', img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop&q=80' },
+  { name: 'Aviation', icon: '🔩', href: '/aviation', img: '/new-images/avaition.jfif' },
+  { name: 'Power', icon: '⚡', href: '/power', img: '/new-images/power.jfif' },
   { name: 'FMCG', icon: '📦', href: '/fmcg', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop&q=80' },
 ]
 
 const products = [
-  { name: 'Mechanical Products', desc: 'Bearings, Pumps, Gearboxes, Belts & more', href: '/products/mechanical', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80', badge: 'Bearings · Pumps · Seals' },
-  { name: 'Electrical Products', desc: 'Motors, Cables, Switchgear & Panels', href: '/products/electrical', img: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&h=350&fit=crop&q=80', badge: 'Motors · Cables · MCCs' },
-  { name: 'Pipes & Fittings', desc: 'Valves, Flanges, Pipe systems & fittings', href: '/products/pipes-fittings', img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=350&fit=crop&q=80', badge: 'Valves · Flanges · Fittings' },
-  { name: 'Instruments', desc: 'Precision measurement & control instruments', href: '/products/instruments', img: 'https://images.unsplash.com/photo-1581093458791-9f3c3250e1ef?w=500&h=350&fit=crop&q=80', badge: 'Gauges · Transmitters · PLCs' },
+  { name: 'Mechanical Products', desc: 'Bearings, Pumps, Gearboxes, Belts & more', href: '/products/mechanical', img: '/mechanical.jfif', badge: 'Bearings · Pumps · Seals' },
+  { name: 'Electrical Products', desc: 'Motors, Cables, Switchgear & Panels', href: '/products/electrical', img: '/electrical.jfif', badge: 'Motors · Cables · MCCs' },
+  { name: 'Pipes & Fittings', desc: 'Valves, Flanges, Pipe systems & fittings', href: '/products/pipes-fittings', img: '/pipes-and-fittings.jfif', badge: 'Valves · Flanges · Fittings' },
+  { name: 'Instruments', desc: 'Precision measurement & control instruments', href: '/products/instruments', img: '/instruments.jfif', badge: 'Gauges · Transmitters · PLCs' },
   { name: 'General Orders', desc: 'Custom sourcing for any industrial product or equipment', href: '/contact', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=350&fit=crop&q=80', badge: 'Custom · Bulk · Procurement' },
 ]
-
 const brands = [
   { name: 'ABB', logo: 'https://www.zfcorporation.co.uk/storage/media/abb-copy-copy-copy-copy-copy-copy-copy-1777881191.jpg' },
   { name: 'Siemens', logo: 'https://www.zfcorporation.co.uk/storage/media/Siemens .jpg' },
@@ -65,79 +62,8 @@ const steps = [
 ]
 
 export default function HomePage() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
   return (
     <div className="min-h-screen bg-white font-sans">
-
-      {/* TOP BAR */}
-      <div className="bg-[#0d2b26] text-[#98c4b8] text-xs py-2 hidden lg:block">
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <span>📞 <a href="tel:03351503555" className="hover:text-teal-400 transition">0335-1503555</a></span>
-            <span className="text-white/20">|</span>
-            <span>📧 <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">info@nexus-is.co</a></span>
-            <span className="text-white/20">|</span>
-            <span>📍 DHA Phase 2, Islamabad</span>
-          </div>
-          <span className="bg-teal-400/10 border border-teal-400/30 text-teal-300 px-3 py-0.5 rounded-full text-[10px] font-bold tracking-widest uppercase">⚡ Same Day Response · NTN: 123455</span>
-        </div>
-      </div>
-
-      {/* HEADER */}
-      <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-lg' : 'shadow-sm'}`}>
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-6">
-          <a href="/" className="flex items-center gap-3 shrink-0">
-            <img src="/images/logoofthenexus.jpeg" alt="NIS" className="h-12 w-12 rounded-full object-cover" />
-            <div className="hidden sm:block">
-              <p className="font-black text-gray-900 text-sm leading-tight">Nexus Industrial</p>
-              <p className="text-teal-700 text-[10px] font-bold tracking-wider uppercase">Solutions</p>
-            </div>
-          </a>
-
-          {/* NAV */}
-          <nav className="hidden lg:flex items-center gap-1">
-            {[['Home', '/'], ['About', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
-              <a key={label} href={href} className="text-sm font-bold text-gray-600 hover:text-teal-700 px-4 py-2 rounded-lg hover:bg-teal-50 transition-all">{label}</a>
-            ))}
-          </nav>
-
-          <a href="/contact" className="hidden lg:inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition shrink-0">
-            Get a Quote →
-          </a>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 rounded-lg border border-gray-200">☰</button>
-        </div>
-
-        {/* BOTTOM NAV BAR (ZFC style) */}
-        <div className="hidden lg:block bg-[#1a3d35] border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-10">
-            <ul className="flex items-center h-full">
-              {[['Home', '/'], ['About Us', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
-                <li key={label} className="h-full flex items-center">
-                  <a href={href} className="text-white/70 font-bold text-[11px] hover:text-teal-300 transition-colors uppercase tracking-widest h-full flex items-center px-4">{label}</a>
-                </li>
-              ))}
-            </ul>
-            <span className="border border-teal-400/40 text-teal-300 px-4 py-1 rounded-full font-black text-[10px] tracking-widest uppercase animate-pulse">⚡ GENUINE PARTS · FAST DELIVERY</span>
-          </div>
-        </div>
-
-        {/* MOBILE MENU */}
-        {menuOpen && (
-          <div className="lg:hidden bg-white border-t px-6 py-4 space-y-2">
-            {[['Home', '/'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([label, href]) => (
-              <a key={label} href={href} onClick={() => setMenuOpen(false)} className="block py-2 font-bold text-gray-700 hover:text-teal-700">{label}</a>
-            ))}
-          </div>
-        )}
-      </header>
 
       {/* HERO */}
       <section className="relative min-h-[92vh] overflow-hidden" style={{ background: 'linear-gradient(135deg, #071a16 0%, #0d2b24 40%, #0f3d32 70%, #155244 100%)' }}>
@@ -402,17 +328,17 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
             {brands.map((brand, index) => (
-              <div 
-                key={brand.name || index} 
+              <div
+                key={brand.name || index}
                 className="bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-center justify-center hover:border-teal-400 hover:shadow-md hover:-translate-y-0.5 transition-all group min-h-[90px]"
               >
                 {/* Clean image support with an alternative text backup if image fails */}
                 {brand.logo ? (
-                  <img 
-                    src={brand.logo} 
-                    alt={brand.name} 
-                    className="max-h-12 max-w-full object-contain filter contrast-125 mix-blend-multiply group-hover:scale-105 transition-transform" 
-                    loading="lazy" 
+                  <img
+                    src={brand.logo}
+                    alt={brand.name}
+                    className="max-h-12 max-w-full object-contain filter contrast-125 mix-blend-multiply group-hover:scale-105 transition-transform"
+                    loading="lazy"
                   />
                 ) : (
                   <span className="text-gray-700 font-black text-xs text-center group-hover:text-teal-700 transition-colors">
@@ -449,51 +375,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-[#050f0d] text-gray-400 pt-16 pb-6 border-t-4 border-teal-700">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
-            <div className="col-span-2 md:col-span-1">
-              <div className="flex items-center gap-3 mb-4">
-                <img src="/images/logoofthenexus.jpeg" alt="NIS" className="h-10 w-10 rounded-full object-cover" />
-                <div>
-                  <p className="text-white font-black text-sm">Nexus Industrial</p>
-                  <p className="text-teal-400 text-[10px] font-bold uppercase tracking-widest">Solutions</p>
-                </div>
-              </div>
-              <p className="text-sm leading-relaxed text-gray-500">Delivering reliable industrial supply and global trade solutions across Pakistan's key industries.</p>
-            </div>
-            <div>
-              <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Quick Links</h4>
-              <ul className="space-y-3 text-sm">
-                {[['About', '/#about-section'], ['Products', '/#products'], ['Industries', '/#industries'], ['Brands', '/brands'], ['Contact', '/contact']].map(([l, h]) => (
-                  <li key={l}><a href={h} className="hover:text-teal-400 transition-colors">{l}</a></li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Products</h4>
-              <ul className="space-y-3 text-sm">
-                {[['Mechanical', '/products/mechanical'], ['Electrical', '/products/electrical'], ['Pipes & Fittings', '/products/pipes-fittings'], ['Instruments', '/products/instruments']].map(([l, h]) => (
-                  <li key={l}><a href={h} className="hover:text-teal-400 transition-colors">{l}</a></li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Contact</h4>
-              <div className="space-y-3 text-sm">
-                <p>📞 <a href="tel:03351503555" className="hover:text-teal-400 transition">0335-1503555</a></p>
-                <p>📧 <a href="mailto:info@nexus-is.co" className="hover:text-teal-400 transition">info@nexus-is.co</a></p>
-                <p>📍 DHA Phase 2, Islamabad</p>
-                <p className="text-gray-600">NTN: 123455 | STRN: 1233456</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-white/5 pt-6 text-center text-xs text-gray-600">
-            <p>© 2024 Nexus Industrial Solutions. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

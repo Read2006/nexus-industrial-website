@@ -21,7 +21,7 @@ export default function OilGasPage() {
         .og-btn-teal:hover{background:#0f766e}
         .og-btn-drk{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;padding:14px 28px;font-weight:600;font-size:14px;border-radius:8px;display:inline-flex;align-items:center;gap:8px}
         .og-hero-right{position:relative;z-index:2;flex-shrink:0;margin-left:52px}
-        .og-img-wrap{position:relative;width:440px;height:300px;border-radius:12px;overflow:hidden}
+        .og-img-wrap{position:relative;width:560px;height:400px;border-radius:12px;overflow:hidden}
         .og-img-wrap img{width:100%;height:100%;object-fit:cover}
         .og-fc{position:absolute;background:white;color:#000;border-radius:10px;padding:11px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.4)}
         .og-fc.tr{top:-14px;right:-14px}
@@ -122,11 +122,35 @@ export default function OilGasPage() {
           .og-tl::before{display:none}
           .og-hero h1{font-size:38px}
         }
-      `}</style>
+      
+        @media (max-width: 600px){
+          .og-hero{padding: 40px 24px !important}
+          .og-hero h1{font-size:32px !important;line-height:1.1 !important;letter-spacing:-1px !important}
+          .og-img-wrap{height:250px !important}
+          .og-stats{flex-direction:row !important;justify-content:flex-start !important;gap:28px !important;margin-bottom:28px !important}
+          .og-hs-num{font-size:26px !important}
+          .og-hs-lbl{color:#cbd5e1 !important;font-weight:600 !important}
+          .og-stats-grid{grid-template-columns:1fr !important}
+          .og-s-cards{grid-template-columns:1fr !important}
+          .og-tl{grid-template-columns:1fr !important;gap:24px !important}
+          .og-stats-sec{padding:32px 24px !important}
+          .og-vc-section{padding:48px 24px !important}
+          .og-lifecycle{padding:48px 24px !important}
+          .og-safety{padding:48px 24px !important}
+          .og-vc-section h2{font-size:28px !important}
+          .og-safety h2{font-size:28px !important}
+          .og-lifecycle h2{font-size:28px !important}
+          .og-cta{padding:48px 24px !important}
+          .og-cta h2{font-size:28px !important}
+          .og-cert-row{flex-direction:column !important;align-items:flex-start !important;gap:16px !important;padding:16px 20px !important}
+          .og-fc{display:none !important}
+          .og-fc-cert{display:none !important}
+        }
+      `} </style>
 
       <div className="og">
         {/* BACK LINK */}
-        <div style={{ padding: '20px 48px 0', background: '#091422' }}>
+        <div className="px-6 md:px-12 py-5" style={{ background: '#091422' }}>
           <a href="/#industries" style={{ color: '#2dd4bf', fontSize: '14px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
             ← Back to Industries
           </a>
@@ -150,18 +174,7 @@ export default function OilGasPage() {
           </div>
           <div className="og-hero-right">
             <div className="og-img-wrap">
-              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=85" alt="Oil plant" />
-              <div className="og-fc tr">
-                <div className="og-fc-icon">🛡️</div>
-                <div><div className="fn">5M+</div><div className="fl">Safe Man-Hours</div></div>
-              </div>
-              <div className="og-fc bl">
-                <div><div className="fn">Zero LTI</div><div className="fl">Safety Record</div></div>
-              </div>
-              <div className="og-fc-cert">
-                <p>API Q1 &amp; Q2 Certified</p>
-                <strong>Quality Management System</strong>
-              </div>
+              <img src="/industries/oil and gas.jfif" alt="Oil plant" />
             </div>
           </div>
         </section>
@@ -213,7 +226,7 @@ export default function OilGasPage() {
 
         {/* SAFETY */}
         <section className="og-safety">
-          <img className="og-s-bg" src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1600&q=80" alt="Offshore platform" />
+          <img className="og-s-bg" src="/industries/oil and gas.jfif" alt="Offshore platform" />
           <div className="og-s-ov"></div>
           <div className="og-s-cnt">
             <div className="og-s-tag">🛡️ HEALTH, SAFETY &amp; ENVIRONMENT</div>
@@ -262,39 +275,6 @@ export default function OilGasPage() {
         </section>
       </div>
 
-      {/* FOOTER - NIS standard */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-bold mb-4">Nexus Industrial</h3>
-              <p className="text-sm">Delivering reliable industrial supply and global trade solutions.</p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/about" className="hover:text-white transition">About</a></li>
-                <li><a href="/#products" className="hover:text-white transition">Products</a></li>
-                <li><a href="/#industries" className="hover:text-white transition">Industries</a></li>
-                <li><a href="/brands" className="hover:text-white transition">Brands</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Contact</h3>
-              <p className="text-sm">📞 0335-1503555</p>
-              <p className="text-sm">📧 info@nexus-is.co</p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Compliance</h3>
-              <p className="text-sm">NTN: 123455</p>
-              <p className="text-sm">STRN: 1233456</p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>&copy; 2024 Nexus Industrial Solutions. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

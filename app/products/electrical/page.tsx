@@ -9,14 +9,14 @@ const categories = [
     icon: '⚡',
     desc: 'Industrial motors including AC, DC, servo and variable speed applications for all duty cycles.',
     products: [
-      { name: 'AC Electric Motor', desc: 'AC electric motor for general industrial applications', img: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=500&h=350&fit=crop&q=80' },
-      { name: 'DC Electric Motor', desc: 'DC electric motor for precise speed control applications', img: 'https://images.unsplash.com/photo-1601612628452-9e99ced43524?w=500&h=350&fit=crop&q=80' },
-      { name: 'Three Phase Motor', desc: 'Three phase motor for heavy-duty industrial drives', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
-      { name: 'Servo Motor', desc: 'Servo motor for precision positioning and automation', img: 'https://images.unsplash.com/photo-1581093458791-9f3c3250e1ef?w=500&h=350&fit=crop&q=80' },
-      { name: 'Variable Frequency Drive', desc: 'VFD units for smooth motor speed control', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
-      { name: 'Soft Starters', desc: 'Motor soft starters for smooth, controlled startup', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
-      { name: 'Motor Couplings', desc: 'Flexible couplings for shaft-to-shaft connections', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
-      { name: 'Motor Protection Relays', desc: 'Overload and short-circuit protection devices', img: 'https://images.unsplash.com/photo-1620912189865-1e0a32230eb7?w=500&h=350&fit=crop&q=80' },
+      { name: 'AC Electric Motor', desc: 'AC electric motor for general industrial applications', img: '/electrical/AC Electric Motor.jfif' },
+      { name: 'DC Electric Motor', desc: 'DC electric motor for precise speed control applications', img: '/electrical/DC Electric Motor.jfif' },
+      { name: 'Three Phase Motor', desc: 'Three phase motor for heavy-duty industrial drives', img: '/electrical/Three Phase Motor.jfif' },
+      { name: 'Servo Motor', desc: 'Servo motor for precision positioning and automation', img: '/electrical/Servo Motor.jfif' },
+      { name: 'Variable Frequency Drive', desc: 'VFD units for smooth motor speed control', img: '/electrical/Variable Frequency Drive.jfif' },
+      { name: 'Soft Starters', desc: 'Motor soft starters for smooth, controlled startup', img: '/electrical/Soft Starters.jfif' },
+      { name: 'Motor Couplings', desc: 'Flexible couplings for shaft-to-shaft connections', img: '/electrical/Motor Couplings.jfif' },
+      { name: 'Motor Protection Relays', desc: 'Overload and short-circuit protection devices', img: '/electrical/Motor Protection Relays.jfif' },
     ]
   },
   {
@@ -25,12 +25,12 @@ const categories = [
     icon: '🔌',
     desc: 'Power, control and instrumentation cables built to international safety standards.',
     products: [
-      { name: 'XLPE Power Cables', desc: 'Cross-linked polyethylene cables for medium voltage power', img: 'https://images.unsplash.com/photo-1620825141348-bb5c70cdca4d?w=500&h=350&fit=crop&q=80' },
-      { name: 'Control Cables', desc: 'Multi-core cables for control and signal circuits', img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=500&h=350&fit=crop&q=80' },
-      { name: 'Armoured Cables', desc: 'Steel wire armoured cables for underground/outdoor runs', img: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&h=350&fit=crop&q=80' },
-      { name: 'Instrumentation Cables', desc: 'Shielded cables for sensitive instrumentation signals', img: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=500&h=350&fit=crop&q=80' },
-      { name: 'Fire-Resistant Cables', desc: 'Cables rated for fire safety and emergency systems', img: 'https://images.unsplash.com/photo-1601612628452-9e99ced43524?w=500&h=350&fit=crop&q=80' },
-      { name: 'Cable Glands & Lugs', desc: 'Termination accessories for secure cable connections', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
+      { name: 'XLPE Power Cables', desc: 'Cross-linked polyethylene cables for medium voltage power', img: '/electrical/XLPE Power Cables.jfif' },
+      { name: 'Control Cables', desc: 'Multi-core cables for control and signal circuits', img: '/electrical/Control Cables.jfif' },
+      { name: 'Armoured Cables', desc: 'Steel wire armoured cables for underground/outdoor runs', img: '/electrical/Armoured Cables.jfif' },
+      { name: 'Instrumentation Cables', desc: 'Shielded cables for sensitive instrumentation signals', img: '/electrical/Instrumentation Cables.jfif' },
+      { name: 'Fire-Resistant Cables', desc: 'Cables rated for fire safety and emergency systems', img: '/electrical/Fire-Resistant Cables.jfif' },
+      { name: 'Cable Glands & Lugs', desc: 'Termination accessories for secure cable connections', img: '/electrical/Cable Glands & Lugs.jfif' },
     ]
   },
   {
@@ -39,12 +39,12 @@ const categories = [
     icon: '🔲',
     desc: 'Circuit breakers, contactors and switching equipment for power distribution.',
     products: [
-      { name: 'Air Circuit Breakers', desc: 'Low voltage ACBs for main power distribution', img: 'https://images.unsplash.com/photo-1620912189865-1e0a32230eb7?w=500&h=350&fit=crop&q=80' },
-      { name: 'MCCBs', desc: 'Molded case circuit breakers for branch protection', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
-      { name: 'Contactors', desc: 'Power contactors for motor and load switching', img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=350&fit=crop&q=80' },
-      { name: 'Isolators & Switches', desc: 'Load break switches and disconnect isolators', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
-      { name: 'Fuses & Fuse Bases', desc: 'HRC fuses for overcurrent protection', img: 'https://images.unsplash.com/photo-1581093458791-9f3c3250e1ef?w=500&h=350&fit=crop&q=80' },
-      { name: 'Relays & Timers', desc: 'Protection relays and control timers', img: 'https://images.unsplash.com/photo-1620825141348-bb5c70cdca4d?w=500&h=350&fit=crop&q=80' },
+      { name: 'Air Circuit Breakers', desc: 'Low voltage ACBs for main power distribution', img: '/electrical/Air Circuit Breakers.jfif' },
+      { name: 'MCCBs', desc: 'Molded case circuit breakers for branch protection', img: '/electrical/MCCBs.jfif' },
+      { name: 'Contactors', desc: 'Power contactors for motor and load switching', img: '/electrical/Contactors.jfif' },
+      { name: 'Isolators & Switches', desc: 'Load break switches and disconnect isolators', img: '/electrical/Isolators & Switches.jfif' },
+      { name: 'Fuses & Fuse Bases', desc: 'HRC fuses for overcurrent protection', img: '/electrical/Fuses & Fuse Bases.jfif' },
+      { name: 'Relays & Timers', desc: 'Protection relays and control timers', img: '/electrical/Relays & Timers.jfif' },
     ]
   },
   {
@@ -53,21 +53,21 @@ const categories = [
     icon: '🗄️',
     desc: 'Distribution boards, control panels and protective enclosures for electrical installations.',
     products: [
-      { name: 'Distribution Boards', desc: 'Main and sub distribution boards for power distribution', img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=500&h=350&fit=crop&q=80' },
-      { name: 'Motor Control Centers', desc: 'MCC panels for centralized motor control', img: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&h=350&fit=crop&q=80' },
-      { name: 'Junction Boxes', desc: 'IP-rated enclosures for cable termination', img: 'https://images.unsplash.com/photo-1601612628452-9e99ced43524?w=500&h=350&fit=crop&q=80' },
-      { name: 'PLC Control Panels', desc: 'Custom-built panels for automation systems', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=350&fit=crop&q=80' },
-      { name: 'Explosion-Proof Enclosures', desc: 'ATEX-rated enclosures for hazardous areas', img: 'https://images.unsplash.com/photo-1620912189865-1e0a32230eb7?w=500&h=350&fit=crop&q=80' },
-      { name: 'Busbar Systems', desc: 'Copper and aluminum busbars for power distribution', img: 'https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=500&h=350&fit=crop&q=80' },
+      { name: 'Distribution Boards', desc: 'Main and sub distribution boards for power distribution', img: '/electrical/Distribution Boards.jfif' },
+      { name: 'Motor Control Centers', desc: 'MCC panels for centralized motor control', img: '/electrical/Motor Control Centers.jfif' },
+      { name: 'Junction Boxes', desc: 'IP-rated enclosures for cable termination', img: '/electrical/Junction Boxes.jfif' },
+      { name: 'PLC Control Panels', desc: 'Custom-built panels for automation systems', img: '/electrical/PLC Control Panels.jfif' },
+      { name: 'Explosion-Proof Enclosures', desc: 'ATEX-rated enclosures for hazardous areas', img: '/electrical/Explosion-Proof Enclosures.jfif' },
+      { name: 'Busbar Systems', desc: 'Copper and aluminum busbars for power distribution', img: '/electrical/Busbar Systems.jfif' },
     ]
   },
 ]
 
 const relatedCategories = [
-  { name: 'Mechanical Products', desc: 'Bearings, pumps & mechanical systems', href: '/products/mechanical', img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&h=350&fit=crop&q=80' },
-  { name: 'Pipes & Fittings', desc: 'Valves, fittings & pipe systems', href: '/products/pipes-fittings', img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=350&fit=crop&q=80' },
-  { name: 'Instruments', desc: 'Precision measurement tools', href: '/products/instruments', img: 'https://images.unsplash.com/photo-1581093458791-9f3c3250e1ef?w=500&h=350&fit=crop&q=80' },
-  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&h=350&fit=crop&q=80' },
+  { name: 'Mechanical Products', desc: 'Bearings, pumps & mechanical systems', href: '/products/mechanical', img: '/mechanical.jfif' },
+  { name: 'Pipes & Fittings', desc: 'Valves, fittings & pipe systems', href: '/products/pipes-fittings', img: '/pipes-and-fittings.jfif' },
+  { name: 'Instruments', desc: 'Precision measurement tools', href: '/products/instruments', img: '/instruments.jfif' },
+  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=350&fit=crop&q=80' },
 ]
 
 export default function ElectricalProductsPage() {
@@ -76,35 +76,7 @@ export default function ElectricalProductsPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* TOP BAR */}
-      <div className="bg-gray-900 text-white text-sm py-2 px-6">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <a href="tel:03351503555" className="hover:text-amber-400 transition">📞 0335-1503555</a>
-            <span className="text-gray-600">|</span>
-            <a href="mailto:info@nexus-is.co" className="hover:text-amber-400 transition">📧 info@nexus-is.co</a>
-          </div>
-          <div className="text-amber-400 font-semibold">Sourcing Solutions. Delivering Results.</div>
-        </div>
-      </div>
-
-      {/* HEADER */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-          <a href="/" className="flex items-center gap-2">
-            <img src="/images/logoofthenexus.jpeg" alt="NIS Logo" className="w-10 h-10 rounded-full object-cover" />
-            <span className="font-bold text-gray-900 text-sm">NIS</span>
-          </a>
-          <nav className="hidden lg:flex gap-6">
-            <a href="/" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Home</a>
-            <a href="/#about-section" className="text-sm font-semibold text-gray-700 hover:text-teal-700">About</a>
-            <a href="/#products" className="text-sm font-semibold text-teal-700 border-b-2 border-teal-700">Products</a>
-            <a href="/#industries" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Industries</a>
-            <a href="/brands" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Brands</a>
-            <a href="/contact" className="text-sm font-semibold text-gray-700 hover:text-teal-700">Contact</a>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* HERO */}
       <section className="relative w-full overflow-hidden" style={{ background: 'linear-gradient(135deg, #0b1220 0%, #0f1f3d 35%, #1a2f5c 70%, #1e3a8a 100%)' }}>
@@ -146,7 +118,7 @@ export default function ElectricalProductsPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10" style={{ transform: 'perspective(1000px) rotateY(-6deg) rotateX(2deg)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1620912189865-1e0a32230eb7?w=900&h=650&fit=crop&q=85"
+                  src="/electrical/elec.jfif"
                   alt="Industrial electrical control panel"
                   className="w-full h-[320px] md:h-[400px] object-cover"
                 />
@@ -179,19 +151,19 @@ export default function ElectricalProductsPage() {
           </div>
 
           {/* TAB BUTTONS */}
-          <div className="grid grid-cols-2 md:grid-cols-4 mb-12 gap-1 p-1 bg-slate-100 rounded-lg">
+          <div className="flex overflow-x-auto md:grid md:grid-cols-4 mb-12 gap-1.5 p-1 bg-slate-100 rounded-lg scrollbar-none snap-x">
             {categories.map(cat => (
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(cat.id)}
-                className={`flex flex-col items-center gap-2 py-4 px-2 rounded-md transition-all ${
+                className={`flex-shrink-0 md:flex-shrink flex flex-row md:flex-col items-center justify-center gap-2 py-3 md:py-4 px-5 md:px-2 rounded-md transition-all snap-start ${
                   activeTab === cat.id
                     ? 'bg-blue-900 text-white shadow-md'
                     : 'text-slate-600 hover:bg-white'
                 }`}
               >
-                <span className="text-2xl">{cat.icon}</span>
-                <span className="text-sm font-medium">{cat.label}</span>
+                <span className="text-xl md:text-2xl">{cat.icon}</span>
+                <span className="text-xs md:text-sm font-medium text-center whitespace-nowrap">{cat.label}</span>
               </button>
             ))}
           </div>
@@ -277,38 +249,6 @@ export default function ElectricalProductsPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-bold mb-4">Nexus Industrial</h3>
-              <p className="text-sm">Delivering reliable industrial supply and global trade solutions.</p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/about" className="hover:text-white transition">About</a></li>
-                <li><a href="/#products" className="hover:text-white transition">Products</a></li>
-                <li><a href="/#industries" className="hover:text-white transition">Industries</a></li>
-                <li><a href="/brands" className="hover:text-white transition">Brands</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Contact</h3>
-              <p className="text-sm">📞 0335-1503555</p>
-              <p className="text-sm">📧 info@nexus-is.co</p>
-            </div>
-            <div>
-              <h3 className="text-white font-bold mb-4">Compliance</h3>
-              <p className="text-sm">NTN: 123455</p>
-              <p className="text-sm">STRN: 1233456</p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>&copy; 2024 Nexus Industrial Solutions. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
