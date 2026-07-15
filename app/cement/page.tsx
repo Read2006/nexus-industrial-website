@@ -1,7 +1,7 @@
 export default function CementPage() {
   return (
     <div className="min-h-screen" style={{ background: '#0f172a' }}>
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .cem *{box-sizing:border-box}
         .cem{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .cem a{text-decoration:none;color:inherit}
@@ -146,7 +146,7 @@ export default function CementPage() {
           .cem-fc{display:none !important}
           .cem-fc-cert{display:none !important}
         }
-      `} </style>
+      `}} />
 
       <div className="cem">
         {/* BACK LINK */}

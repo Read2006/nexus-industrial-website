@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function TextilePage() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#fff' }}>
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .txt *{box-sizing:border-box}
         .txt{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .txt a{text-decoration:none;color:inherit}
@@ -76,7 +76,7 @@ export default function TextilePage() {
           .txt-fc{display:none !important}
           .txt-fc-cert{display:none !important}
         }
-      `} </style>
+      `}} />
 
       <div className="txt">
         {/* BACK LINK */}

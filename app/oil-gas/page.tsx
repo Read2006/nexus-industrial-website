@@ -1,7 +1,7 @@
 export default function OilGasPage() {
   return (
     <div className="min-h-screen" style={{ background: '#0d1b2e' }}>
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .og *{box-sizing:border-box}
         .og{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .og a{text-decoration:none;color:inherit}
@@ -146,7 +146,7 @@ export default function OilGasPage() {
           .og-fc{display:none !important}
           .og-fc-cert{display:none !important}
         }
-      `} </style>
+      `}} />
 
       <div className="og">
         {/* BACK LINK */}
