@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function FmcgPage() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#fff' }}>
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .fmcg *{box-sizing:border-box}
         .fmcg{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .fmcg a{text-decoration:none;color:inherit}
@@ -76,7 +76,7 @@ export default function FmcgPage() {
           .fmcg-fc{display:none !important}
           .fmcg-fc-cert{display:none !important}
         }
-      `} </style>
+      `}} />
 
       <div className="fmcg">
         {/* BACK LINK */}

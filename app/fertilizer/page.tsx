@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function FertilizerPage() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#fff' }}>
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .fer *{box-sizing:border-box}
         .fer{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .fer a{text-decoration:none;color:inherit}
@@ -36,7 +36,7 @@ export default function FertilizerPage() {
         .fer-fc-cert{position:absolute;bottom:-14px;right:20px;background:rgba(13,27,46,.95);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:11px 16px}
         .fer-fc-cert p{font-size:11px;color:#94a3b8;margin-bottom:3px}
         .fer-fc-cert strong{font-size:12px;font-weight:700;color:white}
-
+ 
         .fer-stats-sec{background:linear-gradient(180deg,#052e16,#166534);padding:52px 48px}
         .fer-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1280px;margin:0 auto}
         .fer-sc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 24px;text-align:center;transition:border-color .2s}
@@ -44,7 +44,7 @@ export default function FertilizerPage() {
         .fer-sc-icon{width:52px;height:52px;background:#65a30d;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 18px}
         .fer-sc .num{font-size:44px;font-weight:900;color:#fff;line-height:1;margin-bottom:6px}
         .fer-sc .lbl{font-size:13px;color:#94a3b8}
-
+ 
         @media (max-width: 900px){
           .fer-hero{flex-direction:column;padding:48px 24px}
           .fer-hero-right{margin-left:0;margin-top:40px}
@@ -76,7 +76,8 @@ export default function FertilizerPage() {
           .fer-fc{display:none !important}
           .fer-fc-cert{display:none !important}
         }
-      `} </style>
+      `}} />
+
 
       <div className="fer">
         {/* BACK LINK */}
@@ -396,7 +397,7 @@ export default function FertilizerPage() {
             Integrated process from feedstock to finished product
           </p>
 
-          <div className="w-full max-w-6xl relative z-10 overflow-x-auto pb-4 custom-scrollbar">
+          <div className="w-full max-w-6xl relative z-10 overflow-x-auto pt-4 pb-4 custom-scrollbar">
             <div className="min-w-[900px] flex justify-between relative px-2">
               {/* Connecting Line */}
               <div className="absolute top-[32px] left-[8%] right-[8%] h-[1px] bg-[#0ea5e9]/50 z-0"></div>

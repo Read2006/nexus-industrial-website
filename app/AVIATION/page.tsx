@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function AviationIndustryPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .stl *{box-sizing:border-box}
         .stl{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .stl a{text-decoration:none;color:inherit}
@@ -76,7 +76,8 @@ export default function AviationIndustryPage() {
           .stl-fc{display:none !important}
           .stl-fc-cert{display:none !important}
         }
-      `} </style>
+      `}} />
+
 
       {/* ORIGINAL HEADER SECTION PATTERN */}
       <div className="stl" style={{ background: '#0f172a' }}>
