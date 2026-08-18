@@ -135,7 +135,7 @@ const relatedCategories = [
   { name: 'Mechanical Products', desc: 'Bearings, pumps & mechanical systems', href: '/products/mechanical', img: '/mechanical.jfif' },
   { name: 'Electrical Products', desc: 'Motors, cables & electrical systems', href: '/products/electrical', img: '/electrical.jfif' },
   { name: 'Instruments', desc: 'Precision measurement tools', href: '/products/instruments', img: '/instruments.jfif' },
-  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/contact', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=350&fit=crop&q=80' },
+  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general', img: '/general-orders/hero.jpg' },
 ];
 
 export default function PipesFittingsPage() {
@@ -143,58 +143,38 @@ export default function PipesFittingsPage() {
   const active = categories.find(c => c.id === activeTab)!
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
    
 
-      {/* HERO */}
-      <section className="relative w-full overflow-hidden" style={{ background: 'linear-gradient(135deg, #0d1b1a 0%, #0f2e2a 35%, #0d4d42 70%, #115e4f 100%)' }}>
-        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(45,212,191,.25), transparent 50%)' }}></div>
-        <div className="max-w-7xl mx-auto px-6 py-14 md:py-20 relative z-10">
-          <div className="mb-8">
-            <a href="/#products" className="inline-flex items-center gap-2 text-teal-300 hover:text-white transition text-sm font-semibold">
-              ← Back to Products
-            </a>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="text-left space-y-5">
-              <div className="inline-flex items-center gap-2 bg-teal-400/10 border border-teal-400/30 text-teal-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
-                ⭕ Pipes & Fittings
-              </div>
-              <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
-                Engineered for<br /><span className="text-teal-300">Fluid Control</span>
-              </h1>
-              <p className="text-base md:text-lg text-teal-50/80 leading-relaxed max-w-xl">
-                Pipes, Flanges, Fittings, Valves, Gaskets &amp; More — genuine parts from globally trusted brands, engineered for demanding industrial environments.
-              </p>
-              <div className="flex gap-8 pt-2">
-                <div>
-                  <p className="text-3xl font-black text-white">500+</p>
-                  <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">SKUs</p>
-                </div>
-                <div className="w-px bg-white/15"></div>
-                <div>
-                  <p className="text-3xl font-black text-white">20+</p>
-                  <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">Brands</p>
-                </div>
-                <div className="w-px bg-white/15"></div>
-                <div>
-                  <p className="text-3xl font-black text-white">7</p>
-                  <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">Categories</p>
-                </div>
-              </div>
+      <section className="relative min-h-[70vh] md:min-h-[85vh] overflow-hidden">
+        <img src="/pipes-and-fittings.jfif" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" style={{ background: 'rgba(13,27,26,0.78)' }}></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 relative z-10 flex flex-col justify-center min-h-[70vh] md:min-h-[85vh]">
+          <a href="/#products" className="inline-flex items-center gap-2 text-teal-300 hover:text-white transition text-sm font-semibold mb-8 min-h-[44px]">
+            ← Back to Products
+          </a>
+          <div className="max-w-2xl space-y-5">
+            <div className="inline-flex items-center gap-2 bg-teal-400/10 border border-teal-400/30 text-teal-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+              Pipes & Fittings
             </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10" style={{ transform: 'perspective(1000px) rotateY(-6deg) rotateX(2deg)' }}>
-                <img
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&h=650&fit=crop&q=85"
-                  alt="Industrial piping equipment"
-                  className="w-full h-[320px] md:h-[400px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
+              Engineered for<br /><span className="text-teal-300">Fluid Control</span>
+            </h1>
+            <p className="text-base md:text-lg text-teal-50/80 leading-relaxed max-w-xl">
+              Pipes, Flanges, Fittings, Valves, Gaskets &amp; More — genuine parts from globally trusted brands, engineered for demanding industrial environments.
+            </p>
+            <div className="flex flex-wrap gap-8 pt-2">
+              <div>
+                <p className="text-3xl font-black text-white">500+</p>
+                <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">SKUs</p>
               </div>
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-2xl px-5 py-3 hidden md:block">
-                <p className="text-2xl font-black text-teal-700 leading-none">100%</p>
-                <p className="text-gray-500 text-[11px] font-semibold mt-1">Genuine Parts</p>
+              <div>
+                <p className="text-3xl font-black text-white">20+</p>
+                <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">Brands</p>
+              </div>
+              <div>
+                <p className="text-3xl font-black text-white">7</p>
+                <p className="text-teal-200/60 text-xs uppercase tracking-widest mt-1">Categories</p>
               </div>
             </div>
           </div>

@@ -6,12 +6,12 @@ export default function CementPage() {
         .cem{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .cem a{text-decoration:none;color:inherit}
         .cem img{display:block}
-        .cem-hero{background:linear-gradient(135deg,#020617 0%,#0f172a 40%,#1e293b 70%,#334155 100%);min-height:560px;display:flex;align-items:center;padding:60px 48px;position:relative;overflow:hidden}
-        .cem-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(100,116,139,0.15),transparent)}
+        .cem-hero{position:relative;min-height:85vh;display:flex;align-items:center;padding:72px 24px;overflow:hidden;background:transparent}.cem-hero::before{content:'';position:absolute;inset:0;background:url('/new-heroes/cement.jpeg') center/cover no-repeat;z-index:0}.cem-hero::after{content:'';position:absolute;inset:0;background:rgba(2,6,23,0.78);z-index:1}.cem-hero-left{position:relative;z-index:2;max-width:720px}.cem-hero-right{display:none !important}
+        
         .cem-hero-left{flex:1;max-width:580px;position:relative;z-index:2}
         .cem-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(100,116,139,0.15);border:1px solid rgba(100,116,139,0.4);color:#64748b;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;margin-bottom:26px;text-transform:uppercase}
         .cem-hero h1{font-size:52px;font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:20px}
-        .cem-hero h1 .c-pri{color:#2dd4bf;display:block}
+        .cem-hero h1 .c-pri{color:#94a3b8;display:block}
         .cem-desc{font-size:15.5px;color:#94a3b8;line-height:1.8;max-width:460px;margin-bottom:32px}
         .cem-stats{display:flex;gap:32px;margin-bottom:36px}
         .cem-hs-num{font-size:28px;font-weight:900;color:#64748b;line-height:1}
@@ -25,7 +25,7 @@ export default function CementPage() {
         .cem-img-wrap img{width:100%;height:100%;object-fit:cover}
         .cem-fc{position:absolute;background:white;color:#000;border-radius:10px;padding:11px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.4)}
         .cem-fc.tr{top:-14px;right:-14px}
-        .cem-fc-icon{width:34px;height:34px;background:#16a34a;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+        .cem-fc-icon{width:34px;height:34px;background:#475569;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
         .cem-fc .fn{font-size:18px;font-weight:900;color:#000;line-height:1}
         .cem-fc .fl{font-size:11px;color:#666;margin-top:2px}
         .cem-fc.bl{bottom:-14px;left:-14px;background:#475569;color:white;border-radius:10px;padding:12px 18px}
@@ -45,7 +45,7 @@ export default function CementPage() {
 
         .cem-vc-section{background:#fff;padding:80px 48px;color:#111}
         .cem-sec-center{text-align:center;margin-bottom:52px;max-width:1280px;margin-left:auto;margin-right:auto}
-        .cem-tag-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(100,116,139,0.15);border:1px solid rgba(13,148,136,.3);color:#475569;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:16px;text-transform:uppercase}
+        .cem-tag-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(100,116,139,0.15);border:1px solid rgba(71,85,105,.3);color:#475569;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:16px;text-transform:uppercase}
         .cem-vc-section h2{font-size:38px;font-weight:900;color:#111;letter-spacing:-1.5px;margin-bottom:10px}
         .cem-vc-section h2 span{color:#475569}
         .cem-sec-sub{font-size:15px;color:#666;max-width:480px;margin:0 auto}
@@ -54,7 +54,7 @@ export default function CementPage() {
         .cem-vcc:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.1)}
         .cem-vch{padding:26px 26px 22px;position:relative;overflow:hidden}
         .cem-vch.c1{background:linear-gradient(135deg,#475569,#334155)}
-        .cem-vch.c2{background:linear-gradient(135deg,#16a34a,#15803d)}
+        .cem-vch.c2{background:linear-gradient(135deg,#475569,#334155)}
         .cem-vch.c3{background:linear-gradient(135deg,#1e3a8a,#1e293b)}
         .cem-vch::after{content:'';position:absolute;top:-30px;right:-30px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.1)}
         .cem-vch-icon{width:46px;height:46px;background:rgba(255,255,255,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:14px}
@@ -64,11 +64,11 @@ export default function CementPage() {
         .cem-vcb .desc{font-size:13.5px;color:#555;line-height:1.65;margin-bottom:16px}
         .cem-vcm{display:flex;gap:24px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #f0f0f0}
         .cem-vm-val{font-size:19px;font-weight:800;color:#111}
-        .cem-vm-val.g{color:#16a34a}
+        .cem-vm-val.g{color:#475569}
         .cem-vm-lbl{font-size:11.5px;color:#888;margin-top:2px}
         .cem-vc-list{list-style:none;display:flex;flex-direction:column;gap:9px}
         .cem-vc-list li{display:flex;align-items:center;gap:9px;font-size:13.5px;color:#444}
-        .cem-vc-list li::before{content:'✓';width:19px;height:19px;min-width:19px;background:#d1fae5;color:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
+        .cem-vc-list li::before{content:'✓';width:19px;height:19px;min-width:19px;background:#e2e8f0;color:#475569;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
 
         .cem-safety{position:relative;padding:90px 48px;text-align:center;overflow:hidden}
         .cem-s-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -124,7 +124,7 @@ export default function CementPage() {
         }
       
         @media (max-width: 600px){
-          .cem-hero{padding: 40px 24px !important}
+          .cem-hero{padding: 40px 24px !important;min-height:70vh !important}
           .cem-hero h1{font-size:32px !important;line-height:1.1 !important;letter-spacing:-1px !important}
           .cem-img-wrap{height:250px !important}
           .cem-stats{flex-direction:row !important;justify-content:flex-start !important;gap:28px !important;margin-bottom:28px !important}
@@ -174,7 +174,7 @@ export default function CementPage() {
           </div>
           <div className="cem-hero-right">
             <div className="cem-img-wrap">
-              <img src="/industries/cement.jfif" alt="cement industry" />
+              <img src="/new-heroes/cement.jpeg" alt="cement industry" />
             </div>
           </div>
         </section>
@@ -241,7 +241,7 @@ export default function CementPage() {
 
         {/* SAFETY */}
         <section className="cem-safety">
-          <img className="cem-s-bg" src="/industries/cement 1.jfif" alt="Industry safety background" />
+          <img className="cem-s-bg" src="/new-heroes/cement.jpeg" alt="Industry safety background" />
           <div className="cem-s-ov"></div>
           <div className="cem-s-cnt">
             <div className="cem-s-tag">🛡️ HEALTH, SAFETY &amp; ENVIRONMENT</div>

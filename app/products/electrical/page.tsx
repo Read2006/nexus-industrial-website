@@ -67,7 +67,7 @@ const relatedCategories = [
   { name: 'Mechanical Products', desc: 'Bearings, pumps & mechanical systems', href: '/products/mechanical', img: '/mechanical.jfif' },
   { name: 'Pipes & Fittings', desc: 'Valves, fittings & pipe systems', href: '/products/pipes-fittings', img: '/pipes-and-fittings.jfif' },
   { name: 'Instruments', desc: 'Precision measurement tools', href: '/products/instruments', img: '/instruments.jfif' },
-  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general', img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=350&fit=crop&q=80' },
+  { name: 'General Orders', desc: 'Custom & specialized equipment', href: '/products/general', img: '/general-orders/hero.jpg' },
 ]
 
 export default function ElectricalProductsPage() {
@@ -75,58 +75,38 @@ export default function ElectricalProductsPage() {
   const active = categories.find(c => c.id === activeTab)!
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       
 
-      {/* HERO */}
-      <section className="relative w-full overflow-hidden" style={{ background: 'linear-gradient(135deg, #0b1220 0%, #0f1f3d 35%, #1a2f5c 70%, #1e3a8a 100%)' }}>
-        <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(251,191,36,.25), transparent 50%)' }}></div>
-        <div className="max-w-7xl mx-auto px-6 py-14 md:py-20 relative z-10">
-          <div className="mb-8">
-            <a href="/#products" className="inline-flex items-center gap-2 text-amber-300 hover:text-white transition text-sm font-semibold">
-              ← Back to Products
-            </a>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="text-left space-y-5">
-              <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
-                ⚡ Electrical Products
-              </div>
-              <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
-                Powering Industrial<br /><span className="text-amber-300">Systems Reliably</span>
-              </h1>
-              <p className="text-base md:text-lg text-blue-50/80 leading-relaxed max-w-xl">
-                Motors, Cables, Switchgear &amp; Panels — genuine electrical components sourced from globally trusted brands, built for safety and operational reliability.
-              </p>
-              <div className="flex gap-8 pt-2">
-                <div>
-                  <p className="text-3xl font-black text-white">400+</p>
-                  <p className="text-blue-200/60 text-xs uppercase tracking-widest mt-1">SKUs</p>
-                </div>
-                <div className="w-px bg-white/15"></div>
-                <div>
-                  <p className="text-3xl font-black text-white">15+</p>
-                  <p className="text-blue-200/60 text-xs uppercase tracking-widest mt-1">Brands</p>
-                </div>
-                <div className="w-px bg-white/15"></div>
-                <div>
-                  <p className="text-3xl font-black text-white">4</p>
-                  <p className="text-blue-200/60 text-xs uppercase tracking-widest mt-1">Categories</p>
-                </div>
-              </div>
+      <section className="relative min-h-[70vh] md:min-h-[85vh] overflow-hidden">
+        <img src="/electrical/elec.jfif" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" style={{ background: 'rgba(11,18,32,0.82)' }}></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 relative z-10 flex flex-col justify-center min-h-[70vh] md:min-h-[85vh]">
+          <a href="/#products" className="inline-flex items-center gap-2 text-amber-300 hover:text-white transition text-sm font-semibold mb-8 min-h-[44px]">
+            ← Back to Products
+          </a>
+          <div className="max-w-2xl space-y-5">
+            <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+              Electrical Products
             </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10" style={{ transform: 'perspective(1000px) rotateY(-6deg) rotateX(2deg)' }}>
-                <img
-                  src="/electrical/elec.jfif"
-                  alt="Industrial electrical control panel"
-                  className="w-full h-[320px] md:h-[400px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
+              Powering Industrial<br /><span className="text-amber-300">Systems Reliably</span>
+            </h1>
+            <p className="text-base md:text-lg text-blue-50/80 leading-relaxed max-w-xl">
+              Motors, Cables, Switchgear &amp; Panels — genuine electrical components sourced from globally trusted brands, built for safety and operational reliability.
+            </p>
+            <div className="flex flex-wrap gap-8 pt-2">
+              <div>
+                <p className="text-3xl font-black text-white">400+</p>
+                <p className="text-blue-200/60 text-xs uppercase tracking-widest mt-1">SKUs</p>
               </div>
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-2xl px-5 py-3 hidden md:block">
-                <p className="text-2xl font-black text-blue-900 leading-none">IEC</p>
-                <p className="text-gray-500 text-[11px] font-semibold mt-1">Safety Certified</p>
+              <div>
+                <p className="text-3xl font-black text-white">15+</p>
+                <p className="text-blue-200/60 text-xs uppercase tracking-widest mt-1">Brands</p>
+              </div>
+              <div>
+                <p className="text-3xl font-black text-white">4</p>
+                <p className="text-blue-200/60 text-xs uppercase tracking-widest mt-1">Categories</p>
               </div>
             </div>
           </div>

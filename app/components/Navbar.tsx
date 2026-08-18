@@ -23,7 +23,7 @@ export default function Navbar() {
             <span className="text-white/20">|</span>
             <span>📍 DHA Phase 2, Islamabad</span>
           </div>
-          <span className="bg-teal-400/10 border border-teal-400/30 text-teal-300 px-3 py-0.5 rounded-full text-[10px] font-bold tracking-widest uppercase">⚡ Same Day Response · NTN: 123455</span>
+          <span className="bg-teal-400/10 border border-teal-400/30 text-teal-300 px-3 py-0.5 rounded-full text-[10px] font-bold tracking-widest uppercase">Same Day Response</span>
         </div>
       </div>
 

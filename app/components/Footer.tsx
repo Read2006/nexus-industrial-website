@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-black text-[11px] tracking-[0.2em] uppercase border-l-2 border-teal-500 pl-3 mb-4">Products</h4>
             <ul className="space-y-3 text-sm">
-              {[['Mechanical', '/products/mechanical'], ['Electrical', '/products/electrical'], ['Pipes & Fittings', '/products/pipes-fittings'], ['Instruments', '/products/instruments']].map(([l, h]) => (
+              {[['Mechanical', '/products/mechanical'], ['Electrical', '/products/electrical'], ['Pipes & Fittings', '/products/pipes-fittings'], ['Instruments', '/products/instruments'], ['General Orders', '/products/general']].map(([l, h]) => (
                 <li key={l}><a href={h} className="hover:text-teal-400 transition-colors">{l}</a></li>
               ))}
             </ul>

@@ -8,8 +8,8 @@ export default function TextilePage() {
         .txt{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .txt a{text-decoration:none;color:inherit}
         .txt img{display:block}
-        .txt-hero{background:linear-gradient(135deg,#1e1b4b 0%,#312e81 40%,#4338ca 70%,#4f46e5 100%);min-height:560px;display:flex;align-items:center;padding:60px 48px;position:relative;overflow:hidden}
-        .txt-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(99,102,241,0.15),transparent)}
+        .txt-hero{position:relative;min-height:85vh;display:flex;align-items:center;padding:72px 24px;overflow:hidden;background:transparent}.txt-hero::before{content:'';position:absolute;inset:0;background:url('/new-heroes/textile.jpeg') center/cover no-repeat;z-index:0}.txt-hero::after{content:'';position:absolute;inset:0;background:rgba(30,27,75,0.75);z-index:1}.txt-hero-left{position:relative;z-index:2;max-width:720px}.txt-hero-right{display:none !important}
+        
         .txt-hero-left{flex:1;max-width:580px;position:relative;z-index:2}
         .txt-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.4);color:#a5b4fc;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;margin-bottom:26px;text-transform:uppercase}
         .txt-hero h1{font-size:52px;font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:20px}
@@ -27,7 +27,7 @@ export default function TextilePage() {
         .txt-img-wrap img{width:100%;height:100%;object-fit:cover}
         .txt-fc{position:absolute;background:white;color:#000;border-radius:10px;padding:11px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.4)}
         .txt-fc.tr{top:-14px;right:-14px}
-        .txt-fc-icon{width:34px;height:34px;background:#16a34a;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+        .txt-fc-icon{width:34px;height:34px;background:#4f46e5;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
         .txt-fc .fn{font-size:18px;font-weight:900;color:#000;line-height:1}
         .txt-fc .fl{font-size:11px;color:#666;margin-top:2px}
         .txt-fc.bl{bottom:-14px;left:-14px;background:#4f46e5;color:white;border-radius:10px;padding:12px 18px}
@@ -54,7 +54,7 @@ export default function TextilePage() {
         }
       
         @media (max-width: 600px){
-          .txt-hero{padding: 40px 24px !important}
+          .txt-hero{padding: 40px 24px !important;min-height:70vh !important}
           .txt-hero h1{font-size:32px !important;line-height:1.1 !important;letter-spacing:-1px !important}
           .txt-img-wrap{height:250px !important}
           .txt-stats{flex-direction:row !important;justify-content:flex-start !important;gap:28px !important;margin-bottom:28px !important}
@@ -104,7 +104,7 @@ export default function TextilePage() {
           </div>
           <div className="txt-hero-right">
             <div className="txt-img-wrap">
-              <img src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?w=900&q=85" alt="Textile Industry" />
+              <img src="/new-heroes/textile.jpeg" alt="Textile Industry" />
             </div>
           </div>
         </section>
@@ -126,7 +126,7 @@ export default function TextilePage() {
         {/* Section 1: Equipment Supply Portfolio */}
         <section className="py-20 px-6 md:px-12 flex flex-col items-center bg-white">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
-            Equipment Supply <span className="text-[#0099ff]">Portfolio</span>
+            Equipment Supply <span className="text-[#4f46e5]">Portfolio</span>
           </h2>
           <p className="text-gray-500 mb-16 text-center max-w-2xl text-[15px]">
             Comprehensive equipment supply across all textile manufacturing processes
@@ -138,16 +138,16 @@ export default function TextilePage() {
               {/* Bar 1 */}
               <div className="bg-[#151f32] rounded-xl p-6 relative overflow-hidden shadow-md">
                 <div className="flex items-start gap-4 relative z-10">
-                  <div className="w-12 h-12 rounded-lg bg-[#ff6600] text-white flex items-center justify-center text-2xl shrink-0 shadow-lg">🧶</div>
+                  <div className="w-12 h-12 rounded-lg bg-[#4f46e5] text-white flex items-center justify-center text-2xl shrink-0 shadow-lg">🧶</div>
                   <div className="flex-1">
                     <div className="flex justify-between items-center mb-1">
                       <h3 className="text-white font-bold text-[15px]">Spinning & Weaving</h3>
-                      <span className="text-[#0099ff] font-extrabold text-lg">45%</span>
+                      <span className="text-[#4f46e5] font-extrabold text-lg">45%</span>
                     </div>
                     <p className="text-gray-400 text-xs mb-4">Blowrooms, carding machines, ring frames, and air-jet looms.</p>
                     <div className="flex gap-6 border-t border-gray-700/50 pt-4">
                       <div>
-                        <div className="text-[#ff6600] font-bold text-sm">800+</div>
+                        <div className="text-[#4f46e5] font-bold text-sm">800+</div>
                         <div className="text-gray-500 text-[10px] uppercase">Products</div>
                       </div>
                       <div>
@@ -160,11 +160,11 @@ export default function TextilePage() {
               </div>
               {/* Bar 2 */}
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 flex items-center gap-4 hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 rounded-lg bg-[#0099ff] text-white flex items-center justify-center text-xl shrink-0 shadow-md">💧</div>
+                <div className="w-10 h-10 rounded-lg bg-[#4f46e5] text-white flex items-center justify-center text-xl shrink-0 shadow-md">💧</div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-0.5">
                     <h3 className="text-gray-900 font-bold text-sm">Wet Processing & Dyeing</h3>
-                    <span className="text-[#0099ff] font-extrabold text-base">35%</span>
+                    <span className="text-[#4f46e5] font-extrabold text-base">35%</span>
                   </div>
                   <p className="text-gray-500 text-xs">High-temp jet dyeing, stenters, and continuous finishing ranges.</p>
                 </div>
@@ -175,7 +175,7 @@ export default function TextilePage() {
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-0.5">
                     <h3 className="text-gray-900 font-bold text-sm">Garment Manufacturing</h3>
-                    <span className="text-[#0099ff] font-extrabold text-base">20%</span>
+                    <span className="text-[#4f46e5] font-extrabold text-base">20%</span>
                   </div>
                   <p className="text-gray-500 text-xs">CNC cutting, automated sewing, and finishing/pressing units.</p>
                 </div>
@@ -187,7 +187,7 @@ export default function TextilePage() {
               <img src="/industries/automation.jfif" alt="Spinning Mill" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
-                <div className="inline-flex items-center gap-1.5 bg-[#ff6600] text-white text-[10px] font-bold px-2 py-1 rounded mb-2">
+                <div className="inline-flex items-center gap-1.5 bg-[#4f46e5] text-white text-[10px] font-bold px-2 py-1 rounded mb-2">
                   <span>🧶</span> Spinning Machinery
                 </div>
                 <h3 className="text-white text-2xl font-bold">Latest Automation Tech</h3>
@@ -198,11 +198,11 @@ export default function TextilePage() {
 
         {/* Section 2: Comprehensive Equipment Range */}
         <section className="py-20 px-6 md:px-12 flex flex-col items-center bg-gray-50">
-          <div className="bg-orange-50 text-[#ff6600] border border-orange-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+          <div className="bg-indigo-50 text-[#4f46e5] border border-indigo-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
             ⚙ PRODUCT RANGE
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
-            Comprehensive <span className="text-[#ff6600]">Equipment Range</span>
+            Comprehensive <span className="text-[#4f46e5]">Equipment Range</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-[15px]">
             End-to-end machinery for every stage of textile and apparel production.
@@ -223,12 +223,12 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Blowroom Lines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Carding Machines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Draw Frames</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Roving Frames</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Ring Spinning</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Rotor/Air-Jet Spinning</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Blowroom Lines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Carding Machines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Draw Frames</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Roving Frames</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Ring Spinning</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Rotor/Air-Jet Spinning</div>
               </div>
             </div>
             
@@ -246,12 +246,12 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Air-Jet Looms</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Rapier Looms</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Water-Jet Looms</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Circular Knitting</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Flat Knitting</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Warping & Sizing</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Air-Jet Looms</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Rapier Looms</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Water-Jet Looms</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Circular Knitting</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Flat Knitting</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Warping & Sizing</div>
               </div>
             </div>
 
@@ -269,12 +269,12 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> High-Temp Jet Dyeing</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Stenter Frames</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Continuous Bleaching</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Singeing Machines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Calenders & Compacting</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Rotary Printing</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> High-Temp Jet Dyeing</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Stenter Frames</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Continuous Bleaching</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Singeing Machines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Calenders & Compacting</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Rotary Printing</div>
               </div>
             </div>
 
@@ -292,12 +292,12 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> CNC Fabric Cutters</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Spreading Machines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Industrial Sewing</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Fusing Presses</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Multi-head Embroidery</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Steam Ironing Systems</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> CNC Fabric Cutters</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Spreading Machines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Industrial Sewing</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Fusing Presses</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Multi-head Embroidery</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Steam Ironing Systems</div>
               </div>
             </div>
 
@@ -315,12 +315,12 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Tensile Testers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Spectrophotometers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Yarn Evenness Testers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Fabric Inspection Machines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Shrinkage Washers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Pilling Testers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Tensile Testers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Spectrophotometers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Yarn Evenness Testers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Fabric Inspection Machines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Shrinkage Washers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Pilling Testers</div>
               </div>
             </div>
 
@@ -338,12 +338,12 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Humidification Plants</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Industrial Boilers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Air Compressors</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Effluent Treatment (ETP)</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> RO Water Plants</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Material Handling</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Humidification Plants</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Industrial Boilers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Air Compressors</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Effluent Treatment (ETP)</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> RO Water Plants</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#4f46e5]">›</span> Material Handling</div>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@ export default function TextilePage() {
             ⚗ EQUIPMENT FOR EVERY STAGE
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 text-center tracking-tight relative z-10">
-            From Raw Fiber to <span className="text-[#ff6600]">Retail</span>
+            From Raw Fiber to <span className="text-[#4f46e5]">Retail</span>
           </h2>
           <p className="text-gray-400 mb-16 text-center max-w-2xl text-[15px] relative z-10">
             End-to-end machinery solutions across the entire textile value chain.
@@ -368,17 +368,17 @@ export default function TextilePage() {
               
               {/* Step 1 */}
               <div className="flex flex-col items-center text-center relative z-10 w-32">
-                <div className="w-11 h-11 rounded-lg bg-[#ff6600] text-white flex items-center justify-center text-xl shadow-lg mb-4">🌿</div>
+                <div className="w-11 h-11 rounded-lg bg-[#4f46e5] text-white flex items-center justify-center text-xl shadow-lg mb-4">🌿</div>
                 <h4 className="text-white font-bold text-[13px] mb-1">Fiber Prep</h4>
-                <div className="text-[#ff6600] font-bold text-[11px] mb-1">Blowroom</div>
+                <div className="text-[#4f46e5] font-bold text-[11px] mb-1">Blowroom</div>
                 <p className="text-gray-500 text-[10px]">Cleaning & mixing</p>
               </div>
               
               {/* Step 2 */}
               <div className="flex flex-col items-center text-center relative z-10 w-32">
-                <div className="w-11 h-11 rounded-lg bg-orange-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">🧶</div>
+                <div className="w-11 h-11 rounded-lg bg-indigo-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">🧶</div>
                 <h4 className="text-white font-bold text-[13px] mb-1">Spinning</h4>
-                <div className="text-orange-500 font-bold text-[11px] mb-1">Ring / Rotor</div>
+                <div className="text-indigo-500 font-bold text-[11px] mb-1">Ring / Rotor</div>
                 <p className="text-gray-500 text-[10px]">Yarn formation</p>
               </div>
 
@@ -392,9 +392,9 @@ export default function TextilePage() {
 
               {/* Step 4 */}
               <div className="flex flex-col items-center text-center relative z-10 w-32">
-                <div className="w-11 h-11 rounded-lg bg-blue-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">💧</div>
+                <div className="w-11 h-11 rounded-lg bg-indigo-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">💧</div>
                 <h4 className="text-white font-bold text-[13px] mb-1">Wet Processing</h4>
-                <div className="text-blue-500 font-bold text-[11px] mb-1">Dyeing & Finish</div>
+                <div className="text-indigo-600 font-bold text-[11px] mb-1">Dyeing & Finish</div>
                 <p className="text-gray-500 text-[10px]">Color & texture</p>
               </div>
 
@@ -424,7 +424,7 @@ export default function TextilePage() {
             <div className="bg-[#151f32] rounded-xl p-6 shadow-xl border border-gray-800">
               <div className="flex justify-between items-start mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#0099ff] flex items-center justify-center text-white text-sm">🏭</div>
+                  <div className="w-8 h-8 rounded-lg bg-[#4f46e5] flex items-center justify-center text-white text-sm">🏭</div>
                   <div>
                     <h3 className="text-white font-bold text-sm">Mill Performance Dashboard</h3>
                     <div className="flex items-center gap-1.5 text-green-400 text-[10px]">
@@ -440,22 +440,22 @@ export default function TextilePage() {
               
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">🌍</span> Global Sourcing</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#4f46e5]">🌍</span> Global Sourcing</div>
                   <div className="text-white font-bold text-xl">150+</div>
                   <div className="text-gray-500 text-[10px]">OEM Partners</div>
                 </div>
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">⚙️</span> Mill Capacity</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#4f46e5]">⚙️</span> Mill Capacity</div>
                   <div className="text-white font-bold text-xl">100K+</div>
                   <div className="text-gray-500 text-[10px]">Spindles Handled</div>
                 </div>
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">📦</span> Spare Parts</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#4f46e5]">📦</span> Spare Parts</div>
                   <div className="text-white font-bold text-xl">15K+</div>
                   <div className="text-gray-500 text-[10px]">SKUs Available</div>
                 </div>
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">⚡</span> Uptime</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#4f46e5]">⚡</span> Uptime</div>
                   <div className="text-white font-bold text-xl">99.2%</div>
                   <div className="text-gray-500 text-[10px]">Machine Availability</div>
                 </div>
@@ -472,11 +472,11 @@ export default function TextilePage() {
 
             {/* Right Col: Text & Checklist */}
             <div>
-              <div className="bg-blue-50 text-[#0099ff] border border-blue-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
+              <div className="bg-indigo-50 text-[#4f46e5] border border-indigo-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
                 📦 SUPPLY CAPABILITIES
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">
-                Reliable Machinery <span className="text-[#0099ff]">Supply</span>
+                Reliable Machinery <span className="text-[#4f46e5]">Supply</span>
               </h2>
               <p className="text-gray-500 mb-8 text-[15px] leading-relaxed">
                 From high-speed spinning frames to precision dye houses, we supply European and Asian machinery designed for scale.
@@ -484,28 +484,28 @@ export default function TextilePage() {
               
               <div className="space-y-3 mb-8">
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#4f46e5] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">OEM Brand Partnerships</h4>
                     <p className="text-gray-500 text-[11px]">Authorized suppliers for leading loom and spinning brands</p>
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#4f46e5] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Erection & Commissioning</h4>
                     <p className="text-gray-500 text-[11px]">Full support for plant setup and initial trial runs</p>
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#4f46e5] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Spare Parts Inventory</h4>
                     <p className="text-gray-500 text-[11px]">Consumables like cots, aprons, and heald wires in stock</p>
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#4f46e5] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Automation Upgrades</h4>
                     <p className="text-gray-500 text-[11px]">Retrofitting older mills with PLC controls and IoT</p>
@@ -513,7 +513,7 @@ export default function TextilePage() {
                 </div>
               </div>
 
-              <a href="/contact" className="inline-flex bg-[#0099ff] hover:bg-blue-600 text-white px-6 py-2.5 rounded-md font-semibold text-sm items-center gap-2 transition shadow-md">
+              <a href="/contact" className="inline-flex bg-[#4f46e5] hover:bg-indigo-700 text-white px-6 py-2.5 rounded-md font-semibold text-sm items-center gap-2 transition shadow-md">
                 Request Quote <span>→</span>
               </a>
             </div>
@@ -534,7 +534,7 @@ export default function TextilePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-6xl">
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center text-xl mb-4">🛡️</div>
+              <div className="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-4">🛡️</div>
               <h4 className="text-gray-900 font-bold text-[13px] mb-2">ISO 9001</h4>
               <p className="text-gray-500 text-[11px]">Quality management systems</p>
             </div>
@@ -549,7 +549,7 @@ export default function TextilePage() {
               <p className="text-gray-500 text-[11px]">Supports organic processing</p>
             </div>
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4">⚡</div>
+              <div className="w-12 h-12 rounded-full bg-indigo-50 text-indigo-500 flex items-center justify-center text-xl mb-4">⚡</div>
               <h4 className="text-gray-900 font-bold text-[13px] mb-2">CE Marked</h4>
               <p className="text-gray-500 text-[11px]">European safety standards</p>
             </div>
@@ -563,11 +563,11 @@ export default function TextilePage() {
 
         {/* Section 6: Complete Supply Solutions */}
         <section className="py-20 px-6 md:px-12 flex flex-col items-center bg-white">
-          <div className="bg-sky-50 text-[#0099ff] border border-sky-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
+          <div className="bg-indigo-50 text-[#4f46e5] border border-indigo-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
             🔧 OUR SERVICES
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
-            Complete <span className="text-[#0099ff]">Supply Solutions</span>
+            Complete <span className="text-[#4f46e5]">Supply Solutions</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-[15px]">
             End-to-end equipment supply services for textile and apparel clients
@@ -576,8 +576,8 @@ export default function TextilePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
             {/* Card 1 */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex gap-5 hover:shadow-md transition-shadow relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#ff6600]"></div>
-              <div className="w-12 h-12 rounded-full bg-orange-50 text-[#ff6600] flex items-center justify-center text-xl shrink-0">🏭</div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#4f46e5]"></div>
+              <div className="w-12 h-12 rounded-full bg-indigo-50 text-[#4f46e5] flex items-center justify-center text-xl shrink-0">🏭</div>
               <div>
                 <h3 className="text-gray-900 font-bold text-base mb-2">Turnkey Mill Setup</h3>
                 <p className="text-gray-500 text-[13px] mb-4">Complete procurement and layout planning for new spinning, weaving, or dyeing facilities.</p>
@@ -590,8 +590,8 @@ export default function TextilePage() {
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex gap-5 hover:shadow-md transition-shadow relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0099ff]"></div>
-              <div className="w-12 h-12 rounded-full bg-blue-50 text-[#0099ff] flex items-center justify-center text-xl shrink-0">🔧</div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#4f46e5]"></div>
+              <div className="w-12 h-12 rounded-full bg-indigo-50 text-[#4f46e5] flex items-center justify-center text-xl shrink-0">🔧</div>
               <div>
                 <h3 className="text-gray-900 font-bold text-base mb-2">Technical Upgrades</h3>
                 <p className="text-gray-500 text-[13px] mb-4">Modernizing existing setups with advanced auto-doffing, electronic drafting, and IoT sensors.</p>
@@ -639,7 +639,7 @@ export default function TextilePage() {
             🛠 SUPPLY PROJECTS
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 text-center tracking-tight">
-            Textile Supply <span className="text-[#ff6600]">Projects</span>
+            Textile Supply <span className="text-[#4f46e5]">Projects</span>
           </h2>
           <p className="text-gray-400 mb-12 text-center max-w-2xl text-[15px]">
             Delivering scale and quality to major textile hubs worldwide.
@@ -649,10 +649,10 @@ export default function TextilePage() {
             {/* Card 1 */}
             <div className="bg-[#151f32] rounded-xl overflow-hidden shadow-xl border border-gray-800 flex flex-col group">
               <div className="h-40 relative">
-                <img src="https://images.unsplash.com/photo-1596547609804-b9db84bdfbc6?w=600&q=80" alt="Denim Mill" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/industries/weaving.jfif" alt="Denim Mill" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151f32] to-transparent"></div>
                 <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#ff6600] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Denim Mill</span>
+                  <span className="bg-[#4f46e5] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Denim Mill</span>
                   <span className="bg-white text-gray-900 text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Spinning & Dyeing</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-5">
@@ -660,7 +660,7 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#0099ff] font-bold text-[12px] mb-4">Crescent Mills</div>
+                <div className="text-[#4f46e5] font-bold text-[12px] mb-4">Crescent Mills</div>
                 <div className="grid grid-cols-2 gap-4 mb-5 text-[12px]">
                   <div>
                     <div className="text-gray-500 text-[9px] mb-1 uppercase tracking-wider">Location</div>
@@ -694,10 +694,10 @@ export default function TextilePage() {
             {/* Card 2 */}
             <div className="bg-[#151f32] rounded-xl overflow-hidden shadow-xl border border-gray-800 flex flex-col group">
               <div className="h-40 relative">
-                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600&q=80" alt="Knitwear Factory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/industries/garment manufactoring.jfif" alt="Knitwear Factory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151f32] to-transparent"></div>
                 <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#ff6600] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Knitwear</span>
+                  <span className="bg-[#4f46e5] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Knitwear</span>
                   <span className="bg-white text-gray-900 text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Cut & Sew</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-5">
@@ -705,7 +705,7 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#0099ff] font-bold text-[12px] mb-4">Apex Garments</div>
+                <div className="text-[#4f46e5] font-bold text-[12px] mb-4">Apex Garments</div>
                 <div className="grid grid-cols-2 gap-4 mb-5 text-[12px]">
                   <div>
                     <div className="text-gray-500 text-[9px] mb-1 uppercase tracking-wider">Location</div>
@@ -739,10 +739,10 @@ export default function TextilePage() {
             {/* Card 3 */}
             <div className="bg-[#151f32] rounded-xl overflow-hidden shadow-xl border border-gray-800 flex flex-col group">
               <div className="h-40 relative">
-                <img src="https://images.unsplash.com/photo-1544426510-a292d3f6bd5f?w=600&q=80" alt="Weaving" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/industries/spinning.jfif" alt="Weaving" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151f32] to-transparent"></div>
                 <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#ff6600] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Home Textiles</span>
+                  <span className="bg-[#4f46e5] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Home Textiles</span>
                   <span className="bg-white text-gray-900 text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Air-Jet Looms</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-5">
@@ -750,7 +750,7 @@ export default function TextilePage() {
                 </div>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#0099ff] font-bold text-[12px] mb-4">Nishat Weaving</div>
+                <div className="text-[#4f46e5] font-bold text-[12px] mb-4">Nishat Weaving</div>
                 <div className="grid grid-cols-2 gap-4 mb-5 text-[12px]">
                   <div>
                     <div className="text-gray-500 text-[9px] mb-1 uppercase tracking-wider">Location</div>
