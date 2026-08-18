@@ -1,13 +1,13 @@
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
 
       {/* HERO BANNER */}
       <section className="bg-gray-900 py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl">
             <p className="text-teal-400 text-sm font-bold uppercase tracking-widest mb-3">Get In Touch</p>
-            <h1 className="text-5xl font-black text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
               Contact <span className="text-teal-400">Us</span>
             </h1>
             <div className="w-16 h-1 bg-teal-400 mb-6"></div>
@@ -70,17 +70,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* NTN */}
-                <div className="bg-white rounded-2xl p-6 flex items-start gap-5 shadow-sm border border-gray-100 hover:border-teal-300 hover:shadow-md transition-all">
-                  <div className="w-12 h-12 bg-teal-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xl">📋</span>
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-teal-700 uppercase tracking-widest mb-1">Compliance</p>
-                    <p className="text-gray-900 font-bold">NTN: 123455</p>
-                    <p className="text-gray-900 font-bold">STRN: 1233456</p>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -184,22 +173,6 @@ export default function ContactPage() {
               </form>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* BOTTOM CTA STRIP */}
-      <section className="bg-teal-700 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <h3 className="text-white text-2xl font-black mb-1">Need an Urgent Quote?</h3>
-            <p className="text-teal-100 text-sm">Call us directly for same-day response on your requirements.</p>
-          </div>
-          <a
-            href="tel:03351503555"
-            className="bg-white text-teal-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition whitespace-nowrap"
-          >
-            📞 Call Now: 0335-1503555
-          </a>
         </div>
       </section>
 

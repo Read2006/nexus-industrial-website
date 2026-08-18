@@ -8,12 +8,12 @@ export default function AluminumSteelPage() {
         .stl{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .stl a{text-decoration:none;color:inherit}
         .stl img{display:block}
-        .stl-hero{background:linear-gradient(135deg,#020617 0%,#0f172a 40%,#1e293b 70%,#334155 100%);min-height:500px;display:flex;align-items:center;padding:48px;position:relative;overflow:hidden}
-        .stl-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(148,163,184,0.15),transparent)}
+        .stl-hero{position:relative;min-height:85vh;display:flex;align-items:center;padding:72px 24px;overflow:hidden;background:transparent}.stl-hero::before{content:'';position:absolute;inset:0;background:url('/new-heroes/steel.jpeg') center/cover no-repeat;z-index:0}.stl-hero::after{content:'';position:absolute;inset:0;background:rgba(15,23,42,0.80);z-index:1}.stl-hero-left{position:relative;z-index:2;max-width:720px}.stl-hero-right{display:none !important}
+        
         .stl-hero-left{flex:1;max-width:540px;position:relative;z-index:2}
         .stl-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(148,163,184,0.15);border:1px solid rgba(148,163,184,0.4);color:#94a3b8;font-size:10px;font-weight:700;letter-spacing:1px;padding:6px 12px;border-radius:20px;margin-bottom:20px;text-transform:uppercase}
         .stl-hero h1{font-size:44px;font-weight:900;line-height:1.1;letter-spacing:-1.5px;margin-bottom:16px}
-        .stl-hero h1 .c-pri{color:#38bdf8;display:block}
+        .stl-hero h1 .c-pri{color:#e2e8f0;display:block}
         .stl-desc{font-size:14px;color:#94a3b8;line-height:1.7;max-width:420px;margin-bottom:28px}
         .stl-stats{display:flex;gap:28px;margin-bottom:32px}
         .stl-hs-num{font-size:24px;font-weight:900;color:#94a3b8;line-height:1}
@@ -27,7 +27,7 @@ export default function AluminumSteelPage() {
         .stl-img-wrap img{width:100%;height:100%;object-fit:cover}
         .stl-fc{position:absolute;background:white;color:#000;border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
         .stl-fc.tr{top:-12px;right:-12px}
-        .stl-fc-icon{width:28px;height:28px;background:#16a34a;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+        .stl-fc-icon{width:28px;height:28px;background:#64748b;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
         .stl-fc .fn{font-size:16px;font-weight:800;color:#000;line-height:1}
         .stl-fc .fl{font-size:10px;color:#666;margin-top:2px}
         .stl-fc.bl{bottom:-12px;left:-12px;background:#64748b;color:white;border-radius:8px;padding:10px 16px}
@@ -54,7 +54,7 @@ export default function AluminumSteelPage() {
         }
       
         @media (max-width: 600px){
-          .stl-hero{padding: 40px 24px !important}
+          .stl-hero{padding: 40px 24px !important;min-height:70vh !important}
           .stl-hero h1{font-size:32px !important;line-height:1.1 !important;letter-spacing:-1px !important}
           .stl-img-wrap{height:250px !important}
           .stl-stats{flex-direction:row !important;justify-content:flex-start !important;gap:28px !important;margin-bottom:28px !important}
@@ -91,7 +91,7 @@ export default function AluminumSteelPage() {
         <section className="stl-hero">
           <div className="stl-hero-left">
             <div className="stl-badge">⚙️ STEEL & ALUMINIUM SOLUTIONS</div>
-            <h1>Forging the Future of<span className="c-pri">Heavy Manufacturing</span></h1>
+            <h1>Steel &amp; Aluminium<span className="c-pri">Industry Solutions</span></h1>
             <p className="stl-desc">Specialized equipment and rugged components for metal smelting, continuous casting, and rolling mills. Engineered for extreme thermal and mechanical loads.</p>
             <div className="stl-stats">
               <div><div className="stl-hs-num">100+</div><div className="stl-hs-lbl">Projects</div></div>
@@ -105,7 +105,7 @@ export default function AluminumSteelPage() {
           </div>
           <div className="stl-hero-right">
             <div className="stl-img-wrap">
-              <img src="/industries/steel.jfif" alt="steel industry" />
+              <img src="/new-heroes/steel.jpeg" alt="steel industry" />
             </div>
           </div>
         </section>
@@ -125,11 +125,11 @@ export default function AluminumSteelPage() {
       <div className="bg-gray-50 font-sans text-gray-800 flex flex-col flex-1 w-full">
         {/* Section 1: Comprehensive Equipment Range */}
         <section className="py-16 px-6 md:px-12 bg-gray-50 flex flex-col items-center">
-          <div className="bg-blue-50 text-[#0099ff] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-blue-100 uppercase tracking-wider">
+          <div className="bg-slate-100 text-[#64748b] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-slate-200 uppercase tracking-wider">
             ⚙ PRODUCT RANGE
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 text-center tracking-tight">
-            Comprehensive <span className="text-[#0099ff]">Equipment Range</span>
+            Comprehensive <span className="text-[#64748b]">Equipment Range</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-base">
             We supply industry-leading equipment for all aluminum production applications
@@ -141,14 +141,14 @@ export default function AluminumSteelPage() {
               <div className="h-48 bg-gray-200 relative">
                 <img src="/industries/smelting.jfif" alt="Smelting" className="w-full h-full object-cover" />
                 <div className="absolute -bottom-4 left-5 bg-white text-gray-900 font-bold px-3 py-2.5 rounded-lg shadow-md text-[13px] flex items-center gap-2">
-                  <span className="text-[#0099ff] text-base">⚙</span> Smelting & Reduction Equipment
+                  <span className="text-[#64748b] text-base">⚙</span> Smelting & Reduction Equipment
                 </div>
               </div>
               <div className="p-6 pt-8">
                 <ul className="text-[13px] text-gray-600 space-y-2.5">
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Electrolytic Reduction Cells (400...)</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Cathode Assembly Systems</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Alumina Feed Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Electrolytic Reduction Cells (400...)</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Cathode Assembly Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Alumina Feed Systems</span></li>
                 </ul>
               </div>
             </a>
@@ -157,14 +157,14 @@ export default function AluminumSteelPage() {
               <div className="h-48 bg-gray-200 relative">
                 <img src="/industries/casting.jfif" alt="Casting" className="w-full h-full object-cover" />
                 <div className="absolute -bottom-4 left-5 bg-white text-gray-900 font-bold px-3 py-2.5 rounded-lg shadow-md text-[13px] flex items-center gap-2">
-                  <span className="text-[#0099ff] text-base">⚙</span> Casting & Forming Systems
+                  <span className="text-[#64748b] text-base">⚙</span> Casting & Forming Systems
                 </div>
               </div>
               <div className="p-6 pt-8">
                 <ul className="text-[13px] text-gray-600 space-y-2.5">
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Direct Chill (DC) Casting Systems</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Ingot Casting Equipment (T-bars)</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Slab Casting Lines</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Direct Chill (DC) Casting Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Ingot Casting Equipment (T-bars)</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Slab Casting Lines</span></li>
                 </ul>
               </div>
             </a>
@@ -173,14 +173,14 @@ export default function AluminumSteelPage() {
               <div className="h-48 bg-gray-200 relative">
                 <img src="/industries/rolling mill.jfif" alt="Rolling" className="w-full h-full object-cover" />
                 <div className="absolute -bottom-4 left-5 bg-white text-gray-900 font-bold px-3 py-2.5 rounded-lg shadow-md text-[13px] flex items-center gap-2">
-                  <span className="text-[#0099ff] text-base">⚙</span> Rolling Mill Equipment
+                  <span className="text-[#64748b] text-base">⚙</span> Rolling Mill Equipment
                 </div>
               </div>
               <div className="p-6 pt-8">
                 <ul className="text-[13px] text-gray-600 space-y-2.5">
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Hot Rolling Mills (2000-4000mm)</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Foil Rolling Mills (0.006-0.4mm)</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Slitting & Cut-to-Length Lines</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Hot Rolling Mills (2000-4000mm)</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Foil Rolling Mills (0.006-0.4mm)</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Slitting & Cut-to-Length Lines</span></li>
                 </ul>
               </div>
             </a>
@@ -189,14 +189,14 @@ export default function AluminumSteelPage() {
               <div className="h-48 bg-gray-200 relative">
                 <img src="/industries/extrusion.jfif" alt="Extrusion" className="w-full h-full object-cover" />
                 <div className="absolute -bottom-4 left-5 bg-white text-gray-900 font-bold px-3 py-2.5 rounded-lg shadow-md text-[13px] flex items-center gap-2">
-                  <span className="text-[#0099ff] text-base">⚙</span> Extrusion Technology
+                  <span className="text-[#64748b] text-base">⚙</span> Extrusion Technology
                 </div>
               </div>
               <div className="p-6 pt-8">
                 <ul className="text-[13px] text-gray-600 space-y-2.5">
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Hydraulic Extrusion Presses (700...)</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Billet Heating Furnaces</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Profile Cooling Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Hydraulic Extrusion Presses (700...)</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Billet Heating Furnaces</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Profile Cooling Systems</span></li>
                 </ul>
               </div>
             </a>
@@ -205,14 +205,14 @@ export default function AluminumSteelPage() {
               <div className="h-48 bg-gray-200 relative">
                 <img src="/industries/recycle.jfif" alt="Recycling" className="w-full h-full object-cover" />
                 <div className="absolute -bottom-4 left-5 bg-white text-gray-900 font-bold px-3 py-2.5 rounded-lg shadow-md text-[13px] flex items-center gap-2">
-                  <span className="text-[#0099ff] text-base">⚙</span> Recycling & Recovery
+                  <span className="text-[#64748b] text-base">⚙</span> Recycling & Recovery
                 </div>
               </div>
               <div className="p-6 pt-8">
                 <ul className="text-[13px] text-gray-600 space-y-2.5">
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Scrap Melting Furnaces</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Dross Processing Systems</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Metal Recovery Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Scrap Melting Furnaces</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Dross Processing Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Metal Recovery Systems</span></li>
                 </ul>
               </div>
             </a>
@@ -221,20 +221,20 @@ export default function AluminumSteelPage() {
               <div className="h-48 bg-gray-200 relative">
                 <img src="/industries/quality.jfif" alt="Quality" className="w-full h-full object-cover" />
                 <div className="absolute -bottom-4 left-5 bg-white text-gray-900 font-bold px-3 py-2.5 rounded-lg shadow-md text-[13px] flex items-center gap-2">
-                  <span className="text-[#0099ff] text-base">⚙</span> Quality Control & Testing
+                  <span className="text-[#64748b] text-base">⚙</span> Quality Control & Testing
                 </div>
               </div>
               <div className="p-6 pt-8">
                 <ul className="text-[13px] text-gray-600 space-y-2.5">
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Spectrometer Analysis Systems</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Eddy Current Testing</span></li>
-                  <li className="flex items-center gap-3"><span className="text-[#0099ff] text-[9px]">▶</span> <span>Surface Inspection Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Spectrometer Analysis Systems</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Eddy Current Testing</span></li>
+                  <li className="flex items-center gap-3"><span className="text-[#64748b] text-[9px]">▶</span> <span>Surface Inspection Systems</span></li>
                 </ul>
               </div>
             </a>
           </div>
 
-          <a href="/#products" className="mt-12 inline-flex bg-[#0099ff] hover:bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold text-sm items-center gap-2 transition shadow-md hover:shadow-blue-500/30">
+          <a href="/#products" className="mt-12 inline-flex bg-[#64748b] hover:bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold text-sm items-center gap-2 transition shadow-md hover:shadow-blue-500/30">
             View All Products <span>→</span>
           </a>
         </section>
@@ -245,7 +245,7 @@ export default function AluminumSteelPage() {
             ⚙ TECHNICAL STANDARDS
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-center tracking-tight">
-            Quality Equipment <span className="text-[#0099ff]">Standards</span>
+            Quality Equipment <span className="text-[#64748b]">Standards</span>
           </h2>
           <p className="text-gray-400 mb-12 text-center max-w-2xl text-base">
             Supplying equipment that meets industry-leading specifications
@@ -253,27 +253,27 @@ export default function AluminumSteelPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-5xl">
             <div className="bg-gray-800/40 border border-gray-700/50 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-gray-800/60 transition duration-300">
-              <div className="text-[#0099ff] mb-3 text-xl">⚡</div>
+              <div className="text-[#64748b] mb-3 text-xl">⚡</div>
               <div className="text-2xl font-bold mb-1.5">94-96%</div>
               <div className="text-xs text-gray-400">Equipment Efficiency</div>
             </div>
             <div className="bg-gray-800/40 border border-gray-700/50 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-gray-800/60 transition duration-300">
-              <div className="text-[#0099ff] mb-3 text-xl">⚡</div>
+              <div className="text-[#64748b] mb-3 text-xl">⚡</div>
               <div className="text-2xl font-bold mb-1.5">13.2 <span className="text-lg">kWh/kg</span></div>
               <div className="text-xs text-gray-400">Energy Rating</div>
             </div>
             <div className="bg-gray-800/40 border border-gray-700/50 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-gray-800/60 transition duration-300">
-              <div className="text-[#0099ff] mb-3 text-xl">✨</div>
+              <div className="text-[#64748b] mb-3 text-xl">✨</div>
               <div className="text-2xl font-bold mb-1.5">99.7-99.9%</div>
               <div className="text-xs text-gray-400">Quality Standard</div>
             </div>
             <div className="bg-gray-800/40 border border-gray-700/50 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-gray-800/60 transition duration-300">
-              <div className="text-[#0099ff] mb-3 text-xl">🎯</div>
+              <div className="text-[#64748b] mb-3 text-xl">🎯</div>
               <div className="text-2xl font-bold mb-1.5">99%</div>
               <div className="text-xs text-gray-400">Supply Accuracy</div>
             </div>
             <div className="bg-gray-800/40 border border-gray-700/50 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-gray-800/60 transition duration-300">
-              <div className="text-[#0099ff] mb-3 text-xl">⏱</div>
+              <div className="text-[#64748b] mb-3 text-xl">⏱</div>
               <div className="text-2xl font-bold mb-1.5">12-24 <span className="text-lg">months</span></div>
               <div className="text-xs text-gray-400">Warranty Period</div>
             </div>
@@ -282,11 +282,11 @@ export default function AluminumSteelPage() {
 
         {/* Section 3: Featured Equipment */}
         <section className="py-16 px-6 md:px-12 bg-white flex flex-col items-center">
-          <div className="bg-blue-50 text-[#0099ff] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-blue-100 uppercase tracking-wider">
+          <div className="bg-slate-100 text-[#64748b] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-slate-200 uppercase tracking-wider">
             ⚙ PRODUCT GALLERY
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 text-center tracking-tight">
-            Featured <span className="text-[#0099ff]">Equipment</span>
+            Featured <span className="text-[#64748b]">Equipment</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-base">
             Explore our range of high-performance aluminum production equipment
@@ -298,7 +298,7 @@ export default function AluminumSteelPage() {
               <div className="h-56 relative overflow-hidden">
                 <img src="/industries/reduction cells.jfif" alt="Electrolytic" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#0099ff] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#64748b] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
                   400-500 kA
                 </div>
                 <div className="absolute bottom-5 left-5 text-white">
@@ -308,7 +308,7 @@ export default function AluminumSteelPage() {
               </div>
               <div className="p-5 flex justify-between items-center bg-white border-t border-gray-50">
                 <span className="text-xs text-gray-500 font-medium">CE: 96% capable</span>
-                <a href="/#products" className="text-[#0099ff] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
+                <a href="/#products" className="text-[#64748b] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
               </div>
             </div>
             {/* Card 2 */}
@@ -316,7 +316,7 @@ export default function AluminumSteelPage() {
               <div className="h-56 relative overflow-hidden">
                 <img src="/industries/dc castingb.jfif" alt="DC Casting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#0099ff] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#64748b] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
                   60-120 tons/day
                 </div>
                 <div className="absolute bottom-5 left-5 text-white">
@@ -326,7 +326,7 @@ export default function AluminumSteelPage() {
               </div>
               <div className="p-5 flex justify-between items-center bg-white border-t border-gray-50">
                 <span className="text-xs text-gray-500 font-medium">Recovery: 98%</span>
-                <a href="/#products" className="text-[#0099ff] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
+                <a href="/#products" className="text-[#64748b] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
               </div>
             </div>
             {/* Card 3 */}
@@ -334,7 +334,7 @@ export default function AluminumSteelPage() {
               <div className="h-56 relative overflow-hidden">
                 <img src="/industries/hot rolling mil l.jfif" alt="Hot Rolling Mill" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#0099ff] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#64748b] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
                   250,000 TPA
                 </div>
                 <div className="absolute bottom-5 left-5 text-white">
@@ -344,7 +344,7 @@ export default function AluminumSteelPage() {
               </div>
               <div className="p-5 flex justify-between items-center bg-white border-t border-gray-50">
                 <span className="text-xs text-gray-500 font-medium">Gauge: 0.2-12mm</span>
-                <a href="/#products" className="text-[#0099ff] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
+                <a href="/#products" className="text-[#64748b] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
               </div>
             </div>
             {/* Card 4 */}
@@ -352,7 +352,7 @@ export default function AluminumSteelPage() {
               <div className="h-56 relative overflow-hidden">
                 <img src="/industries/extrusion pres.jfif" alt="Extrusion Press" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#0099ff] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#64748b] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
                   2500-5500 MT
                 </div>
                 <div className="absolute bottom-5 left-5 text-white">
@@ -362,7 +362,7 @@ export default function AluminumSteelPage() {
               </div>
               <div className="p-5 flex justify-between items-center bg-white border-t border-gray-50">
                 <span className="text-xs text-gray-500 font-medium">Speed: 50m/min</span>
-                <a href="/#products" className="text-[#0099ff] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
+                <a href="/#products" className="text-[#64748b] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
               </div>
             </div>
             {/* Card 5 */}
@@ -370,7 +370,7 @@ export default function AluminumSteelPage() {
               <div className="h-56 relative overflow-hidden">
                 <img src="/industries/recycling furnace.jfif" alt="Recycling Furnace" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#0099ff] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#64748b] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
                   30-50 MT/batch
                 </div>
                 <div className="absolute bottom-5 left-5 text-white">
@@ -380,7 +380,7 @@ export default function AluminumSteelPage() {
               </div>
               <div className="p-5 flex justify-between items-center bg-white border-t border-gray-50">
                 <span className="text-xs text-gray-500 font-medium">Recovery: 98%</span>
-                <a href="/#products" className="text-[#0099ff] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
+                <a href="/#products" className="text-[#64748b] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
               </div>
             </div>
             {/* Card 6 */}
@@ -388,7 +388,7 @@ export default function AluminumSteelPage() {
               <div className="h-56 relative overflow-hidden">
                 <img src="/industries/foil rolling.jfif" alt="Foil Rolling Mill" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#0099ff] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur text-[#64748b] text-[11px] font-bold px-2.5 py-1 rounded shadow-sm">
                   30,000 TPA
                 </div>
                 <div className="absolute bottom-5 left-5 text-white">
@@ -398,7 +398,7 @@ export default function AluminumSteelPage() {
               </div>
               <div className="p-5 flex justify-between items-center bg-white border-t border-gray-50">
                 <span className="text-xs text-gray-500 font-medium">Thickness: 6-400µm</span>
-                <a href="/#products" className="text-[#0099ff] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
+                <a href="/#products" className="text-[#64748b] text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">Details ↗</a>
               </div>
             </div>
           </div>
@@ -406,11 +406,11 @@ export default function AluminumSteelPage() {
 
         {/* Section 5: Complete Supply Solutions */}
         <section className="py-16 px-6 md:px-12 bg-gray-50 flex flex-col items-center">
-          <div className="bg-blue-50 text-[#0099ff] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-blue-100 uppercase tracking-wider">
+          <div className="bg-slate-100 text-[#64748b] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-slate-200 uppercase tracking-wider">
             ⚙ OUR SERVICES
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 text-center tracking-tight">
-            Complete Supply <span className="text-[#0099ff]">Solutions</span>
+            Complete Supply <span className="text-[#64748b]">Solutions</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-base">
             End-to-end equipment supply services for aluminum production clients
@@ -418,8 +418,8 @@ export default function AluminumSteelPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-[#0099ff] group-hover:w-1.5 transition-all"></div>
-              <div className="text-3xl text-[#0099ff] bg-blue-50/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-blue-100">📦</div>
+              <div className="absolute top-0 left-0 w-1 h-full bg-[#64748b] group-hover:w-1.5 transition-all"></div>
+              <div className="text-3xl text-[#64748b] bg-slate-100/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-slate-200">📦</div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Equipment Supply & Procurement</h3>
                 <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Comprehensive supply of aluminum production equipment from 50,000 to 500,000 TPA capacity sourced from leading global OEM manufacturers.</p>
@@ -432,8 +432,8 @@ export default function AluminumSteelPage() {
               </div>
             </div>
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-[#0099ff] group-hover:w-1.5 transition-all"></div>
-              <div className="text-3xl text-[#0099ff] bg-blue-50/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-blue-100">🔧</div>
+              <div className="absolute top-0 left-0 w-1 h-full bg-[#64748b] group-hover:w-1.5 transition-all"></div>
+              <div className="text-3xl text-[#64748b] bg-slate-100/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-slate-200">🔧</div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Technical Support Services</h3>
                 <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Expert technical consultation for equipment selection, specification development, and integration support throughout your project.</p>
@@ -446,8 +446,8 @@ export default function AluminumSteelPage() {
               </div>
             </div>
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-[#0099ff] group-hover:w-1.5 transition-all"></div>
-              <div className="text-3xl text-[#0099ff] bg-blue-50/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-blue-100">⚙</div>
+              <div className="absolute top-0 left-0 w-1 h-full bg-[#64748b] group-hover:w-1.5 transition-all"></div>
+              <div className="text-3xl text-[#64748b] bg-slate-100/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-slate-200">⚙</div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Installation & Commissioning</h3>
                 <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Professional installation services with commissioning support, performance validation, and operator training programs.</p>
@@ -460,8 +460,8 @@ export default function AluminumSteelPage() {
               </div>
             </div>
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-1 h-full bg-[#0099ff] group-hover:w-1.5 transition-all"></div>
-              <div className="text-3xl text-[#0099ff] bg-blue-50/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-blue-100">🚚</div>
+              <div className="absolute top-0 left-0 w-1 h-full bg-[#64748b] group-hover:w-1.5 transition-all"></div>
+              <div className="text-3xl text-[#64748b] bg-slate-100/50 w-16 h-16 rounded-xl flex items-center justify-center shrink-0 border border-slate-200">🚚</div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Spare Parts & Logistics</h3>
                 <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Fast delivery of genuine spare parts with comprehensive logistics management ensuring minimal equipment downtime.</p>
@@ -478,11 +478,11 @@ export default function AluminumSteelPage() {
 
         {/* Section 6: Equipment for Every Production Stage */}
         <section className="py-16 px-6 md:px-12 bg-white flex flex-col items-center pb-24">
-          <div className="bg-blue-50 text-[#0099ff] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-blue-100 uppercase tracking-wider">
+          <div className="bg-slate-100 text-[#64748b] text-[10px] font-bold px-3 py-1 rounded-full mb-4 flex items-center gap-2 border border-slate-200 uppercase tracking-wider">
             ⚙ PRODUCTION PROCESS
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 text-center tracking-tight">
-            Equipment for Every <span className="text-[#0099ff]">Production Stage</span>
+            Equipment for Every <span className="text-[#64748b]">Production Stage</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-base">
             Complete equipment solutions from bauxite to finished aluminum
@@ -490,11 +490,11 @@ export default function AluminumSteelPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-6xl">
             <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col hover:-translate-y-1.5 transition-all duration-300 hover:shadow-[0_12px_30px_rgb(0,0,0,0.06)]">
-              <div className="bg-[#0099ff] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">01</div>
+              <div className="bg-[#64748b] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">01</div>
               <div className="text-2xl mb-4">⛏</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Bauxite Mining & Refining</h3>
               <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Equipment for extraction of bauxite ore and refining to produce alumina (Al2O3) using Bayer process technology.</p>
-              <div className="text-[11px] font-bold text-[#0099ff] mb-3 uppercase tracking-wider">Complete Equipment Range Available</div>
+              <div className="text-[11px] font-bold text-[#64748b] mb-3 uppercase tracking-wider">Complete Equipment Range Available</div>
               <ul className="text-[13px] text-gray-500 space-y-2.5 mt-auto">
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Mining Equipment</li>
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Refinery Systems</li>
@@ -502,11 +502,11 @@ export default function AluminumSteelPage() {
               </ul>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col hover:-translate-y-1.5 transition-all duration-300 hover:shadow-[0_12px_30px_rgb(0,0,0,0.06)]">
-              <div className="bg-[#0099ff] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">02</div>
+              <div className="bg-[#64748b] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">02</div>
               <div className="text-2xl mb-4">⚡</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Electrolytic Reduction</h3>
               <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Smelting equipment for Hall-Héroult process converting alumina to aluminum at 960°C using electrolysis.</p>
-              <div className="text-[11px] font-bold text-[#0099ff] mb-3 uppercase tracking-wider">Capacity: 400-500 kA</div>
+              <div className="text-[11px] font-bold text-[#64748b] mb-3 uppercase tracking-wider">Capacity: 400-500 kA</div>
               <ul className="text-[13px] text-gray-500 space-y-2.5 mt-auto">
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Electrolysis Cells</li>
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Carbon Anodes</li>
@@ -514,11 +514,11 @@ export default function AluminumSteelPage() {
               </ul>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col hover:-translate-y-1.5 transition-all duration-300 hover:shadow-[0_12px_30px_rgb(0,0,0,0.06)]">
-              <div className="bg-[#0099ff] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">03</div>
+              <div className="bg-[#64748b] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">03</div>
               <div className="text-2xl mb-4">🔥</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Casting & Alloying</h3>
               <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Casting equipment for producing ingots, billets, or slabs with precise alloy composition control.</p>
-              <div className="text-[11px] font-bold text-[#0099ff] mb-3 uppercase tracking-wider">Purity: 99.5-99.9%</div>
+              <div className="text-[11px] font-bold text-[#64748b] mb-3 uppercase tracking-wider">Purity: 99.5-99.9%</div>
               <ul className="text-[13px] text-gray-500 space-y-2.5 mt-auto">
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Casting Systems</li>
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> DC Casting</li>
@@ -526,11 +526,11 @@ export default function AluminumSteelPage() {
               </ul>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col hover:-translate-y-1.5 transition-all duration-300 hover:shadow-[0_12px_30px_rgb(0,0,0,0.06)]">
-              <div className="bg-[#0099ff] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">04</div>
+              <div className="bg-[#64748b] text-white w-12 h-12 rounded-lg flex items-center justify-center text-xl font-bold mb-6 shadow-md shadow-blue-500/20">04</div>
               <div className="text-2xl mb-4">⚙</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Downstream Processing</h3>
               <p className="text-[13px] text-gray-500 mb-4 leading-relaxed">Rolling, extrusion, and finishing equipment for creating finished aluminum products.</p>
-              <div className="text-[11px] font-bold text-[#0099ff] mb-3 uppercase tracking-wider">Thickness: 0.006-500mm</div>
+              <div className="text-[11px] font-bold text-[#64748b] mb-3 uppercase tracking-wider">Thickness: 0.006-500mm</div>
               <ul className="text-[13px] text-gray-500 space-y-2.5 mt-auto">
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Rolling Mills</li>
                 <li className="flex items-center gap-2"><span className="text-gray-300 text-xs">○</span> Extrusion Presses</li>

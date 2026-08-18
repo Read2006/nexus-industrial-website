@@ -8,12 +8,12 @@ export default function FmcgPage() {
         .fmcg{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .fmcg a{text-decoration:none;color:inherit}
         .fmcg img{display:block}
-        .fmcg-hero{background:linear-gradient(135deg,#022c22 0%,#115e59 40%,#0f766e 70%,#0d9488 100%);min-height:560px;display:flex;align-items:center;padding:60px 48px;position:relative;overflow:hidden}
-        .fmcg-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(20,184,166,0.15),transparent)}
+        .fmcg-hero{position:relative;min-height:85vh;display:flex;align-items:center;padding:72px 24px;overflow:hidden;background:transparent}.fmcg-hero::before{content:'';position:absolute;inset:0;background:url('/industries/fmcg hero.jfif') center/cover no-repeat;z-index:0}.fmcg-hero::after{content:'';position:absolute;inset:0;background:rgba(2,44,34,0.75);z-index:1}.fmcg-hero-left{position:relative;z-index:2;max-width:720px}.fmcg-hero-right{display:none !important}
+        
         .fmcg-hero-left{flex:1;max-width:580px;position:relative;z-index:2}
         .fmcg-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(20,184,166,0.15);border:1px solid rgba(20,184,166,0.4);color:#5eead4;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;margin-bottom:26px;text-transform:uppercase}
         .fmcg-hero h1{font-size:52px;font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:20px}
-        .fmcg-hero h1 .c-pri{color:#38bdf8;display:block}
+        .fmcg-hero h1 .c-pri{color:#2dd4bf;display:block}
         .fmcg-desc{font-size:15.5px;color:#ccfbf1;line-height:1.8;max-width:460px;margin-bottom:32px}
         .fmcg-stats{display:flex;gap:32px;margin-bottom:36px}
         .fmcg-hs-num{font-size:28px;font-weight:900;color:#2dd4bf;line-height:1}
@@ -54,7 +54,7 @@ export default function FmcgPage() {
         }
       
         @media (max-width: 600px){
-          .fmcg-hero{padding: 40px 24px !important}
+          .fmcg-hero{padding: 40px 24px !important;min-height:70vh !important}
           .fmcg-hero h1{font-size:32px !important;line-height:1.1 !important;letter-spacing:-1px !important}
           .fmcg-img-wrap{height:250px !important}
           .fmcg-stats{flex-direction:row !important;justify-content:flex-start !important;gap:28px !important;margin-bottom:28px !important}
@@ -126,7 +126,7 @@ export default function FmcgPage() {
         {/* Section 1: Equipment Supply Portfolio */}
         <section className="py-20 px-6 md:px-12 flex flex-col items-center bg-white">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
-            Equipment Supply <span className="text-[#0099ff]">Portfolio</span>
+            Equipment Supply <span className="text-[#0d9488]">Portfolio</span>
           </h2>
           <p className="text-gray-500 mb-16 text-center max-w-2xl text-[15px]">
             Comprehensive equipment supply across processing, packaging, and utilities.
@@ -138,16 +138,16 @@ export default function FmcgPage() {
               {/* Bar 1 */}
               <div className="bg-[#151f32] rounded-xl p-6 relative overflow-hidden shadow-md">
                 <div className="flex items-start gap-4 relative z-10">
-                  <div className="w-12 h-12 rounded-lg bg-[#ff6600] text-white flex items-center justify-center text-2xl shrink-0 shadow-lg">🍲</div>
+                  <div className="w-12 h-12 rounded-lg bg-[#0d9488] text-white flex items-center justify-center text-2xl shrink-0 shadow-lg">🍲</div>
                   <div className="flex-1">
                     <div className="flex justify-between items-center mb-1">
                       <h3 className="text-white font-bold text-[15px]">Food Processing</h3>
-                      <span className="text-[#0099ff] font-extrabold text-lg">45%</span>
+                      <span className="text-[#0d9488] font-extrabold text-lg">45%</span>
                     </div>
                     <p className="text-gray-400 text-xs mb-4">Industrial mixers, pasteurizers, and sanitary piping systems.</p>
                     <div className="flex gap-6 border-t border-gray-700/50 pt-4">
                       <div>
-                        <div className="text-[#ff6600] font-bold text-sm">600+</div>
+                        <div className="text-[#0d9488] font-bold text-sm">600+</div>
                         <div className="text-gray-500 text-[10px] uppercase">Products</div>
                       </div>
                       <div>
@@ -160,11 +160,11 @@ export default function FmcgPage() {
               </div>
               {/* Bar 2 */}
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 flex items-center gap-4 hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 rounded-lg bg-[#0099ff] text-white flex items-center justify-center text-xl shrink-0 shadow-md">📦</div>
+                <div className="w-10 h-10 rounded-lg bg-[#0d9488] text-white flex items-center justify-center text-xl shrink-0 shadow-md">📦</div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-0.5">
                     <h3 className="text-gray-900 font-bold text-sm">Packaging Automation</h3>
-                    <span className="text-[#0099ff] font-extrabold text-base">35%</span>
+                    <span className="text-[#0d9488] font-extrabold text-base">35%</span>
                   </div>
                   <p className="text-gray-500 text-xs">High-speed fillers, VFFS, cappers, and labeling machines.</p>
                 </div>
@@ -175,7 +175,7 @@ export default function FmcgPage() {
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-0.5">
                     <h3 className="text-gray-900 font-bold text-sm">End-of-Line & Palletizing</h3>
-                    <span className="text-[#0099ff] font-extrabold text-base">20%</span>
+                    <span className="text-[#0d9488] font-extrabold text-base">20%</span>
                   </div>
                   <p className="text-gray-500 text-xs">Robotic palletizers, case packers, and stretch wrapping systems.</p>
                 </div>
@@ -187,7 +187,7 @@ export default function FmcgPage() {
               <img src="/industries/processing plant.jfif" alt="Processing Plant" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
-                <div className="inline-flex items-center gap-1.5 bg-[#ff6600] text-white text-[10px] font-bold px-2 py-1 rounded mb-2">
+                <div className="inline-flex items-center gap-1.5 bg-[#0d9488] text-white text-[10px] font-bold px-2 py-1 rounded mb-2">
                   <span>🍲</span> Processing Machinery
                 </div>
                 <h3 className="text-white text-2xl font-bold">Hygienic Design & Scale</h3>
@@ -198,11 +198,11 @@ export default function FmcgPage() {
 
         {/* Section 2: Comprehensive Equipment Range */}
         <section className="py-20 px-6 md:px-12 flex flex-col items-center bg-gray-50">
-          <div className="bg-orange-50 text-[#ff6600] border border-orange-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+          <div className="bg-teal-50 text-[#0d9488] border border-teal-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
             ⚙ PRODUCT RANGE
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
-            Comprehensive <span className="text-[#ff6600]">Equipment Range</span>
+            Comprehensive <span className="text-[#0d9488]">Equipment Range</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-[15px]">
             Sanitary-grade machinery designed for food safety and maximum throughput.
@@ -223,12 +223,12 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Industrial Mixers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Extruders</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Baking Tunnels</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Sorters & Graders</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Fryers & Ovens</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Coating Drums</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Industrial Mixers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Extruders</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Baking Tunnels</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Sorters & Graders</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Fryers & Ovens</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Coating Drums</div>
               </div>
             </div>
             
@@ -246,12 +246,12 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Homogenizers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Pasteurizers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Plate Heat Exchangers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Clean-In-Place (CIP)</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Sanitary Pumps</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Aseptic Valves</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Homogenizers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Pasteurizers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Plate Heat Exchangers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Clean-In-Place (CIP)</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Sanitary Pumps</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Aseptic Valves</div>
               </div>
             </div>
 
@@ -269,12 +269,12 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Rotary Fillers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> VFFS / HFFS Machines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Flow Wrappers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Capping Machines</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Thermoforming</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Labeling Systems</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Rotary Fillers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> VFFS / HFFS Machines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Flow Wrappers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Capping Machines</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Thermoforming</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Labeling Systems</div>
               </div>
             </div>
 
@@ -292,12 +292,12 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Robotic Palletizers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Case Packers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Shrink Wrappers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Stretch Hooders</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Carton Erectors</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Conveyor Systems</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Robotic Palletizers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Case Packers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Shrink Wrappers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Stretch Hooders</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Carton Erectors</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Conveyor Systems</div>
               </div>
             </div>
 
@@ -315,12 +315,12 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> X-Ray Scanners</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Metal Detectors</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Checkweighers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Vision Systems</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Seal Integrity Testers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Leak Detectors</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> X-Ray Scanners</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Metal Detectors</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Checkweighers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Vision Systems</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Seal Integrity Testers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Leak Detectors</div>
               </div>
             </div>
 
@@ -338,12 +338,12 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] text-gray-600 bg-white flex-1">
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Industrial Chillers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Air Compressors</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Steam Boilers</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Clean Room Panels</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Hygiene Stations</div>
-                <div className="flex items-center gap-1.5"><span className="text-[#ff6600]">›</span> Nitrogen Generators</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Industrial Chillers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Air Compressors</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Steam Boilers</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Clean Room Panels</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Hygiene Stations</div>
+                <div className="flex items-center gap-1.5"><span className="text-[#0d9488]">›</span> Nitrogen Generators</div>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@ export default function FmcgPage() {
             ⚗ AUTOMATION FOR EVERY STAGE
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 text-center tracking-tight relative z-10">
-            From Ingredients to <span className="text-[#ff6600]">Retail</span>
+            From Ingredients to <span className="text-[#0d9488]">Retail</span>
           </h2>
           <p className="text-gray-400 mb-16 text-center max-w-2xl text-[15px] relative z-10">
             End-to-end machinery solutions across the entire food and beverage value chain.
@@ -368,25 +368,25 @@ export default function FmcgPage() {
               
               {/* Step 1 */}
               <div className="flex flex-col items-center text-center relative z-10 w-32">
-                <div className="w-11 h-11 rounded-lg bg-[#ff6600] text-white flex items-center justify-center text-xl shadow-lg mb-4">🌾</div>
+                <div className="w-11 h-11 rounded-lg bg-[#0d9488] text-white flex items-center justify-center text-xl shadow-lg mb-4">🌾</div>
                 <h4 className="text-white font-bold text-[13px] mb-1">Ingredients</h4>
-                <div className="text-[#ff6600] font-bold text-[11px] mb-1">Raw Intake</div>
+                <div className="text-[#0d9488] font-bold text-[11px] mb-1">Raw Intake</div>
                 <p className="text-gray-500 text-[10px]">Silos & dosing</p>
               </div>
               
               {/* Step 2 */}
               <div className="flex flex-col items-center text-center relative z-10 w-32">
-                <div className="w-11 h-11 rounded-lg bg-orange-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">🥣</div>
+                <div className="w-11 h-11 rounded-lg bg-teal-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">🥣</div>
                 <h4 className="text-white font-bold text-[13px] mb-1">Processing</h4>
-                <div className="text-orange-500 font-bold text-[11px] mb-1">Mixing & Cooking</div>
+                <div className="text-teal-700 font-bold text-[11px] mb-1">Mixing & Cooking</div>
                 <p className="text-gray-500 text-[10px]">Product preparation</p>
               </div>
 
               {/* Step 3 */}
               <div className="flex flex-col items-center text-center relative z-10 w-32">
-                <div className="w-11 h-11 rounded-lg bg-blue-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">🥫</div>
+                <div className="w-11 h-11 rounded-lg bg-teal-500 text-white flex items-center justify-center text-xl shadow-lg mb-4">🥫</div>
                 <h4 className="text-white font-bold text-[13px] mb-1">Primary Pack</h4>
-                <div className="text-blue-500 font-bold text-[11px] mb-1">Filling & Sealing</div>
+                <div className="text-teal-700 font-bold text-[11px] mb-1">Filling & Sealing</div>
                 <p className="text-gray-500 text-[10px]">Direct contact packaging</p>
               </div>
 
@@ -424,7 +424,7 @@ export default function FmcgPage() {
             <div className="bg-[#151f32] rounded-xl p-6 shadow-xl border border-gray-800">
               <div className="flex justify-between items-start mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#0099ff] flex items-center justify-center text-white text-sm">📈</div>
+                  <div className="w-8 h-8 rounded-lg bg-[#0d9488] flex items-center justify-center text-white text-sm">📈</div>
                   <div>
                     <h3 className="text-white font-bold text-sm">Plant Performance Dashboard</h3>
                     <div className="flex items-center gap-1.5 text-green-400 text-[10px]">
@@ -440,22 +440,22 @@ export default function FmcgPage() {
               
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">🌍</span> Global Brands</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#0d9488]">🌍</span> Global Brands</div>
                   <div className="text-white font-bold text-xl">120+</div>
                   <div className="text-gray-500 text-[10px]">OEM Partners</div>
                 </div>
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">⏱</span> Line Speeds</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#0d9488]">⏱</span> Line Speeds</div>
                   <div className="text-white font-bold text-xl">1000+</div>
                   <div className="text-gray-500 text-[10px]">Units per minute</div>
                 </div>
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">📦</span> Spare Parts</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#0d9488]">📦</span> Spare Parts</div>
                   <div className="text-white font-bold text-xl">10K+</div>
                   <div className="text-gray-500 text-[10px]">SKUs Available</div>
                 </div>
                 <div className="bg-[#1a2639] border border-gray-700/50 rounded-lg p-4">
-                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#ff6600]">🛡️</span> IP Rating</div>
+                  <div className="flex items-center gap-1.5 text-gray-400 text-[10px] mb-2 uppercase"><span className="text-[#0d9488]">🛡️</span> IP Rating</div>
                   <div className="text-white font-bold text-xl">IP69K</div>
                   <div className="text-gray-500 text-[10px]">Washdown Ready</div>
                 </div>
@@ -472,11 +472,11 @@ export default function FmcgPage() {
 
             {/* Right Col: Text & Checklist */}
             <div>
-              <div className="bg-blue-50 text-[#0099ff] border border-blue-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
+              <div className="bg-teal-50 text-[#0d9488] border border-teal-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
                 📦 SUPPLY CAPABILITIES
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">
-                Reliable Machinery <span className="text-[#0099ff]">Supply</span>
+                Reliable Machinery <span className="text-[#0d9488]">Supply</span>
               </h2>
               <p className="text-gray-500 mb-8 text-[15px] leading-relaxed">
                 From high-speed bottling lines to automated warehouse palletizers, we supply European and Asian machinery designed for scale and hygiene.
@@ -484,28 +484,28 @@ export default function FmcgPage() {
               
               <div className="space-y-3 mb-8">
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#0d9488] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Sanitary Design</h4>
                     <p className="text-gray-500 text-[11px]">Equipment built with stainless steel (304/316L) for easy CIP</p>
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#0d9488] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Turnkey Integration</h4>
                     <p className="text-gray-500 text-[11px]">Full line integration from raw intake to palletizing</p>
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#0d9488] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Spare Parts Inventory</h4>
                     <p className="text-gray-500 text-[11px]">Consumables like belts, seals, and sensors in stock</p>
                   </div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4 flex items-start gap-4">
-                  <div className="text-[#0099ff] mt-0.5">✓</div>
+                  <div className="text-[#0d9488] mt-0.5">✓</div>
                   <div>
                     <h4 className="text-gray-900 font-bold text-[13px] mb-0.5">Factory Acceptance Tests</h4>
                     <p className="text-gray-500 text-[11px]">Rigorous FAT/SAT protocols before final handover</p>
@@ -513,7 +513,7 @@ export default function FmcgPage() {
                 </div>
               </div>
 
-              <a href="/contact" className="inline-flex bg-[#0099ff] hover:bg-blue-600 text-white px-6 py-2.5 rounded-md font-semibold text-sm items-center gap-2 transition shadow-md">
+              <a href="/contact" className="inline-flex bg-[#0d9488] hover:bg-teal-800 text-white px-6 py-2.5 rounded-md font-semibold text-sm items-center gap-2 transition shadow-md">
                 Request Quote <span>→</span>
               </a>
             </div>
@@ -534,7 +534,7 @@ export default function FmcgPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-6xl">
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center text-xl mb-4">🛡️</div>
+              <div className="w-12 h-12 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center text-xl mb-4">🛡️</div>
               <h4 className="text-gray-900 font-bold text-[13px] mb-2">FDA Approved</h4>
               <p className="text-gray-500 text-[11px]">Food-contact material compliance</p>
             </div>
@@ -549,7 +549,7 @@ export default function FmcgPage() {
               <p className="text-gray-500 text-[11px]">Good manufacturing practices</p>
             </div>
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-orange-50 text-orange-500 flex items-center justify-center text-xl mb-4">🔬</div>
+              <div className="w-12 h-12 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center text-xl mb-4">🔬</div>
               <h4 className="text-gray-900 font-bold text-[13px] mb-2">HACCP Ready</h4>
               <p className="text-gray-500 text-[11px]">Hazard analysis integration</p>
             </div>
@@ -563,11 +563,11 @@ export default function FmcgPage() {
 
         {/* Section 6: Complete Supply Solutions */}
         <section className="py-20 px-6 md:px-12 flex flex-col items-center bg-white">
-          <div className="bg-sky-50 text-[#0099ff] border border-sky-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
+          <div className="bg-teal-50 text-[#0d9488] border border-teal-100 text-[10px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider inline-block">
             🔧 OUR SERVICES
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
-            Complete <span className="text-[#0099ff]">Supply Solutions</span>
+            Complete <span className="text-[#0d9488]">Supply Solutions</span>
           </h2>
           <p className="text-gray-500 mb-12 text-center max-w-2xl text-[15px]">
             End-to-end equipment supply services for FMCG clients
@@ -576,8 +576,8 @@ export default function FmcgPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
             {/* Card 1 */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex gap-5 hover:shadow-md transition-shadow relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#ff6600]"></div>
-              <div className="w-12 h-12 rounded-full bg-orange-50 text-[#ff6600] flex items-center justify-center text-xl shrink-0">🏭</div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0d9488]"></div>
+              <div className="w-12 h-12 rounded-full bg-teal-50 text-[#0d9488] flex items-center justify-center text-xl shrink-0">🏭</div>
               <div>
                 <h3 className="text-gray-900 font-bold text-base mb-2">Turnkey Line Integration</h3>
                 <p className="text-gray-500 text-[13px] mb-4">Complete procurement and layout planning for new bottling, snack, or dairy lines.</p>
@@ -590,8 +590,8 @@ export default function FmcgPage() {
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex gap-5 hover:shadow-md transition-shadow relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0099ff]"></div>
-              <div className="w-12 h-12 rounded-full bg-blue-50 text-[#0099ff] flex items-center justify-center text-xl shrink-0">🔧</div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0d9488]"></div>
+              <div className="w-12 h-12 rounded-full bg-teal-50 text-[#0d9488] flex items-center justify-center text-xl shrink-0">🔧</div>
               <div>
                 <h3 className="text-gray-900 font-bold text-base mb-2">Technical Upgrades</h3>
                 <p className="text-gray-500 text-[13px] mb-4">Modernizing existing setups with robotic palletizers and automated inspection systems.</p>
@@ -639,7 +639,7 @@ export default function FmcgPage() {
             🛠 SUPPLY PROJECTS
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 text-center tracking-tight">
-            FMCG Supply <span className="text-[#ff6600]">Projects</span>
+            FMCG Supply <span className="text-[#0d9488]">Projects</span>
           </h2>
           <p className="text-gray-400 mb-12 text-center max-w-2xl text-[15px]">
             Delivering scale and quality to major food & beverage hubs worldwide.
@@ -649,10 +649,10 @@ export default function FmcgPage() {
             {/* Card 1 */}
             <div className="bg-[#151f32] rounded-xl overflow-hidden shadow-xl border border-gray-800 flex flex-col group">
               <div className="h-40 relative">
-                <img src="https://images.unsplash.com/photo-1621213404555-538be1a68d06?w=600&q=80" alt="Bottling Line" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/industries/liquid.jfif" alt="Bottling Line" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151f32] to-transparent"></div>
                 <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#ff6600] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Beverages</span>
+                  <span className="bg-[#0d9488] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Beverages</span>
                   <span className="bg-white text-gray-900 text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">PET Bottling</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-5">
@@ -660,7 +660,7 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#0099ff] font-bold text-[12px] mb-4">Oasis Drinks Ltd.</div>
+                <div className="text-[#0d9488] font-bold text-[12px] mb-4">Oasis Drinks Ltd.</div>
                 <div className="grid grid-cols-2 gap-4 mb-5 text-[12px]">
                   <div>
                     <div className="text-gray-500 text-[9px] mb-1 uppercase tracking-wider">Location</div>
@@ -694,10 +694,10 @@ export default function FmcgPage() {
             {/* Card 2 */}
             <div className="bg-[#151f32] rounded-xl overflow-hidden shadow-xl border border-gray-800 flex flex-col group">
               <div className="h-40 relative">
-                <img src="https://images.unsplash.com/photo-1591039869151-5fb38e07edef?w=600&q=80" alt="Snack Factory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/industries/solid food.jfif" alt="Snack Factory" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151f32] to-transparent"></div>
                 <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#ff6600] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Snacks</span>
+                  <span className="bg-[#0d9488] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Snacks</span>
                   <span className="bg-white text-gray-900 text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">VFFS & Packing</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-5">
@@ -705,7 +705,7 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#0099ff] font-bold text-[12px] mb-4">Savory Foods</div>
+                <div className="text-[#0d9488] font-bold text-[12px] mb-4">Savory Foods</div>
                 <div className="grid grid-cols-2 gap-4 mb-5 text-[12px]">
                   <div>
                     <div className="text-gray-500 text-[9px] mb-1 uppercase tracking-wider">Location</div>
@@ -739,10 +739,10 @@ export default function FmcgPage() {
             {/* Card 3 */}
             <div className="bg-[#151f32] rounded-xl overflow-hidden shadow-xl border border-gray-800 flex flex-col group">
               <div className="h-40 relative">
-                <img src="https://images.unsplash.com/photo-1533722746147-7ee9fb017dfd?w=600&q=80" alt="Dairy Plant" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/industries/end of line.jfif" alt="Dairy Plant" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151f32] to-transparent"></div>
                 <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#ff6600] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Dairy</span>
+                  <span className="bg-[#0d9488] text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Dairy</span>
                   <span className="bg-white text-gray-900 text-[9px] font-bold px-2 py-0.5 rounded shadow-sm">Pasteurization</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-5">
@@ -750,7 +750,7 @@ export default function FmcgPage() {
                 </div>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="text-[#0099ff] font-bold text-[12px] mb-4">Milko Dairies</div>
+                <div className="text-[#0d9488] font-bold text-[12px] mb-4">Milko Dairies</div>
                 <div className="grid grid-cols-2 gap-4 mb-5 text-[12px]">
                   <div>
                     <div className="text-gray-500 text-[9px] mb-1 uppercase tracking-wider">Location</div>

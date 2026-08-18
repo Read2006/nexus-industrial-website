@@ -197,29 +197,29 @@ export default function BrandsPage() {
   )
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
 
       {/* HERO BANNER */}
       <section className="bg-gray-900 py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl">
-            <p className="text-teal-400 text-sm font-bold uppercase tracking-widest mb-3">Our Partners</p>
-            <h1 className="text-5xl font-black text-white mb-4">
-              Brands We <span className="text-teal-400">Source</span>
+            <p className="text-teal-400 text-sm font-bold uppercase tracking-widest mb-3">Brands We Serve</p>
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
+              Brands We <span className="text-teal-400">Serve</span>
             </h1>
             <div className="w-16 h-1 bg-teal-400 mb-6"></div>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              Strategic partnerships with global industry leaders. We source genuine products from {uniqueBrands.length}+ trusted brands to deliver quality, reliability, and performance to your operations.
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Connecting businesses with trusted global suppliers and 190+ leading brands. Through our reliable sourcing network, we help customers access genuine products with a focus on quality, reliability, and efficient procurement solutions.
             </p>
           </div>
         </div>
       </section>
 
       {/* DISCLAIMER */}
-      <div className="bg-teal-50 border-l-4 border-teal-600 py-4 px-6">
+      <div className="bg-teal-50 border-y border-teal-200 py-6 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <p className="text-gray-700 text-sm leading-relaxed">
-            <strong className="font-bold text-teal-800">Disclaimer:</strong> Nexus Industrial Solutions is an independent supplier of products from the brands listed on this page. We are not officially affiliated with, endorsed by, or an authorised representative of any brand or manufacturer shown. All trademarks and brand names are the sole property of their respective owners and are referenced here for product identification purposes only.
+          <p className="text-gray-800 text-base leading-relaxed">
+            <strong className="font-black text-teal-900">Disclaimer:</strong> Nexus Industrial Solutions is an independent supplier and sources products from the brands displayed based on customer requirements and availability. We are not claiming official affiliation, authorization, or endorsement from these brands unless specifically stated. All trademarks and brand names belong to their respective owners and are used only for product identification purposes.
           </p>
         </div>
       </div>
@@ -250,10 +250,11 @@ export default function BrandsPage() {
               </div>
             ))}
           </div>
+          <p className="text-gray-800 text-base md:text-lg leading-relaxed mt-10 pt-8 border-t border-gray-200">
+            <strong className="font-black text-teal-900">Disclaimer:</strong> Nexus Industrial Solutions is an independent supplier and sources products from the brands displayed based on customer requirements and availability. We are not claiming official affiliation, authorization, or endorsement from these brands unless specifically stated. All trademarks and brand names belong to their respective owners and are used only for product identification purposes.
+          </p>
         </div>
       </section>
-
-      {/* CTA */}
       <section className="bg-teal-700 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-4xl font-bold">Need a Specific Brand or Product?</h2>

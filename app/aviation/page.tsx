@@ -8,8 +8,8 @@ export default function AviationIndustryPage() {
         .stl{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .stl a{text-decoration:none;color:inherit}
         .stl img{display:block}
-        .stl-hero{background:linear-gradient(135deg,#020617 0%,#0f172a 40%,#1e293b 70%,#334155 100%);min-height:500px;display:flex;align-items:center;padding:48px;position:relative;overflow:hidden}
-        .stl-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(14,165,233,0.15),transparent)}
+        .stl-hero{position:relative;min-height:85vh;display:flex;align-items:center;padding:72px 24px;overflow:hidden;background:transparent}.stl-hero::before{content:'';position:absolute;inset:0;background:url('/new-images/avaition.jfif') center/cover no-repeat;z-index:0}.stl-hero::after{content:'';position:absolute;inset:0;background:rgba(15,23,42,0.78);z-index:1}.stl-hero-left{position:relative;z-index:2;max-width:720px}.stl-hero-right{display:none !important}
+        
         .stl-hero-left{flex:1;max-width:540px;position:relative;z-index:2}
         .stl-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(14,165,233,0.15);border:1px solid rgba(14,165,233,0.4);color:#38bdf8;font-size:10px;font-weight:700;letter-spacing:1px;padding:6px 12px;border-radius:20px;margin-bottom:20px;text-transform:uppercase}
         .stl-hero h1{font-size:44px;font-weight:900;line-height:1.1;letter-spacing:-1.5px;margin-bottom:16px}
@@ -106,7 +106,7 @@ export default function AviationIndustryPage() {
           </div>
           <div className="stl-hero-right">
             <div className="stl-img-wrap">
-              <img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?w=900&q=85" alt="Aviation operations" />
+              <img src="/new-images/avaition.jfif" alt="Aviation operations" />
             </div>
           </div>
         </section>

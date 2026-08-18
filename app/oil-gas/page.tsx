@@ -6,29 +6,29 @@ export default function OilGasPage() {
         .og{font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden}
         .og a{text-decoration:none;color:inherit}
         .og img{display:block}
-        .og-hero{background:linear-gradient(135deg,#091422 0%,#0d1f3c 40%,#0e2244 70%,#182c4e 100%);min-height:560px;display:flex;align-items:center;padding:60px 48px;position:relative;overflow:hidden}
-        .og-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(13,148,136,.15),transparent)}
+        .og-hero{position:relative;min-height:85vh;display:flex;align-items:center;padding:72px 24px;overflow:hidden;background:transparent}.og-hero::before{content:'';position:absolute;inset:0;background:url('/new-heroes/oil-gas.jpeg') center/cover no-repeat;z-index:0}.og-hero::after{content:'';position:absolute;inset:0;background:rgba(9,20,34,0.78);z-index:1}.og-hero-left{position:relative;z-index:2;max-width:720px}.og-hero-right{display:none !important}
+        
         .og-hero-left{flex:1;max-width:580px;position:relative;z-index:2}
-        .og-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(13,148,136,.15);border:1px solid rgba(13,148,136,.4);color:#2dd4bf;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;margin-bottom:26px;text-transform:uppercase}
+        .og-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(30,58,138,.15);border:1px solid rgba(30,58,138,.4);color:#93c5fd;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;margin-bottom:26px;text-transform:uppercase}
         .og-hero h1{font-size:52px;font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:20px}
-        .og-hero h1 .teal{color:#2dd4bf;display:block}
+        .og-hero h1 .teal{color:#93c5fd;display:block}
         .og-desc{font-size:15.5px;color:#94a3b8;line-height:1.8;max-width:460px;margin-bottom:32px}
         .og-stats{display:flex;gap:32px;margin-bottom:36px}
-        .og-hs-num{font-size:28px;font-weight:900;color:#2dd4bf;line-height:1}
+        .og-hs-num{font-size:28px;font-weight:900;color:#93c5fd;line-height:1}
         .og-hs-lbl{font-size:12px;color:#94a3b8;margin-top:3px}
         .og-hero-btns{display:flex;gap:12px;flex-wrap:wrap}
-        .og-btn-teal{background:#0d9488;color:#fff;padding:14px 28px;font-weight:700;font-size:14px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;transition:background .2s}
-        .og-btn-teal:hover{background:#0f766e}
+        .og-btn-teal{background:#1e3a8a;color:#fff;padding:14px 28px;font-weight:700;font-size:14px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;transition:background .2s}
+        .og-btn-teal:hover{background:#1e40af}
         .og-btn-drk{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;padding:14px 28px;font-weight:600;font-size:14px;border-radius:8px;display:inline-flex;align-items:center;gap:8px}
-        .og-hero-right{position:relative;z-index:2;flex-shrink:0;margin-left:52px}
+        .og-hero-right{display:none !important;position:relative;z-index:2;flex-shrink:0;margin-left:52px}
         .og-img-wrap{position:relative;width:560px;height:400px;border-radius:12px;overflow:hidden}
         .og-img-wrap img{width:100%;height:100%;object-fit:cover}
         .og-fc{position:absolute;background:white;color:#000;border-radius:10px;padding:11px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.4)}
         .og-fc.tr{top:-14px;right:-14px}
-        .og-fc-icon{width:34px;height:34px;background:#16a34a;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+        .og-fc-icon{width:34px;height:34px;background:#1e3a8a;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
         .og-fc .fn{font-size:18px;font-weight:900;color:#000;line-height:1}
         .og-fc .fl{font-size:11px;color:#666;margin-top:2px}
-        .og-fc.bl{bottom:-14px;left:-14px;background:#0d9488;color:white;border-radius:10px;padding:12px 18px}
+        .og-fc.bl{bottom:-14px;left:-14px;background:#1e3a8a;color:white;border-radius:10px;padding:12px 18px}
         .og-fc.bl .fn{font-size:22px;font-weight:900;color:white}
         .og-fc.bl .fl{font-size:11px;color:rgba(255,255,255,.7);margin-top:2px}
         .og-fc-cert{position:absolute;bottom:-14px;right:20px;background:rgba(13,27,46,.95);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:11px 16px}
@@ -38,23 +38,23 @@ export default function OilGasPage() {
         .og-stats-sec{background:linear-gradient(180deg,#091422,#0f1e35);padding:52px 48px}
         .og-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1280px;margin:0 auto}
         .og-sc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 24px;text-align:center;transition:border-color .2s}
-        .og-sc:hover{border-color:rgba(13,148,136,.4)}
-        .og-sc-icon{width:52px;height:52px;background:#0d9488;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 18px}
+        .og-sc:hover{border-color:rgba(30,58,138,.4)}
+        .og-sc-icon{width:52px;height:52px;background:#1e3a8a;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 18px}
         .og-sc .num{font-size:44px;font-weight:900;color:#fff;line-height:1;margin-bottom:6px}
         .og-sc .lbl{font-size:13px;color:#94a3b8}
 
         .og-vc-section{background:#fff;padding:80px 48px;color:#111}
         .og-sec-center{text-align:center;margin-bottom:52px;max-width:1280px;margin-left:auto;margin-right:auto}
-        .og-tag-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(13,148,136,.1);border:1px solid rgba(13,148,136,.3);color:#0d9488;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:16px;text-transform:uppercase}
+        .og-tag-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(30,58,138,.1);border:1px solid rgba(30,58,138,.3);color:#1e3a8a;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:16px;text-transform:uppercase}
         .og-vc-section h2{font-size:38px;font-weight:900;color:#111;letter-spacing:-1.5px;margin-bottom:10px}
-        .og-vc-section h2 span{color:#0d9488}
+        .og-vc-section h2 span{color:#1e3a8a}
         .og-sec-sub{font-size:15px;color:#666;max-width:480px;margin:0 auto}
         .og-vc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1280px;margin:0 auto}
         .og-vcc{border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;transition:box-shadow .25s,transform .25s}
         .og-vcc:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.1)}
         .og-vch{padding:26px 26px 22px;position:relative;overflow:hidden}
-        .og-vch.teal{background:linear-gradient(135deg,#0d9488,#0f766e)}
-        .og-vch.green{background:linear-gradient(135deg,#16a34a,#15803d)}
+        .og-vch.teal{background:linear-gradient(135deg,#1e3a8a,#1e40af)}
+        .og-vch.green{background:linear-gradient(135deg,#1e3a8a,#1e40af)}
         .og-vch.navy{background:linear-gradient(135deg,#1e3a8a,#1e293b)}
         .og-vch::after{content:'';position:absolute;top:-30px;right:-30px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.1)}
         .og-vch-icon{width:46px;height:46px;background:rgba(255,255,255,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:14px}
@@ -64,40 +64,40 @@ export default function OilGasPage() {
         .og-vcb .desc{font-size:13.5px;color:#555;line-height:1.65;margin-bottom:16px}
         .og-vcm{display:flex;gap:24px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #f0f0f0}
         .og-vm-val{font-size:19px;font-weight:800;color:#111}
-        .og-vm-val.g{color:#16a34a}
+        .og-vm-val.g{color:#1e3a8a}
         .og-vm-lbl{font-size:11.5px;color:#888;margin-top:2px}
         .og-vc-list{list-style:none;display:flex;flex-direction:column;gap:9px}
         .og-vc-list li{display:flex;align-items:center;gap:9px;font-size:13.5px;color:#444}
-        .og-vc-list li::before{content:'✓';width:19px;height:19px;min-width:19px;background:#d1fae5;color:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
+        .og-vc-list li::before{content:'✓';width:19px;height:19px;min-width:19px;background:#dbeafe;color:#1e3a8a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
 
         .og-safety{position:relative;padding:90px 48px;text-align:center;overflow:hidden}
         .og-s-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
         .og-s-ov{position:absolute;inset:0;background:rgba(6,16,32,.85)}
         .og-s-cnt{position:relative;z-index:2;max-width:1100px;margin:0 auto}
-        .og-s-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(13,148,136,.2);border:1px solid rgba(13,148,136,.4);color:#2dd4bf;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:20px;text-transform:uppercase}
+        .og-s-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(30,58,138,.2);border:1px solid rgba(30,58,138,.4);color:#93c5fd;font-size:11px;font-weight:700;letter-spacing:1.5px;padding:6px 16px;border-radius:20px;margin-bottom:20px;text-transform:uppercase}
         .og-safety h2{font-size:42px;font-weight:900;letter-spacing:-1.5px;margin-bottom:14px}
-        .og-safety h2 span{color:#2dd4bf}
+        .og-safety h2 span{color:#93c5fd}
         .og-s-sub{font-size:15.5px;color:rgba(255,255,255,.6);max-width:540px;margin:0 auto 48px;line-height:1.7}
         .og-s-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:24px}
         .og-s-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px 18px;text-align:left;backdrop-filter:blur(8px)}
         .og-s-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-        .og-s-card-ico{width:34px;height:34px;background:rgba(13,148,136,.2);border:1px solid rgba(13,148,136,.4);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#2dd4bf}
-        .og-s-val{font-size:22px;font-weight:900;color:#2dd4bf}
+        .og-s-card-ico{width:34px;height:34px;background:rgba(30,58,138,.2);border:1px solid rgba(30,58,138,.4);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#93c5fd}
+        .og-s-val{font-size:22px;font-weight:900;color:#93c5fd}
         .og-s-card h4{font-size:13px;font-weight:700;color:white;margin-bottom:5px}
         .og-s-card p{font-size:12px;color:rgba(255,255,255,.5);line-height:1.55}
         .og-cert-row{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:18px 28px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap}
         .og-ci{display:flex;align-items:center;gap:9px}
-        .og-ci-chk{color:#2dd4bf;font-size:15px}
+        .og-ci-chk{color:#93c5fd;font-size:15px}
         .og-ci strong{font-size:13px;color:white;font-weight:700}
         .og-ci span{font-size:11px;color:rgba(255,255,255,.5);display:block;margin-top:1px}
 
         .og-lifecycle{background:#fff;padding:80px 48px;color:#111}
         .og-lifecycle h2{font-size:38px;font-weight:900;color:#111;letter-spacing:-1.5px;margin-bottom:10px}
-        .og-lifecycle h2 span{color:#0d9488}
+        .og-lifecycle h2 span{color:#1e3a8a}
         .og-tl{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:56px;max-width:1280px;margin-left:auto;margin-right:auto}
-        .og-tl::before{content:'';position:absolute;top:38px;left:6.5%;right:6.5%;height:3px;background:linear-gradient(90deg,#0d9488,#0f766e,#1e293b,#0f766e,#0d9488,#111827);z-index:0}
+        .og-tl::before{content:'';position:absolute;top:38px;left:6.5%;right:6.5%;height:3px;background:linear-gradient(90deg,#1e3a8a,#1e40af,#1e293b,#1e40af,#1e3a8a,#111827);z-index:0}
         .og-tl-s{text-align:center;position:relative;z-index:1;padding:0 8px}
-        .og-tl-ico{width:76px;height:76px;background:#0d9488;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;position:relative;z-index:1;transition:transform .2s}
+        .og-tl-ico{width:76px;height:76px;background:#1e3a8a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;position:relative;z-index:1;transition:transform .2s}
         .og-tl-s:last-child .og-tl-ico{background:#111827}
         .og-tl-s:hover .og-tl-ico{transform:scale(1.08)}
         .og-tl-num{font-size:10px;font-weight:700;letter-spacing:1.5px;color:#999;margin-bottom:7px;text-transform:uppercase}
@@ -105,9 +105,9 @@ export default function OilGasPage() {
         .og-tl-s p{font-size:12px;color:#666;line-height:1.6}
 
         .og-cta{background:linear-gradient(135deg,#091422,#0f2137,#162840);padding:72px 48px;text-align:center;position:relative;overflow:hidden}
-        .og-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(13,148,136,.1),transparent)}
+        .og-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(30,58,138,.1),transparent)}
         .og-cta h2{font-size:38px;font-weight:900;letter-spacing:-1.5px;margin-bottom:12px;position:relative}
-        .og-cta h2 span{color:#2dd4bf}
+        .og-cta h2 span{color:#93c5fd}
         .og-cta p{color:#94a3b8;font-size:16px;max-width:480px;margin:0 auto 32px;line-height:1.7;position:relative}
         .og-cta-btns{display:flex;justify-content:center;gap:12px;position:relative;flex-wrap:wrap}
 
@@ -124,7 +124,7 @@ export default function OilGasPage() {
         }
       
         @media (max-width: 600px){
-          .og-hero{padding: 40px 24px !important}
+          .og-hero{padding: 40px 24px !important;min-height:70vh !important}
           .og-hero h1{font-size:32px !important;line-height:1.1 !important;letter-spacing:-1px !important}
           .og-img-wrap{height:250px !important}
           .og-stats{flex-direction:row !important;justify-content:flex-start !important;gap:28px !important;margin-bottom:28px !important}
@@ -151,7 +151,7 @@ export default function OilGasPage() {
       <div className="og">
         {/* BACK LINK */}
         <div className="px-6 md:px-12 py-5" style={{ background: '#091422' }}>
-          <a href="/#industries" style={{ color: '#2dd4bf', fontSize: '14px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          <a href="/#industries" style={{ color: '#93c5fd', fontSize: '14px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
             ← Back to Industries
           </a>
         </div>
@@ -174,7 +174,7 @@ export default function OilGasPage() {
           </div>
           <div className="og-hero-right">
             <div className="og-img-wrap">
-              <img src="/industries/oil and gas.jfif" alt="Oil plant" />
+              <img src="/new-heroes/oil-gas.jpeg" alt="Oil plant" />
             </div>
           </div>
         </section>
@@ -226,7 +226,7 @@ export default function OilGasPage() {
 
         {/* SAFETY */}
         <section className="og-safety">
-          <img className="og-s-bg" src="/industries/oil and gas.jfif" alt="Offshore platform" />
+          <img className="og-s-bg" src="/new-heroes/oil-gas.jpeg" alt="Offshore platform" />
           <div className="og-s-ov"></div>
           <div className="og-s-cnt">
             <div className="og-s-tag">🛡️ HEALTH, SAFETY &amp; ENVIRONMENT</div>
