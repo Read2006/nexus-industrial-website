@@ -28,12 +28,12 @@ export default function Navbar() {
       </div>
 
       <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-lg' : 'shadow-sm'}`}>
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-6">
-          <a href="/" className="flex items-center gap-3 shrink-0">
-            <img src="/images/logoofthenexus.jpeg" alt="NIS" className="h-12 w-12 rounded-full object-cover" />
+        <div className="max-w-7xl mx-auto px-6 py-3.5 flex items-center justify-between gap-6">
+          <a href="/" className="flex items-center gap-4 shrink-0">
+            <img src="/images/logoofthenexus.jpeg" alt="NIS" className="h-16 w-16 rounded-full object-cover" />
             <div className="hidden sm:block">
-              <p className="font-black text-gray-900 text-sm leading-tight">Nexus Industrial</p>
-              <p className="text-teal-700 text-[10px] font-bold tracking-wider uppercase">Solutions</p>
+              <p className="font-black text-gray-900 text-lg leading-tight">Nexus Industrial</p>
+              <p className="text-teal-700 text-xs font-bold tracking-wider uppercase mt-0.5">Solutions</p>
             </div>
           </a>
 
