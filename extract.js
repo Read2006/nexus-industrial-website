@@ -1,4 +1,4 @@
-const fs = require('fs');
+/const fs = require('fs');
 const content = fs.readFileSync('temp_page.html', 'utf8');
 console.log('File size:', content.length);
 
